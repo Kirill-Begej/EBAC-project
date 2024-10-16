@@ -1,0 +1,9 @@
+.header {
+  background: var(--main-color-white);
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
