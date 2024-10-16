@@ -1,4 +1,4 @@
-.menu__link_bg-color_tangerine:hover {
+.menu__link_hover-bg-color_tangerine:hover {
   background-color: var(--tag-color-tangerine);
   box-shadow: none;
 }

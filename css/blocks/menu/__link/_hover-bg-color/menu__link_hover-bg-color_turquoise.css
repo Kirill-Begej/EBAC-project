@@ -1,4 +1,4 @@
-.menu__link_bg-color_turquoise:hover {
+.menu__link_hover-bg-color_turquoise:hover {
   background-color: var(--tag-color-turquoise);
   box-shadow: none;
 }

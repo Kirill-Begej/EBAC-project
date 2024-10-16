@@ -1,4 +1,4 @@
-.menu__link_bg-color_mint:hover {
+.menu__link_hover-bg-color_mint:hover {
   background-color: var(--tag-color-mint);
   box-shadow: none;
 }

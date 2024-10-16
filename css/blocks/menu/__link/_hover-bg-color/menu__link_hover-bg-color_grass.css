@@ -1,4 +1,4 @@
-.menu__link_bg-color_grass:hover {
+.menu__link_hover-bg-color_grass:hover {
   background-color: var(--tag-color-grass);
   box-shadow: none;
 }

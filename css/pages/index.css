@@ -12,10 +12,10 @@
 
 
 @import url('../blocks/logo/__image/_size/logo__image_size_small.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_pink.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_sky.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_grass.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_tangerine.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_turquoise.css');
-@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_mint.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_pink.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_sky.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_grass.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_tangerine.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_turquoise.css');
+@import url('../blocks/menu/__link/_hover-bg-color/menu__link_bg-color_mint.css');
 

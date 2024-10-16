@@ -1,4 +1,4 @@
-.menu__link_bg-color_pink:hover {
+.menu__link_hover-bg-color_pink:hover {
   background-color: var(--tag-color-pink);
   box-shadow: none;
 }
