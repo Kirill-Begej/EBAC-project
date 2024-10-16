@@ -1,0 +1,4 @@
+.menu__link_bg-color_sky:hover {
+  background-color: var(--tag-color-sky);
+  box-shadow: none;
+}

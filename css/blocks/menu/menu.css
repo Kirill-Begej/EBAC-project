@@ -1,0 +1,5 @@
+.menu {
+  color: var(--main-color-black);
+  font: var(--font-wight-medium) var(--secondary-font-size-m) var(--secondary-font);
+  line-height: var(--font-line-heigth-m);
+}

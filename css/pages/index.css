@@ -5,8 +5,17 @@
 @import url('../blocks/header/__container/header__container.css');
 @import url('../blocks/logo/logo.css');
 @import url('../blocks/logo/__image/logo__image.css');
+@import url('../blocks/menu/menu.css');
+@import url('../blocks/menu/__list/menu__list.css');
+@import url('../blocks/menu/__link/menu__link.css');
 
 
 
 @import url('../blocks/logo/__image/_size/logo__image_size_small.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_pink.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_sky.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_grass.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_tangerine.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_turquoise.css');
+@import url('../blocks/menu/__link/_bg-color/menu__link_bg-color_mint.css');
 
