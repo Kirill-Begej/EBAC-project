@@ -1,0 +1,5 @@
+.logo__image {
+  display: block;
+  fill: var(--main-color-black);
+  transition: fill .3s ease-out;
+}

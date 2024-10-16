@@ -1,6 +1,6 @@
 .header__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   max-width: 1208px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
