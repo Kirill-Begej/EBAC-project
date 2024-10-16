@@ -1,0 +1,6 @@
+.search-form__image {
+  display: block;
+  fill: var(--main-color-black);
+  height: 20px;
+  width: 20px;
+}
