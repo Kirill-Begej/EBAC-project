@@ -5,3 +5,9 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1279px) {
+  .menu__list {
+    gap: 12px;
+  }
+}
