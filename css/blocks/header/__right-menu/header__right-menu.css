@@ -1,3 +1,6 @@
 .header__right-menu {
+  align-self: center;
   display: flex;
+  gap: 27px;
+  padding-top: 5px;
 }

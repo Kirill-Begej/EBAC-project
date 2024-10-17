@@ -1,7 +1,9 @@
 :root {
   /* Шрифты используемые в приложении  */
-  --primary-font: 'Archivo-Black', 'Arial', sans-serif;
-  --secondary-font: 'Nunito', 'Arial', sans-serif;
+  --primary-font: 'Archivo-Black-Regular', 'Arial', sans-serif;
+  --secondary-font-regular: 'Nunito-Regular', 'Arial', sans-serif;
+  --secondary-font-medium: 'Nunito-Medium', 'Arial', sans-serif;
+  --secondary-font-bold: 'Nunito-Bold', 'Arial', sans-serif;
 
   /* Размеры основного шрифта используемого в приложении */
   --primary-font-size-xs: 26px;
@@ -14,10 +16,6 @@
   --secondary-font-size-s: 13px;
   --secondary-font-size-m: 15px;
   --secondary-font-size-l: 18px;
-
-  /* Насыщенность шрифтов используемых в приложении */
-  --font-wight-medium: 500;
-  --font-wight-bold: 700;
 
   /* Размеры межстрочного интервала используемого в приложении */
   --font-line-heigth-s: 1.2;
