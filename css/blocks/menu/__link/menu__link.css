@@ -6,4 +6,5 @@
   padding: 9px 18px;
   text-decoration: none;
   transition: background-color .3s ease-out;
+  white-space: nowrap;
 }

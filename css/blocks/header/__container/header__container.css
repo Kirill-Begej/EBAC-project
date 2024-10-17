@@ -12,3 +12,10 @@
     width: 91.666%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    row-gap: 11px;
+    width: 95%;
+  }
+}

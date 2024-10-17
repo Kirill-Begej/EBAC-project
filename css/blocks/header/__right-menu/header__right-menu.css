@@ -13,3 +13,9 @@
     padding-top: 2px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header__right-menu {
+    gap: 23px;
+  }
+}
