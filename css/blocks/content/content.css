@@ -1,0 +1,4 @@
+.content {
+  background: url('../../../assets/images/article/background.png') center 55px / 100% no-repeat,
+              var(--main-color-white);
+}
