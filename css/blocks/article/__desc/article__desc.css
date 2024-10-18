@@ -1,3 +1,4 @@
 .article__desc {
   margin: 0;
+  max-width: 480px;
 }

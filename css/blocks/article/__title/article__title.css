@@ -2,5 +2,5 @@
   color: var(--main-color-black);
   font: var(--primary-font-size-m) var(--primary-font);
   line-height: var(--font-line-heigth-s);
-  margin: 0;
+  margin: 0 0 16px;
 }

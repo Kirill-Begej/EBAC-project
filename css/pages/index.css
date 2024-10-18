@@ -25,6 +25,7 @@
 @import url('../blocks/article/__image-sticker/article__image-sticker.css');
 @import url('../blocks/article/__text-wrapper/article__text-wrapper.css');
 @import url('../blocks/article/__tags-list/article__tags-list.css');
+@import url('../blocks/article/__text/article__text.css');
 @import url('../blocks/article/__title/article__title.css');
 @import url('../blocks/article/__desc/article__desc.css');
 @import url('../blocks/article/__date-list/article__date-list.css');
@@ -46,5 +47,6 @@
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_grass.css');
 @import url('../blocks/article/__tags-item/_active/article__tags-item_active.css');
 @import url('../blocks/article/__tags-item/_bg-color/article__tags-item_bg-color_grass.css');
+@import url('../blocks/article/__date-list/_type/article__date-list_type_promo.css');
 @import url('../blocks/button/_type/button_type_promo.css');
 
