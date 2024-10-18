@@ -1,0 +1,7 @@
+.article {
+  color: var(--main-color-gray-70);
+  display: flex;
+  font: var(--secondary-font-size-l) var(--secondary-font-regular);
+  gap: 40px;
+  line-height: var(--font-line-heigth-l);
+}

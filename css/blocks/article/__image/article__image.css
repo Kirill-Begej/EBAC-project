@@ -1,0 +1,6 @@
+.article__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  mask: url('../../../../assets/images/article/masks/mask-type-one.svg') 0 0/100% 100%;
+}

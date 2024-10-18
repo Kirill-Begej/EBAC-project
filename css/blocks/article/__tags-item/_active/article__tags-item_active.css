@@ -1,0 +1,6 @@
+.article__tags-item_active {
+  border-radius: 20px;
+  color: var(--main-color-black);
+  margin-right: 6px;
+  padding: 8px 19px;
+}

@@ -1,0 +1,8 @@
+.button {
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: var(--secondary-font-size-l);
+  line-height: var(--font-line-heigth-l);
+  outline: none;
+}

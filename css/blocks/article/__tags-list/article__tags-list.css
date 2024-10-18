@@ -1,0 +1,10 @@
+.article__tags-list {
+  align-items: center;
+  display: flex;
+  font-size: var(--secondary-font-size-m);
+  gap: 10px;
+  line-height: var(--font-line-heigth-m);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

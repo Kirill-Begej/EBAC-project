@@ -1,0 +1,25 @@
+.button_type_promo {
+  background: var(--tag-color-grass);
+  box-shadow: 0px 0px 0px 5px var(--tag-color-grass) inset,
+              0px 0px 0px 6.5px var(--main-color-black) inset;
+  color: var(--main-color-black);
+  font-family: var(--secondary-font-medium);
+  padding: 15.1px 55.3px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              color .3s ease-out,
+              outline .3s ease-out;
+}
+
+.button_type_promo:hover {
+  background: var(--main-color-black);
+  box-shadow: 0px 0px 0px 5px var(--main-color-black) inset,
+              0px 0px 0px 6.5px var(--main-color-black) inset;
+  color: var(--main-color-white);
+}
+
+.button_type_promo:focus {
+  box-shadow: 0px 0px 0px 2px var(--main-color-black) inset,
+              0px 0px 0px 5px var(--tag-color-grass) inset,
+              0px 0px 0px 6.5px var(--tag-color-grass) inset;
+}
