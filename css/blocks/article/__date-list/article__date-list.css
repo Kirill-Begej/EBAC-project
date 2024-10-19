@@ -8,3 +8,12 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1279px) {
+  .article__date-list {
+    padding-top: 12px;
+    align-items: end;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

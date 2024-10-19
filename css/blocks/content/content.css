@@ -1,4 +1,12 @@
 .content {
-  background: url('../../../assets/images/article/background.png') center 55px / 100% no-repeat,
+  background: url('../../../assets/images/content//background-section-promo-desktop.png') center 55px / 100% no-repeat,
               var(--main-color-white);
+}
+
+
+@media screen and (max-width: 1279px) {
+  .content {
+    background: url('../../../assets/images/content//background-section-promo-tablet.png') center -132px / 100% no-repeat,
+                var(--main-color-white);
+  }
 }

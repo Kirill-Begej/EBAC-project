@@ -4,3 +4,11 @@
   padding-bottom: 46.358%;
   position: relative;
 }
+
+@media screen and (max-width: 1279px) {
+  .article__image-wrapper {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-bottom: 45.456%;
+  }
+}

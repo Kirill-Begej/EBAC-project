@@ -2,9 +2,18 @@
   align-items: center;
   display: flex;
   font-size: var(--secondary-font-size-m);
-  gap: 10px;
+  column-gap: 10px;
   line-height: var(--font-line-heigth-m);
   list-style: none;
   margin: 0 0 18px;
   padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .article__tags-list {
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-bottom: 0;
+  }
 }

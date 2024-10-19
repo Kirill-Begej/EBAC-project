@@ -1,0 +1,9 @@
+@media screen and (max-width: 1279px) {
+  .article__text-wrapper {
+    column-gap: 24px;
+    display: grid;
+    grid-template-columns: 31.11% 65.48%;
+    grid-template-rows: 82px auto;
+  }
+}
+
