@@ -11,9 +11,18 @@
 
 @media screen and (max-width: 1279px) {
   .article__date-list {
-    padding-top: 12px;
     align-items: end;
     flex-direction: column;
     gap: 8px;
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article__date-list {
+    align-items: start;
+    flex-direction: row;
+    gap: 23px;
+    padding-top: 0;
   }
 }

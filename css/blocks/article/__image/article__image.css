@@ -12,3 +12,9 @@
           url('../../../../assets/images/article/masks/mask-type-one.svg') 100% 0/42% 100% no-repeat;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__image {
+    mask: url('../../../../assets/images/article/masks/mask-type-one.svg') 0 0/100% 100%;
+  }
+}

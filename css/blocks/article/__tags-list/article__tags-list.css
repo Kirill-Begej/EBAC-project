@@ -17,3 +17,11 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__tags-list {
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+}

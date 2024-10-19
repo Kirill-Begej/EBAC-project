@@ -7,7 +7,13 @@
 @media screen and (max-width: 1279px) {
   .article__image-sticker {
     height: 37.5%;
-    position: absolute;
     width: 17.046%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article__image-sticker {
+    height: 29.546%;
+    width: 34.212%;
   }
 }

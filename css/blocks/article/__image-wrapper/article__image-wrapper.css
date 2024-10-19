@@ -12,3 +12,9 @@
     padding-bottom: 45.456%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__image-wrapper {
+    padding-bottom: 115.79%;
+  }
+}

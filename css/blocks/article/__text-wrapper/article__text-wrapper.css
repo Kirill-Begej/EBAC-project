@@ -7,3 +7,10 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .article__text-wrapper {
+    row-gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+}

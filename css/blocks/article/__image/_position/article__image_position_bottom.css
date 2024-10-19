@@ -7,3 +7,9 @@
     object-position: center center;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__image_position_bottom {
+    object-position: center 90%;
+  }
+}

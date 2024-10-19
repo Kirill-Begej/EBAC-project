@@ -11,3 +11,11 @@
     margin-bottom: 8px;
   }
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .article__title {
+    margin-bottom: 16px;
+  }
+}

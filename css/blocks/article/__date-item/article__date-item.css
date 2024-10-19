@@ -9,3 +9,9 @@
    flex-direction: row-reverse;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__date-item {
+    flex-direction: row;
+   }
+}

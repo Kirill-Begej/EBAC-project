@@ -6,3 +6,9 @@
   line-height: var(--font-line-heigth-l);
   outline: none;
 }
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+}

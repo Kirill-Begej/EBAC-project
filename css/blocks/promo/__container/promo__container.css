@@ -8,3 +8,9 @@
     width: 91.666%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .promo__container {
+    width: 95%;
+  }
+}
