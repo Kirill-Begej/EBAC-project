@@ -58,9 +58,11 @@
 @import url('../blocks/article/__image/_mask-type/article__image_mask-type_four.css');
 @import url('../blocks/article/__image/_mask-type/article__image_mask-type_five.css');
 @import url('../blocks/article/__image/_mask-type/article__image_mask-type_six.css');
-@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_left.css');
-@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_right.css');
-@import url('../blocks/article/__image-sticker/_shape/article__image-sticker_shape_rectangle.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_desktop-left.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_desktop-right.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_rectangle-desktop-left.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_tablet-right.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_rectangle-tablet-right.css');
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_grass.css');
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_marine.css');
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_pink.css');

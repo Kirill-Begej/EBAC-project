@@ -6,3 +6,9 @@
   gap: 32px;
   line-height: var(--font-line-heigth-l);
 }
+
+@media screen and (max-width: 1279px) {
+  .article {
+    gap: 24px;
+  }
+}

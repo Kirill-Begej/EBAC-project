@@ -8,3 +8,9 @@
   margin: 0 0 18px;
   padding: 0;
 }
+
+@media screen and (max-width: 1279px) {
+  .article__tags-list {
+    margin-bottom: 16px;
+  }
+}

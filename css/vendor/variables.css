@@ -6,6 +6,7 @@
   --secondary-font-bold: 'Nunito-Bold', 'Arial', sans-serif;
 
   /* Размеры основного шрифта используемого в приложении */
+  --primary-font-size-xxs: 24px;
   --primary-font-size-xs: 26px;
   --primary-font-size-s: 30px;
   --primary-font-size-m: 36px;

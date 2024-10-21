@@ -80,6 +80,7 @@
 
   .article_type_promo .article__title {
     font-size: var(--primary-font-size-xs);
+    margin-bottom: 8px;
   }
 
   .article_type_promo .article__date-list  {
@@ -135,6 +136,10 @@
   .article_type_promo .article__tags-item_active {
     flex: 0 1 auto;
     margin-right: 6px;
+  }
+
+  .article_type_promo .article__title {
+    margin-bottom: 16px;
   }
 
   .article_type_promo .article__desc {

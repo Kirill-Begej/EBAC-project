@@ -1,0 +1,6 @@
+@media screen and (max-width: 1279px) {
+  .article__image-sticker_position_tablet-right {
+    left: 67%;
+    top: -1%;
+  }
+}

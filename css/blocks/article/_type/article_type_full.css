@@ -61,3 +61,37 @@
 .article_type_full .article__date-item {
   flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 1279px) {
+  .article_type_full {
+    gap: 24px;
+  }
+
+  .article_type_full .article__image-wrapper {
+    padding-bottom: 45.456%;
+  }
+
+  .article_type_full .article__image-sticker {
+    height: 37.5%;
+    right: 1%;
+    top: 2%;
+    width: 17.046%;
+  }
+
+  .article_type_full .article__text-wrapper {
+    column-gap: 24px;
+  }
+
+  .article_type_full .article__tags-list {
+    padding-top: 0px;
+  }
+
+  .article_type_full .article__title {
+    font-size: var(--primary-font-size-xs);
+  }
+
+  .article_type_full .article__date-list {
+    justify-content: start;
+    padding-top: 24px;
+  }
+}

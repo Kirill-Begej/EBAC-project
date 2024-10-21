@@ -1,0 +1,7 @@
+@media screen and (max-width: 1279px) {
+  .article__image-sticker_position_rectangle-tablet-right {
+    left: 52%;
+    top: -7.5%;
+    transform: rotate(15deg);
+  }
+}
