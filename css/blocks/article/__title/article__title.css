@@ -1,6 +1,6 @@
 .article__title {
   color: var(--main-color-black);
-  font: var(--primary-font-size-m) var(--primary-font);
+  font: var(--primary-font-size-s) var(--primary-font);
   line-height: var(--font-line-heigth-s);
   margin: 0 0 16px;
 }

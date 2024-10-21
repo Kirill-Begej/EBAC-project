@@ -1,0 +1,7 @@
+.article__tags-list_color_turquoise {
+  color: var(--text-color-turquoise-dark);
+}
+
+.article__tags-list_color_turquoise .article__tags-active {
+  background-color: var(--tag-color-turquoise);
+}

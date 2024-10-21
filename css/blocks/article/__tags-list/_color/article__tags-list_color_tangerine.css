@@ -1,0 +1,7 @@
+.article__tags-list_color_tangerine {
+  color: var(--text-color-tangerine-dark);
+}
+
+.article__tags-list_color_tangerine .article__tags-active {
+  background-color: var(--tag-color-tangerine);
+}

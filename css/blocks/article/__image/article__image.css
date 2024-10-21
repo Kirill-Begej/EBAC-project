@@ -1,20 +1,6 @@
 .article__image {
   height: 100%;
   object-fit: cover;
+  object-position: center;
   width: 100%;
-  mask: url('../../../../assets/images/article/masks/mask-type-one.svg') 0 0/100% 100%;
-}
-
-@media screen and (max-width: 1279px) {
-  .article__image {
-    mask: url('../../../../assets/images/article/masks/mask-type-one.svg') 0 0/42% 100% no-repeat,
-          url('../../../../assets/images/article/masks/mask-type-one.svg') 50% 0/42% 100% no-repeat,
-          url('../../../../assets/images/article/masks/mask-type-one.svg') 100% 0/42% 100% no-repeat;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .article__image {
-    mask: url('../../../../assets/images/article/masks/mask-type-one.svg') 0 0/100% 100%;
-  }
 }

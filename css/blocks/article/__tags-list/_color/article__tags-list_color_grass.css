@@ -1,3 +1,7 @@
 .article__tags-list_color_grass {
   color: var(--text-color-grass-dark);
 }
+
+.article__tags-list_color_grass .article__tags-active {
+  background-color: var(--tag-color-grass);
+}

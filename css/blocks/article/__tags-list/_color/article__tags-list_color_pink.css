@@ -1,0 +1,7 @@
+.article__tags-list_color_pink {
+  color: var(--text-color-pink-dark);
+}
+
+.article__tags-list_color_pink .article__tags-active {
+  background-color: var(--tag-color-pink);
+}

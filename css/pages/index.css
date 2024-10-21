@@ -35,6 +35,12 @@
 @import url('../blocks/article/__date-image/article__date-image.css');
 @import url('../blocks/article/__button/article__button.css');
 @import url('../blocks/button/button.css');
+@import url('../blocks/articles/articles.css');
+@import url('../blocks/title/title.css');
+@import url('../blocks/articles/__container/articles__container.css');
+@import url('../blocks/articles/__list/articles__list.css');
+@import url('../blocks/articles/__item/articles__item.css');
+@import url('../blocks/articles/__link/articles__link.css');
 
 
 
@@ -45,11 +51,23 @@
 @import url('../blocks/menu/__link/_hover-bg-color/menu__link_hover-bg-color_tangerine.css');
 @import url('../blocks/menu/__link/_hover-bg-color/menu__link_hover-bg-color_turquoise.css');
 @import url('../blocks/menu/__link/_hover-bg-color/menu__link_hover-bg-color_mint.css');
+@import url('../blocks/articles/__item/_width/articles__item_width_full.css');
+@import url('../blocks/article/_type/article_type_promo.css');
+@import url('../blocks/article/_type/article_type_full.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_one.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_two.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_three.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_four.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_five.css');
+@import url('../blocks/article/__image/_mask-type/article__image_mask-type_six.css');
 @import url('../blocks/article/__image/_position/article__image_position_bottom.css');
+@import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_left.css');
 @import url('../blocks/article/__image-sticker/_position/article__image-sticker_position_right.css');
+@import url('../blocks/article/__image-sticker/_shape/article__image-sticker_shape_rectangle.css');
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_grass.css');
+@import url('../blocks/article/__tags-list/_color/article__tags-list_color_marine.css');
+@import url('../blocks/article/__tags-list/_color/article__tags-list_color_pink.css');
+@import url('../blocks/article/__tags-list/_color/article__tags-list_color_tangerine.css');
+@import url('../blocks/article/__tags-list/_color/article__tags-list_color_turquoise.css');
 @import url('../blocks/article/__tags-item/_active/article__tags-item_active.css');
-@import url('../blocks/article/__tags-active/_bg-color/article__tags-active_bg-color_grass.css');
-@import url('../blocks/article/__date-list/_type/article__date-list_type_promo.css');
 @import url('../blocks/button/_type/button_type_promo.css');
-

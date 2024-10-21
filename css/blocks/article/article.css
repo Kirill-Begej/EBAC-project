@@ -1,9 +1,9 @@
 .article {
-  align-items: center;
   color: var(--main-color-gray-70);
   display: flex;
+  flex-direction: column;
   font: var(--secondary-font-size-l) var(--secondary-font-regular);
-  gap: 40px;
+  gap: 32px;
   line-height: var(--font-line-heigth-l);
 }
 
