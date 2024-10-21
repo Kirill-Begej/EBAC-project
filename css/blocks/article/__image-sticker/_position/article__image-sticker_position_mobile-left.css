@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+  .article__image-sticker_position_mobile-left {
+    left: 3%;
+    top: 2%;
+  }
+}

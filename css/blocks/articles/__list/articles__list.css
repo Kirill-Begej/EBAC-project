@@ -12,3 +12,10 @@
     gap: 104px 24px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .articles__list {
+    gap: 105px;
+  }
+}
+

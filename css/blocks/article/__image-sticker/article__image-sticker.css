@@ -3,3 +3,10 @@
   position: absolute;
   width: 30.823%;
 }
+
+@media screen and (max-width: 767px) {
+  .article__image-sticker {
+    height: 34.095%;
+    width: 39.476%;
+  }
+}

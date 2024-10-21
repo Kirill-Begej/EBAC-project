@@ -7,3 +7,9 @@
     mask: url('../../../../../assets/images/article/masks/mask-type-eight.svg') 0% 0%/100% 100% no-repeat;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .article__image_mask-type_four {
+    mask: url('../../../../../assets/images/article/masks/mask-type-thirteen.svg') 0% 0%/100% 100% no-repeat;
+  }
+}
