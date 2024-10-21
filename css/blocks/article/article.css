@@ -6,16 +6,3 @@
   gap: 32px;
   line-height: var(--font-line-heigth-l);
 }
-
-@media screen and (max-width: 1279px) {
-  .article {
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .article {
-    gap: 18px;
-  }
-}

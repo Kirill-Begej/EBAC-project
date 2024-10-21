@@ -3,17 +3,3 @@
   padding-bottom: 56.165%;
   position: relative;
 }
-
-@media screen and (max-width: 1279px) {
-  .article__image-wrapper {
-    flex: 0 1 auto;
-    width: 100%;
-    padding-bottom: 45.456%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .article__image-wrapper {
-    padding-bottom: 115.79%;
-  }
-}
