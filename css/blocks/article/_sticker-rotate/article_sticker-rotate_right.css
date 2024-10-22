@@ -1,0 +1,29 @@
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(380deg);
+  }
+
+  80% {
+    transform: rotate(340deg);
+  }
+
+  90% {
+    transform: rotate(365deg);
+  }
+
+  95% {
+    transform: rotate(355deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.article_sticker-rotate_right:hover .article__image-sticker {
+  animation: rotateRight 3s ease-out;
+}
