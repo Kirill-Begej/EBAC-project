@@ -1,0 +1,9 @@
+.title__container {
+  align-items: center;
+  display: flex;
+  height: 120px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 4608px;
+}

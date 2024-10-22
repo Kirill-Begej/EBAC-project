@@ -1,0 +1,16 @@
+.title_type_articles .title__container {
+  background-color: var(--tag-color-turquoise);
+}
+
+.title_type_articles .title__list {
+  animation: scrollFromRightToLeft 20s linear infinite;
+}
+
+@keyframes scrollFromRightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-54.66%);
+  }
+}
