@@ -1,3 +1,21 @@
+@keyframes scrollFromRightToLeftDesktop {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-50% + 43.04px));
+  }
+}
+
+@keyframes scrollFromRightToLeftTablet {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-50% - 57px));
+  }
+}
+
 .title_type_articles {
   transform: rotate(-4deg);
   position: relative;
@@ -9,14 +27,27 @@
 }
 
 .title_type_articles .title__list {
-  animation: scrollFromRightToLeft 20s linear infinite;
+  animation: scrollFromRightToLeftDesktop 20s linear infinite;
 }
 
-@keyframes scrollFromRightToLeft {
-  from {
-    transform: translateX(0%);
+@media screen and (max-width: 1279px) {
+  .title_type_articles {
+    transform: rotate(-3deg);
+    top: -103px;
   }
-  to {
-    transform: translateX(-54.72828%);
+
+  .title_type_articles .title__list {
+    animation: scrollFromRightToLeftTablet 15s linear infinite;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .title_type_articles {
+    transform: rotate(-4deg);
+    top: -125px;
+  }
+
+  /* .title_type_articles .title__list {
+    animation: scrollFromRightToLeftTablet 15s linear infinite;
+  } */
 }
