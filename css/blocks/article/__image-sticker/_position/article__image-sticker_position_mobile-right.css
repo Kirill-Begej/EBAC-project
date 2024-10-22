@@ -1,4 +1,6 @@
-.article__image-sticker_position_mobile-right {
-  left: 58%;
-  top: 2%;
+@media screen and (max-width: 767px) {
+  .article__image-sticker_position_mobile-right {
+    left: 58%;
+    top: 2%;
+  }
 }

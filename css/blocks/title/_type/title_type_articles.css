@@ -1,3 +1,9 @@
+.title_type_articles {
+  transform: rotate(-4deg);
+  position: relative;
+  top: -97px;
+}
+
 .title_type_articles .title__container {
   background-color: var(--tag-color-turquoise);
 }
