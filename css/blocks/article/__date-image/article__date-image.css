@@ -1,4 +1,4 @@
 .article__date-image {
-  height: 17px;
-  width: 17px;
+  fill: var(--main-color-gray-35);
+  stroke: var(--main-color-gray-35);
 }

@@ -19,6 +19,9 @@
 @import url('../blocks/content/content.css');
 @import url('../blocks/promo/promo.css');
 @import url('../blocks/promo/__container/promo__container.css');
+@import url('../blocks/date/date.css');
+@import url('../blocks/date/__item/date__item.css');
+@import url('../blocks/date/__image/date__image.css');
 @import url('../blocks/article/article.css');
 @import url('../blocks/article/__image-wrapper/article__image-wrapper.css');
 @import url('../blocks/article/__image-container/article__image-container.css');
@@ -30,7 +33,6 @@
 @import url('../blocks/article/__title/article__title.css');
 @import url('../blocks/article/__desc/article__desc.css');
 @import url('../blocks/article/__date-list/article__date-list.css');
-@import url('../blocks/article/__date-item/article__date-item.css');
 @import url('../blocks/article/__date-image/article__date-image.css');
 @import url('../blocks/button/button.css');
 @import url('../blocks/articles/articles.css');
@@ -44,6 +46,25 @@
 @import url('../blocks/articles/__list/articles__list.css');
 @import url('../blocks/articles/__item/articles__item.css');
 @import url('../blocks/articles/__link/articles__link.css');
+@import url('../blocks/webinars/webinars.css');
+@import url('../blocks/webinars/__container/webinars__container.css');
+@import url('../blocks/webinars/__subtitle/webinars__subtitle.css');
+@import url('../blocks/webinars/__button/webinars__button.css');
+@import url('../blocks/webinars/__list/webinars__list.css');
+@import url('../blocks/webinars/__item/webinars__item.css');
+@import url('../blocks/webinars/__item-container/webinars__item-container.css');
+@import url('../blocks/webinars/__image-wrapper/webinars__image-wrapper.css');
+@import url('../blocks/webinars/__image-container/webinars__image-container.css');
+@import url('../blocks/webinars/__no-image/webinars__no-image.css');
+@import url('../blocks/webinars/__image/webinars__image.css');
+@import url('../blocks/webinars/__author/webinars__author.css');
+@import url('../blocks/webinars/__author-name/webinars__author-name.css');
+@import url('../blocks/webinars/__author-post/webinars__author-post.css');
+@import url('../blocks/webinars/__text/webinars__text.css');
+@import url('../blocks/webinars/__date-container/webinars__date-container.css');
+@import url('../blocks/webinars/__tags-list/webinars__tags-list.css');
+@import url('../blocks/webinars/__date-list/webinars__date-list.css');
+@import url('../blocks/webinars/__date-image/webinars__date-image.css');
 
 
 
@@ -84,3 +105,12 @@
 @import url('../blocks/article/__tags-list/_color/article__tags-list_color_turquoise.css');
 @import url('../blocks/article/__tags-item/_active/article__tags-item_active.css');
 @import url('../blocks/button/_type/button_type_promo.css');
+@import url('../blocks/button/_type/button_type_webinars.css');
+@import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_mint.css');
+@import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_coral.css');
+@import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_tangerine.css');
+@import url('../blocks/webinars/__image-container/_no-image/webinars__image-container_no-image.css');
+@import url('../blocks/webinars/__image/_position/webinars__image_position_center.css');
+@import url('../blocks/webinars/__image/_position/webinars__image_position_top.css');
+@import url('../blocks/webinars/__date-item/_type/webinars__date-item_type_calendar.css');
+@import url('../blocks/webinars/__date-item/_type/webinars__date-item_type_watch.css');

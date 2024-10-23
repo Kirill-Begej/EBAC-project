@@ -1,0 +1,9 @@
+.webinars {
+  background-color: var(--main-color-black);
+  color: var(--main-color-white);
+  display: flex;
+  font: var(--primary-font-size-s) var(--primary-font);
+  justify-content: center;
+  line-height: var(--font-line-heigth-s);
+  width: 100%;
+}

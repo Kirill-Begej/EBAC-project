@@ -1,0 +1,7 @@
+.date {
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  line-height: var(--font-line-heigth-m);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

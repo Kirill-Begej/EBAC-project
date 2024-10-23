@@ -1,8 +1,9 @@
 .button {
   border-radius: 40px;
   border: none;
+  color: var(--main-color-white);
   cursor: pointer;
-  font-size: var(--secondary-font-size-l);
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
   line-height: var(--font-line-heigth-l);
   outline: none;
 }

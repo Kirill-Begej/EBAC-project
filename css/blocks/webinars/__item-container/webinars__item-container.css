@@ -1,0 +1,7 @@
+.webinars__item-container {
+  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 82.98%;
+  align-content: stretch;
+}

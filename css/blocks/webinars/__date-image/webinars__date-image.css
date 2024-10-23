@@ -1,0 +1,5 @@
+.webinars__date-image {
+  fill: var(--main-color-white);
+  flex: 1 0 17px;
+  stroke: var(--main-color-white);
+}

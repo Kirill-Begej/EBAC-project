@@ -1,0 +1,8 @@
+.webinars__date-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: end;
+  min-height: 75px;
+  width: 100%;
+}
