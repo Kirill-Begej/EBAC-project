@@ -24,6 +24,20 @@
   }
 }
 
+@keyframes rotateBack {
+  from {
+    transform: rotate(-196deg);
+  }
+
+  to {
+    transform: rotate(-16deg);
+  }
+}
+
 .article_sticker-rotate_left-rectangle:hover .article__image-sticker {
-  animation: rotateLeftRectangle 3s ease-out;
+  animation: rotateLeftRectangle 3s ease-out both;
+}
+
+.article_sticker-rotate_left-rectangle .article__image-sticker {
+  animation: rotateBack .2s ease-in both;
 }
