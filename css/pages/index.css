@@ -109,6 +109,7 @@
 @import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_mint.css');
 @import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_coral.css');
 @import url('../blocks/webinars/__item/_bg-color/webinars__item_bg-color_tangerine.css');
+@import url('../blocks/webinars/__item/_full/webinars__item_full.css');
 @import url('../blocks/webinars/__image-container/_no-image/webinars__image-container_no-image.css');
 @import url('../blocks/webinars/__image/_position/webinars__image_position_center.css');
 @import url('../blocks/webinars/__image/_position/webinars__image_position_top.css');

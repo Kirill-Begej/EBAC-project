@@ -79,7 +79,7 @@
   }
 
   .article_type_promo .article__title {
-    font-size: var(--primary-font-size-xs);
+    font-size: var(--primary-font-size-xxs);
     margin-bottom: 8px;
   }
 

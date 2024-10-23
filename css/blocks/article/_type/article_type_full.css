@@ -87,7 +87,7 @@
   }
 
   .article_type_full .article__title {
-    font-size: var(--primary-font-size-xs);
+    font-size: var(--primary-font-size-xxs);
   }
 
   .article_type_full .article__date-list {
@@ -130,7 +130,7 @@
   }
 
   .article_type_full .article__title {
-    font-size: var(--primary-font-size-xxs);
+    font-size: var(--primary-font-size-xxxs);
     margin-bottom: 18px;
   }
 

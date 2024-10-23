@@ -7,3 +7,9 @@
   line-height: var(--font-line-heigth-s);
   width: 100%;
 }
+
+@media screen and (max-width: 1279px) {
+  .webinars {
+    font-size: var(--primary-font-size-xxxs);
+  }
+}

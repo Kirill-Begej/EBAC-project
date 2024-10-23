@@ -2,6 +2,12 @@
   column-gap: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 82.98%;
-  align-content: stretch;
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__item-container {
+    width: 85.88%;
+  }
 }

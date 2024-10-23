@@ -4,3 +4,11 @@
   padding-bottom: 20.513%;
   position: relative;
 }
+
+@media screen and (max-width: 1279px) {
+  .webinars__image-wrapper {
+    flex: 1 0 21.92%;
+    margin-bottom: 20px;
+    padding-bottom: 21.92%;
+  }
+}
