@@ -10,6 +10,7 @@
 @media screen and (max-width: 1279px) {
   .articles {
     gap: 80px;
+    padding-bottom: 304px;
   }
 }
 

@@ -23,5 +23,6 @@
 @media screen and (max-width: 1279px) {
   .webinars {
     font-size: var(--primary-font-size-xxxs);
+    padding-top: 80px;
   }
 }
