@@ -1,0 +1,5 @@
+.checkbox {
+  color: var(--main-color-white);
+  font: var(--secondary-font-size-m) var(--secondary-font-regular);
+  line-height: var(--font-line-heigth-m);
+}

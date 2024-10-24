@@ -1,0 +1,5 @@
+.input__error-text {
+  display: none;
+  line-height: var(--font-line-heigth-m);
+  text-align: center;
+}

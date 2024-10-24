@@ -1,0 +1,22 @@
+.subscribe__wrapper {
+  background: var(--text-color-turquoise-dark);
+  box-sizing: border-box;
+  display: flex;
+  height: 518px;
+  justify-content: center;
+  max-width: 1208px;
+  padding: 64px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__wrapper {
+    width: 91.666%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__wrapper {
+    width: 95%;
+  }
+}

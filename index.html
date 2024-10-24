@@ -557,7 +557,7 @@
           <button class="button button_type_webinars">Todos os webinars</button>
         </div>
         <ul class="webinars__list">
-          <li class="webinars__item webinars__item_bg-color_mint">
+          <li class="webinars__item webinars__item_bg-color_turquoise">
             <div class="webinars__item-container">
               <div class="webinars__image-wrapper">
                 <div class="webinars__image-container webinars__image-container_no-image">
@@ -679,24 +679,35 @@
 
     <section class="subscribe">
       <h2 class="title title_type_subscribe"></h2>
-      <div class="subscribe__container">
-        <div class="subscribe__text-container">
-          <div class="subscribe__text-row">
-            <h4 class="subscribe__title">Suscríbete a nuestra newsletter para no perderte nada nuevo</h4>
-            <p class="subscribe__text">Tendencia en el mercado laboral: conozca esta profesión que transforma la experiencia del Usuario a través de elementos textuales.</p>
+      <div class="subscribe__wrapper">
+        <div class="subscribe__container">
+          <div class="subscribe__text-container">
+            <div class="subscribe__text-row">
+              <h4 class="subscribe__title">Suscríbete a nuestra newsletter para no perderte nada nuevo</h4>
+              <p class="subscribe__text">Tendencia en el mercado laboral: conozca esta profesión que transforma la experiencia del Usuario a través de elementos textuales.</p>
+            </div>
+            <form class="subscribe__form">
+              <div class="subscribe__input-row">
+                <label class="input input_type_subscribe">
+                  <input class="input__element" type="text" placeholder="Su correo electrónico">
+                  <svg class="input__image-error">
+                    <use href="./assets/images/input/input-icon.svg#error"></use>
+                  </svg>
+                  <svg class="input__image-success">
+                    <use href="./assets/images/input/input-icon.svg#success"></use>
+                  </svg>
+                  <div class="input__error-text">Formato de email inválido, verifique a ortografia</div>
+                </label>
+                <button class="button button_type_subscribe" type="submit">Enviar</button>
+              </div>
+              <div class="checkbox subscribe__checkbox-row">
+                <input class="checkbox__element" id="checkbox" type="checkbox">
+                <label class="checkbox__label" for="checkbox"><span class="checkbox__label-text">Confirmo que he leído, acepto y entiendo los <a href="#" class="checkbox__label-link" target="_blank">términos y condiciones</a>, así como el <a href="#" class="checkbox__label-link" target="_blank">aviso de privacidad</a></span></label>
+              </div>
+            </form>
           </div>
-          <form class="subscribe__form">
-            <div class="subscribe__form-row">
-              <input class="subscribe__input" type="text">
-              <button class="subscribe__button" type="submit">Enviar</button>
-            </div>
-            <div class="subscribe__form-row">
-              <input class="form__checkbox" id="checkbox" type="checkbox">
-              <label class="form__label-checkbox" for="checkbox">Confirmo que he leído, acepto y entiendo los términos y condiciones, así como el aviso de privacidad</label>
-            </div>
-          </form>
+          <img src="" alt="" class="subscribe__image">
         </div>
-        <img src="" alt="" class="subscribe__image">
       </div>
       <h3 class="title title_type_discount"></h3>
     </section>

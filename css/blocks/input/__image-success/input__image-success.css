@@ -1,0 +1,11 @@
+.input__image-success {
+  display: block;
+  height: 29px;
+  opacity: 0;
+  position: absolute;
+  right: 6%;
+  top: 10px;
+  transition: opacity .3s ease-out;
+  width: 29px;
+  z-index: -5;
+}

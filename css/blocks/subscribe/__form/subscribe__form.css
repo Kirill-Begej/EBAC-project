@@ -1,0 +1,6 @@
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 576px;
+}

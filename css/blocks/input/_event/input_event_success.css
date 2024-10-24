@@ -1,0 +1,8 @@
+.input_event_success .input__element {
+  box-shadow: 0px 0px 0px 1.5px var(--tag-color-grass) inset;
+}
+
+.input_event_success .input__image-success {
+  opacity: 1;
+  z-index: 0;
+}
