@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes scrollFromLeftToRightTablet {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% + 122px));
+  }
+}
+
 .title_type_webinars {
   position: absolute;
   top: -85px;
@@ -19,4 +28,10 @@
 
 .title_type_webinars .title__list {
   animation: scrollFromLeftToRightDesktop 20s linear infinite;
+}
+
+@media screen and (max-width: 1279px) {
+  .title_type_webinars .title__list {
+    animation: scrollFromLeftToRightTablet 15s linear infinite;
+  }
 }
