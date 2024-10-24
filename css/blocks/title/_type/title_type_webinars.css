@@ -35,3 +35,9 @@
     animation: scrollFromLeftToRightTablet 15s linear infinite;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .title_type_webinars {
+    transform: rotate(-4deg);
+  }
+}

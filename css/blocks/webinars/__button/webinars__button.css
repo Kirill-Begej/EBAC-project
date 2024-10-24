@@ -2,3 +2,9 @@
   flex: 1 0 50%;
   text-align: right;
 }
+
+@media screen and (max-width: 767px) {
+  .webinars__button {
+    order: 3;
+  }
+}

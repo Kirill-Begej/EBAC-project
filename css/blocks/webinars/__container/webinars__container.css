@@ -17,6 +17,7 @@
 
 @media screen and (max-width: 767px) {
   .webinars__container {
+    row-gap: 42px;
     width: 95%;
   }
 }
