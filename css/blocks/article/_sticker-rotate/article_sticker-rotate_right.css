@@ -35,9 +35,9 @@
 }
 
 .article_sticker-rotate_right:hover .article__image-sticker {
-  animation: rotateRight 3s ease-out both;
+  animation: rotateRight 3s ease-out;
 }
 
 .article_sticker-rotate_right .article__image-sticker {
-  animation: rotateBack .2s ease-in both;
+  animation: rotateBack .2s ease-in;
 }
