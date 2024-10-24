@@ -10,10 +10,12 @@
   padding-top: 120px;
   position: relative;
   width: 100%;
+  padding-bottom: 500px;
 }
 
 .webinars::before {
-  background-color: var(--main-color-black);
+  background: url('../../../assets/images/webinars/webinars-bg/webinars-bg.svg') 49.85% 51% no-repeat,
+              var(--main-color-black);
   clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0% 100%);
   content: '';
   inset: -90px 0 0;
