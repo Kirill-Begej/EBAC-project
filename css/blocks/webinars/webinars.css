@@ -1,11 +1,23 @@
 .webinars {
-  background-color: var(--main-color-black);
+  align-items: center;
+  background-color: var(--main-color-white);
   color: var(--main-color-white);
   display: flex;
+  flex-direction: column;
   font: var(--primary-font-size-s) var(--primary-font);
   justify-content: center;
   line-height: var(--font-line-heigth-s);
+  padding-top: 120px;
+  position: relative;
   width: 100%;
+}
+
+.webinars::before {
+  background-color: var(--main-color-black);
+  clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0% 100%);
+  content: '';
+  inset: -90px 0 0;
+  position: absolute;
 }
 
 @media screen and (max-width: 1279px) {

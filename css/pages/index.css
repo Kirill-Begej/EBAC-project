@@ -76,6 +76,7 @@
 @import url('../blocks/menu/__link/_hover-bg-color/menu__link_hover-bg-color_turquoise.css');
 @import url('../blocks/menu/__link/_hover-bg-color/menu__link_hover-bg-color_mint.css');
 @import url('../blocks/title/_type/title_type_articles.css');
+@import url('../blocks/title/_type/title_type_webinars.css');
 @import url('../blocks/articles/__item/_width/articles__item_width_full.css');
 @import url('../blocks/article/_type/article_type_promo.css');
 @import url('../blocks/article/_type/article_type_full.css');

@@ -1,0 +1,22 @@
+@keyframes scrollFromLeftToRightDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% + 9px));
+  }
+}
+
+.title_type_webinars {
+  position: absolute;
+  top: -85px;
+  transform: rotate(-3deg);
+}
+
+.title_type_webinars .title__container {
+  background-color: var(--tag-color-tangerine);
+}
+
+.title_type_webinars .title__list {
+  animation: scrollFromLeftToRightDesktop 20s linear infinite;
+}
