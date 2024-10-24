@@ -2,3 +2,9 @@
   font-size: var(--primary-font-size-xxs);
   margin: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .webinars__author-name {
+    font-size: var(--primary-font-size-xxxxs);
+  }
+}

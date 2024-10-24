@@ -11,3 +11,9 @@
     width: 85.88%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .webinars__item-container {
+    width: 84.21%;
+  }
+}
