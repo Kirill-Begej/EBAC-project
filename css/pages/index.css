@@ -75,11 +75,12 @@
 @import url('../blocks/webinars/__date-list/webinars__date-list.css');
 @import url('../blocks/webinars/__date-image/webinars__date-image.css');
 @import url('../blocks/subscribe/subscribe.css');
+@import url('../blocks/subscribe/__title/subscribe__title.css');
 @import url('../blocks/subscribe/__wrapper/subscribe__wrapper.css');
 @import url('../blocks/subscribe/__container/subscribe__container.css');
 @import url('../blocks/subscribe/__text-container/subscribe__text-container.css');
 @import url('../blocks/subscribe/__text-row/subscribe__text-row.css');
-@import url('../blocks/subscribe/__title/subscribe__title.css');
+@import url('../blocks/subscribe/__subtitle/subscribe__subtitle.css');
 @import url('../blocks/subscribe/__text/subscribe__text.css');
 @import url('../blocks/subscribe/__form/subscribe__form.css');
 @import url('../blocks/subscribe/__form-row/subscribe__form-row.css');
@@ -106,6 +107,7 @@
 @import url('../blocks/title/_type/title_type_articles.css');
 @import url('../blocks/title/_type/title_type_webinars.css');
 @import url('../blocks/title/_type/title_type_subscribe.css');
+@import url('../blocks/title/_type/title_type_discount.css');
 @import url('../blocks/articles/__item/_width/articles__item_width_full.css');
 @import url('../blocks/article/_type/article_type_promo.css');
 @import url('../blocks/article/_type/article_type_full.css');

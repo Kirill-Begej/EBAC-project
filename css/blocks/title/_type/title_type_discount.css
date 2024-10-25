@@ -1,0 +1,24 @@
+@keyframes scrollFromLeftToRightDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% - 778px));
+  }
+}
+
+.title_type_discount {
+  color: var(--main-color-gray-5);
+}
+
+.title_type_discount .title__container {
+  background-color: var(--text-color-pink-dark);
+}
+
+.title_type_discount .title__list {
+  animation: scrollFromLeftToRightDesktop 20s linear infinite;
+}
+
+.title_type_discount .title__image {
+  fill: var(--main-color-gray-5);
+}

@@ -1,0 +1,5 @@
+.subscribe__subtitle {
+  font: var(--primary-font-size-m) var(--primary-font);
+  line-height: var(--font-line-heigth-s);
+  margin: 0;
+}
