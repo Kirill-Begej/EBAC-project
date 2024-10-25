@@ -8,7 +8,9 @@
 }
 
 .title_type_subscribe {
-  /* transform: rotate(2deg); */
+  position: relative;
+  top: -100px;
+  transform: rotate(2deg);
 }
 
 .title_type_subscribe .title__container {
