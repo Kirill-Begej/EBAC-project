@@ -2,21 +2,21 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 104px;
+  gap: 201px;
   padding-bottom: 241px;
   width: 100%;
 }
 
 @media screen and (max-width: 1279px) {
   .articles {
-    gap: 80px;
+    gap: 182px;
     padding-bottom: 304px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .articles {
-    gap: 40px;
+    gap: 165px;
     padding-bottom: 164px;
   }
 }

@@ -1,0 +1,14 @@
+.subscribe__success {
+  background: var(--main-color-white);
+  border-radius: 88px;
+  bottom: 0;
+  box-sizing: border-box;
+  color: var(--text-color-turquoise-dark);
+  font-family: var(--secondary-font-bold);
+  padding: 10px 24px;
+  position: absolute;
+  width: 576px;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  z-index: -5;
+}

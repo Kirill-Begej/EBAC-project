@@ -1,0 +1,9 @@
+.subscribe__form_hide .subscribe__form-row {
+  opacity: 0;
+  z-index: -5;
+}
+
+.subscribe__form_hide .subscribe__success {
+  opacity: 1;
+  z-index: 5;
+}

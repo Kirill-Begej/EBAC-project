@@ -1,11 +1,6 @@
 .subscribe__wrapper {
-  background: var(--text-color-turquoise-dark);
-  box-sizing: border-box;
-  display: flex;
-  height: 518px;
-  justify-content: center;
   max-width: 1208px;
-  padding: 64px 0;
+  position: relative;
   width: 100%;
 }
 

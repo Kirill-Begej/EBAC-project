@@ -1,4 +1,7 @@
 .subscribe__input-row {
   display: flex;
   justify-content: space-between;
+  opacity: 1;
+  transition: opacity .3s ease-out;
+  z-index: 5;
 }

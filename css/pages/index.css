@@ -82,7 +82,11 @@
 @import url('../blocks/subscribe/__title/subscribe__title.css');
 @import url('../blocks/subscribe/__text/subscribe__text.css');
 @import url('../blocks/subscribe/__form/subscribe__form.css');
+@import url('../blocks/subscribe/__form-row/subscribe__form-row.css');
 @import url('../blocks/subscribe/__input-row/subscribe__input-row.css');
+@import url('../blocks/subscribe/__image/subscribe__image.css');
+@import url('../blocks/subscribe/__success/subscribe__success.css');
+@import url('../blocks/subscribe/__success-image/subscribe__success-image.css');
 
 
 
@@ -138,3 +142,4 @@
 @import url('../blocks/webinars/__image/_position/webinars__image_position_top.css');
 @import url('../blocks/webinars/__date-item/_type/webinars__date-item_type_calendar.css');
 @import url('../blocks/webinars/__date-item/_type/webinars__date-item_type_watch.css');
+@import url('../blocks/subscribe/__form/_hide/subscribe__form_hide.css');

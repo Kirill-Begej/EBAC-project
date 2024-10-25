@@ -1,0 +1,5 @@
+.subscribe__form-row {
+  opacity: 1;
+  transition: opacity .3s ease-out;
+  z-index: 5;
+}
