@@ -1,0 +1,21 @@
+@keyframes scrollFromRightToLeftDesktop {
+  from {
+    transform: translateX(25%);
+  }
+  to {
+    transform: translateX(calc(-25% - 135px));
+  }
+}
+
+.title_type_subscribe {
+  /* transform: rotate(2deg); */
+}
+
+.title_type_subscribe .title__container {
+  background-color: var(--text-color-coral-dark);
+}
+
+.title_type_subscribe .title__list {
+  transform: translateX(25%);
+  animation: scrollFromRightToLeftDesktop 20s linear infinite;
+}
