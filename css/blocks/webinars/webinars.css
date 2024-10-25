@@ -13,7 +13,7 @@
 }
 
 .webinars::before {
-  background: url('../../../assets/images/webinars/webinars-bg/webinars-bg.svg') 49.85% 51% no-repeat,
+  background: url('../../../assets/images/webinars/webinars-bg/webinars-bg-desktop.svg') 49.8% 40% no-repeat,
               var(--main-color-black);
   clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0% 93%);
   content: '';
@@ -38,11 +38,14 @@
   }
 
   .webinars::before {
+    background: url('../../../assets/images/webinars/webinars-bg/webinars-bg-tablet.svg') 49.8% 44% no-repeat,
+                var(--main-color-black);
     clip-path: polygon(0 5vw, 100% 0, 100% 95%, 0% 95%);
   }
 
   .webinars::after {
-    bottom: -50px;
+    bottom: -45px;
+    transform: skewY(3deg);
   }
 }
 
@@ -52,6 +55,12 @@
   }
 
   .webinars::before {
+    background-image: none;
     clip-path: polygon(0 5vw, 100% 0, 100% 99%, 0% 96%);
+  }
+
+  .webinars::after {
+    bottom: -30px;
+    transform: skewY(4deg);
   }
 }

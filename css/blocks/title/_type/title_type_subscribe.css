@@ -9,7 +9,7 @@
 
 .title_type_subscribe {
   position: relative;
-  top: -100px;
+  top: -103px;
   transform: rotate(2deg);
 }
 
@@ -20,4 +20,19 @@
 .title_type_subscribe .title__list {
   transform: translateX(25%);
   animation: scrollFromRightToLeftDesktop 20s linear infinite;
+}
+
+@media screen and (max-width: 1279px) {
+  .title_type_subscribe {
+    position: relative;
+    top: -108px;
+    transform: rotate(3deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title_type_subscribe {
+    top: -117px;
+    transform: rotate(4deg);
+  }
 }
