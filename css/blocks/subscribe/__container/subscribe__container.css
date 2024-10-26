@@ -12,11 +12,11 @@
   .subscribe__container {
     background: url('/assets/images/subscribe/subscribe-bg/subscribe-background-tablet.svg') 53% 40% / 155% 185% no-repeat,
                 var(--text-color-turquoise-dark);
-    border-radius: 32px 180px 180px 32px;
+    border-radius: 32px 100px 100px 32px;
     justify-content: start;
     mask: none;
     padding: 40px 0 40px 24px;
-    width: 90%;
+    width: 79.12%;
   }
 }
 
