@@ -2,3 +2,12 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
+
+@media screen and (max-width: 1279px) {
+  .footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    grid-column: 1 / 3;
+  }
+}

@@ -7,3 +7,13 @@
   grid-row: 2 / 3;
   justify-content: end;
 }
+
+@media screen and (max-width: 1279px) {
+  .footer__form {
+    align-items: end;
+    gap: 16px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: start;
+  }
+}

@@ -3,3 +3,10 @@
   grid-row: 3 / 4;
   padding-top: 97px;
 }
+
+@media screen and (max-width: 1279px) {
+  .footer__contacts {
+    grid-column: 1 / 4;
+    padding: 48px 0 22px;
+  }
+}

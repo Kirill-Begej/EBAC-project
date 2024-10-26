@@ -8,3 +8,12 @@
   min-height: 268px;
   width: 100%;
 }
+
+@media screen and (max-width: 1279px) {
+  .footer__menu {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    max-width: none;
+    padding-top: 89px;
+  }
+}

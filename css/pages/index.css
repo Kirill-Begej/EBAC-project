@@ -121,6 +121,7 @@
 
 
 @import url('../blocks/input/_type/input_type_subscribe.css');
+@import url('../blocks/input/_type/input_type_footer.css');
 @import url('../blocks/input/_event/input_event_error.css');
 @import url('../blocks/input/_event/input_event_success.css');
 @import url('../blocks/button/_type/button_type_promo.css');
