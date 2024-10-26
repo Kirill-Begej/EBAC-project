@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes scrollFromRightToLeftTablet {
+  from {
+    transform: translateX(25%);
+  }
+  to {
+    transform: translateX(calc(-25px + 38px));
+  }
+}
+
 .title_type_subscribe {
   position: relative;
   top: -103px;
@@ -18,7 +27,6 @@
 }
 
 .title_type_subscribe .title__list {
-  transform: translateX(25%);
   animation: scrollFromRightToLeftDesktop 20s linear infinite;
 }
 
@@ -27,6 +35,10 @@
     position: relative;
     top: -108px;
     transform: rotate(3deg);
+  }
+
+  .title_type_subscribe .title__list {
+    animation: scrollFromRightToLeftTablet 15s linear infinite;
   }
 }
 

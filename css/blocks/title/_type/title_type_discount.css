@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes scrollFromLeftToRightTablet {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% + 302px));
+  }
+}
+
 .title_type_discount {
   color: var(--main-color-gray-5);
 }
@@ -21,4 +30,15 @@
 
 .title_type_discount .title__image {
   fill: var(--main-color-gray-5);
+}
+
+@media screen and (max-width: 1279px) {
+  .title_type_discount {
+    font-size: var(--primary-font-size-l);
+  }
+
+  .title_type_discount .title__list {
+    transform: translateX(-25%);
+    animation: scrollFromLeftToRightTablet 15s linear infinite;
+  }
 }

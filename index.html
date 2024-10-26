@@ -811,7 +811,19 @@
               </div>
             </form>
           </div>
-          <img src="./assets/images/subscribe/subscribe-image.svg" alt="Imagem gráfica de uma carta postal." class="subscribe__image">
+          <div class="subscribe__image-container">
+            <picture>
+              <source type="image/webp"
+                srcset="./assets/images/subscribe/subscribe-image-desktop@2x.webp 1x, ./assets/images/subscribe/subscribe-image-desktop@2x.webp 2x">
+              <img src="./assets/images/subscribe/subscribe-image-desktop@1x.png" srcset="./assets/images/subscribe/subscribe-image-desktop@2x.png 2x"
+              alt="Imagem gráfica de uma carta postal." class="subscribe__image">
+            </picture>
+            <picture>
+              <source type="image/webp"
+                srcset="./assets/images/articles/article-five@1x.webp 1x, ./assets/images/articles/article-five@2x.webp 2x">
+                <img src="./assets/images/subscribe/subscribe-image-desktop@1x.png" alt="Imagem gráfica de uma carta postal." class="subscribe__image">
+            </picture>
+          </div>
         </div>
       </div>
       <h3 class="title title_type_discount">

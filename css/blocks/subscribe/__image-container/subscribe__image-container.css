@@ -1,0 +1,8 @@
+.subscribe__image-container {
+  background: var(--main-color-black);
+  inset: 0 0 0 auto;
+  mask: url('/assets/images/subscribe/subscribe-mask/subscribe-image-mask-desktop.svg') 0 0/100% 100% no-repeat;
+  overflow: hidden;
+  position: absolute;
+  width: 416px;
+}

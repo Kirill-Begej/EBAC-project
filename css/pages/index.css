@@ -85,8 +85,10 @@
 @import url('../blocks/subscribe/__form/subscribe__form.css');
 @import url('../blocks/subscribe/__form-row/subscribe__form-row.css');
 @import url('../blocks/subscribe/__input-row/subscribe__input-row.css');
+@import url('../blocks/subscribe/__image-container/subscribe__image-container.css');
 @import url('../blocks/subscribe/__image/subscribe__image.css');
 @import url('../blocks/subscribe/__success/subscribe__success.css');
+@import url('../blocks/subscribe/__success-text/subscribe__success-text.css');
 @import url('../blocks/subscribe/__success-image/subscribe__success-image.css');
 
 

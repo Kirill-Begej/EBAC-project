@@ -3,3 +3,9 @@
   line-height: var(--font-line-heigth-s);
   margin: 0;
 }
+
+@media screen and (max-width: 1279px) {
+  .subscribe__subtitle {
+    font-size: var(--primary-font-size-xxs);
+  }
+}

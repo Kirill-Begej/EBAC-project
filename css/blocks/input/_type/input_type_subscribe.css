@@ -36,3 +36,13 @@
   color: var(--main-color-white);
   font: var(--secondary-font-size-s) var(--secondary-font-medium);
 }
+
+@media screen and (max-width: 1279px) {
+  .input_type_subscribe {
+    width: 100%;
+  }
+
+  .input_type_subscribe .input__element {
+    width: 100%;
+  }
+}

@@ -3,3 +3,9 @@
   font: var(--secondary-font-size-m) var(--secondary-font-regular);
   line-height: var(--font-line-heigth-m);
 }
+
+@media screen and (max-width: 1279px) {
+  .checkbox {
+    font-size: var(--secondary-font-size-s);
+  }
+}

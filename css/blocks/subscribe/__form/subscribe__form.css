@@ -5,3 +5,15 @@
   position: relative;
   width: 576px;
 }
+
+@media screen and (max-width: 1279px) {
+  .subscribe__form {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__form {
+    gap: 9px;
+  }
+}

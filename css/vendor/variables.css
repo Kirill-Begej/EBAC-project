@@ -12,8 +12,9 @@
   --primary-font-size-xs: 28px;
   --primary-font-size-s: 30px;
   --primary-font-size-m: 36px;
-  --primary-font-size-l: 46px;
-  --primary-font-size-xl: 58px;
+  --primary-font-size-l: 44px;
+  --primary-font-size-xl: 46px;
+  --primary-font-size-xxl: 58px;
 
   /* Размеры вторичного шрифта используемого в приложении */
   --secondary-font-size-s: 13px;

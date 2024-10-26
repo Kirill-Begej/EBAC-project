@@ -1,6 +1,6 @@
 .title {
   color: var(--main-color-black);
-  font: var(--primary-font-size-xl) var(--primary-font);
+  font: var(--primary-font-size-xxl) var(--primary-font);
   letter-spacing: 0.6px;
   line-height: var(--font-line-heigth-s);
   margin: 0;
