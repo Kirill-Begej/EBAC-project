@@ -90,6 +90,8 @@
 @import url('../blocks/subscribe/__success/subscribe__success.css');
 @import url('../blocks/subscribe/__success-text/subscribe__success-text.css');
 @import url('../blocks/subscribe/__success-image/subscribe__success-image.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__container/footer__container.css');
 
 
 
