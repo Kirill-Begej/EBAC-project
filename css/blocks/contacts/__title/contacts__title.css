@@ -1,9 +1,7 @@
-.footer {
-  background: var(--main-color-black);
+.contacts__title {
   color: var(--main-color-gray-35);
-  display: flex;
   font: var(--secondary-font-size-s) var(--secondary-font-medium);
-  justify-content: center;
   line-height: var(--font-line-heigth-l);
-  padding: 64px 0 80px;
+  margin: 0;
+  text-transform: uppercase;
 }

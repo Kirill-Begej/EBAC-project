@@ -9,7 +9,7 @@
 }
 
 .ebac-link::before {
-  background-color: var(--tag-color-grass);
+  background: var(--tag-color-grass);
   bottom: 4.5px;
   content: '';
   height: 1.5px;

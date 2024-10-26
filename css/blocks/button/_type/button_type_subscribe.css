@@ -8,7 +8,7 @@
               opacity .3s ease-out;
 }
 
-.button_type_subscribe:hover {
+.button_type_subscribe:enabled:hover {
   background: var(--main-color-black);
 }
 

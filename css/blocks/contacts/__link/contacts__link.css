@@ -1,0 +1,23 @@
+.contacts__link {
+  color: var(--main-color-white);
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
+  position: relative;
+  text-decoration: none;
+}
+
+.contacts__link::before {
+  background: var(--main-color-white);
+  bottom: 0;
+  content: '';
+  height: 1.5px;
+  position: absolute;
+  right: 0;
+  transition: width .3s ease-out;
+  width: 0;
+}
+
+.contacts__link:hover::before {
+  left: 0;
+  width: 100%;
+}

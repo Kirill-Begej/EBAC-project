@@ -1,4 +1,7 @@
 .footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto minmax(183px, min-content) auto;
   max-width: 1208px;
   width: 100%;
 }

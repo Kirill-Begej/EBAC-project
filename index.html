@@ -887,17 +887,20 @@
     <div class="footer__container">
       <div class="footer__logo">
         <div class="footer__logo-row">
-          <a href="#" class="logo">
+          <a href="#" class="logo logo_type_footer">
             <svg class="logo__image">
               <use href="./assets/images/logo/logo.svg#logo"></use>
             </svg>
           </a>
-          <picture>
-            <source type="image/webp" srcset="./assets/images/footer/footer-logo-image@1x.webp 1x, ./assets/images/footer/footer-logo-image@2x.webp 2x">
-            <img src="./assets/images/footer/footer-logo-image@1x.jpg" srcset="./assets/images/footer/footer-logo-image@2x.jpg 2x" alt="Membro da lista EdTech 100 da América Latina." class="footer__logo-image">
+          <picture class="footer__logo-image-wrap">
+            <source type="image/webp"
+              srcset="./assets/images/footer/footer-logo-image@1x.webp 1x, ./assets/images/footer/footer-logo-image@2x.webp 2x">
+            <img src="./assets/images/footer/footer-logo-image@1x.jpg"
+              srcset="./assets/images/footer/footer-logo-image@2x.jpg 2x" alt="Membro da lista EdTech 100 da América Latina."
+              class="footer__logo-image">
           </picture>
         </div>
-        <div class="footer__logo-row footer__row-social">
+        <div class="footer__social-row">
           <ul class="social">
             <li class="social__item">
               <a href="https://www.instagram.com/" class="social__link" target="_blank">
@@ -930,8 +933,8 @@
           </ul>
         </div>
       </div>
-      <form class="footer_form">
-        <label class="input">
+      <form class="footer__form">
+        <label class="input input_type_subscribe">
           <input class="input__element" type="text" placeholder="Su correo electrónico">
           <svg class="input__image-error">
             <use href="./assets/images/input/input-icon.svg#error"></use>
@@ -941,11 +944,11 @@
           </svg>
           <div class="input__error-text">Formato de email inválido, verifique a ortografia</div>
         </label>
-        <button class="button" type="submit" aria-label="Suscribirse al boletín">Suscribirse al boletín</button>
+        <button class="button button_type_footer" type="submit" aria-label="Suscribirse al boletín">Suscribirse al boletín</button>
       </form>
       <div class="footer__menu">
-        <nav class="submenu">
-          <input type="checkbox" name="courses" />
+        <nav class="submenu submenu_max-width_courses">
+          <input type="checkbox" class="submenu__checkbox" name="courses" />
           <label for="courses" class="submenu__title">CURSOS</label>
           <ul class="submenu__list">
             <li class="submenu__item">
@@ -965,8 +968,8 @@
             </li>
           </ul>
         </nav>
-        <nav class="submenu">
-          <input type="checkbox" name="webinars" />
+        <nav class="submenu submenu_max-width_webinars">
+          <input type="checkbox" class="submenu__checkbox" name="webinars" />
           <label for="webinars" class="submenu__title">WEBINARS</label>
           <ul class="submenu__list">
             <li class="submenu__item">
@@ -977,8 +980,8 @@
             </li>
           </ul>
         </nav>
-        <nav class="submenu">
-          <input type="checkbox" name="on" />
+        <nav class="submenu submenu_max-width_on">
+          <input type="checkbox" class="submenu__checkbox" name="on" />
           <label for="on" class="submenu__title">SOBRE</label>
           <ul class="submenu__list">
             <li class="submenu__item">
@@ -992,8 +995,8 @@
             </li>
           </ul>
         </nav>
-        <nav class="submenu">
-          <input type="checkbox" name="blog" />
+        <nav class="submenu submenu_max-width_blog">
+          <input type="checkbox" class="submenu__checkbox" name="blog" />
           <label for="blog" class="submenu__title">BLOG</label>
           <ul class="submenu__list">
             <li class="submenu__item">
@@ -1017,15 +1020,15 @@
       <ul class="contacts footer__contacts">
         <li class="contacts__item">
           <h6 class="contacts__title">WhatsApp</h6>
-          <a class="contacts__link" href="https://wa.me/525592252629">+52 55 9225-2629</a>
+          <a class="contacts__link" href="https://wa.me/525592252629" target="_blank">+52 55 9225-2629</a>
         </li>
         <li class="contacts__item">
           <h6 class="contacts__title">Telefone</h6>
-          <a class="contacts__link" href="tel:+525592252629">+52 55 9225-2629</a>
+          <a class="contacts__link" href="tel:+525592252629" target="_blank">+52 55 9225-2629</a>
         </li>
         <li class="contacts__item">
           <h6 class="contacts__title">email</h6>
-          <a class="contacts__link" href="mailto:ebac.mx@gmail.com">Ebac.mx@gmail.com</a>
+          <a class="contacts__link" href="mailto:ebac.mx@gmail.com" target="_blank">Ebac.mx@gmail.com</a>
         </li>
       </ul>
       <ul class="social footer__social">

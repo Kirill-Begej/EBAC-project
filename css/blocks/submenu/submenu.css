@@ -1,0 +1,9 @@
+.submenu {
+  color: var(--main-color-white);
+  display: flex;
+  flex-direction: column;
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  gap: 32px;
+  line-height: var(--font-line-heigth-m);
+  width: 100%;
+}

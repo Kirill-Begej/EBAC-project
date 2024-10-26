@@ -1,0 +1,7 @@
+.social__image {
+  display: block;
+  fill: var(--main-color-gray-70);
+  height: 32px;
+  transition: fill .3s ease-out;
+  width: 32px;
+}

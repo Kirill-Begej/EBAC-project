@@ -1,0 +1,4 @@
+.footer__logo-row {
+  display: flex;
+  gap: 48px;
+}
