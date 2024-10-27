@@ -8,6 +8,7 @@
   <meta name="author" content="Kirill Begej">
   <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/pages/index.css">
+  <script src="./js/pages/index.js" type="module" defer></script>
   <title>Cursos, webinars e treinamento para os profissionais online — EBAC Online</title>
 </head>
 <body class="root">
@@ -787,10 +788,10 @@
               <h4 class="subscribe__subtitle">Suscríbete a nuestra newsletter para no perderte nada nuevo</h4>
               <p class="subscribe__text">Tendencia en el mercado laboral: conozca esta profesión que transforma la experiencia del Usuario a través de elementos textuales.</p>
             </div>
-            <form class="subscribe__form">
+            <form class="form subscribe__form" name="subscribeForm" novalidate>
               <div class="subscribe__input-row subscribe__form-row">
                 <label class="input input_type_subscribe">
-                  <input class="input__element" type="text" placeholder="Su correo electrónico">
+                  <input class="input__element" type="email" placeholder="Su correo electrónico">
                   <svg class="input__image-error">
                     <use href="./assets/images/input/input-icon.svg#error"></use>
                   </svg>
@@ -933,9 +934,9 @@
           </ul>
         </div>
       </div>
-      <form class="footer__form">
+      <form class="form footer__form" name="footerForm" novalidate>
         <label class="input input_type_footer">
-          <input class="input__element" type="text" placeholder="Su correo electrónico">
+          <input class="input__element" type="email" placeholder="Su correo electrónico">
           <svg class="input__image-error">
             <use href="./assets/images/input/input-icon.svg#error"></use>
           </svg>
