@@ -1,3 +1,7 @@
+export const headerConfig = {
+  headerSelector: '.header',
+};
+
 export const emailRegexp = /^(([0-9A-Za-zА-Яа-я]{1}[-0-9A-zА-Яа-я\.]{1,}[0-9A-Za-zА-Яа-я]{1})@([-A-Za-zА-Яа-я]{1,}\.){1,2}[-A-Za-zА-Яа-я]{2,})$/;
 
 export const validationConfig = {
