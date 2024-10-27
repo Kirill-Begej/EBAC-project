@@ -1,0 +1,23 @@
+.submenu__title_type_checkbox {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .submenu__title_type_checkbox {
+    align-items: center;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .submenu__title_type_checkbox::after {
+   background: url('/assets/images/submenu/submenu-icon.svg') no-repeat;
+   content: '';
+   display: block;
+   height: 7px;
+   margin-right: 5px;
+   transition: transform .3s linear;
+   width: 13px;
+  }
+}

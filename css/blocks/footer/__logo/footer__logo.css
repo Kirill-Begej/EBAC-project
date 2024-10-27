@@ -11,3 +11,10 @@
     grid-column: 1 / 3;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    gap: 40px;
+    order: 1;
+  }
+}

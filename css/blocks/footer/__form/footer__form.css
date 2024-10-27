@@ -17,3 +17,10 @@
     justify-content: start;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__form {
+    gap: 8px;
+    order: 4;
+  }
+}

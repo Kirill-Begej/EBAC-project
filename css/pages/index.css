@@ -116,10 +116,6 @@
 @import url('../blocks/footer/__signature/footer__signature.css');
 @import url('../blocks/footer/__signature-item/footer__signature-item.css');
 @import url('../blocks/footer/__signature-text/footer__signature-text.css');
-
-
-
-
 @import url('../blocks/input/_type/input_type_subscribe.css');
 @import url('../blocks/input/_type/input_type_footer.css');
 @import url('../blocks/input/_event/input_event_error.css');
@@ -142,6 +138,8 @@
 @import url('../blocks/submenu/_max-width/submenu_max-width_webinars.css');
 @import url('../blocks/submenu/_max-width/submenu_max-width_on.css');
 @import url('../blocks/submenu/_max-width/submenu_max-width_blog.css');
+@import url('../blocks/submenu/__title/_type/submenu__title_type_checkbox.css');
+@import url('../blocks/submenu/__title/_type/submenu__title_type_span.css');
 @import url('../blocks/articles/__item/_width/articles__item_width_full.css');
 @import url('../blocks/article/_type/article_type_promo.css');
 @import url('../blocks/article/_type/article_type_full.css');

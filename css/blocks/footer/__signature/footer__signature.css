@@ -14,3 +14,14 @@
     padding: 25px 0 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer__signature {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    order: 5;
+    padding: 0;
+  }
+}

@@ -14,6 +14,17 @@
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     max-width: none;
+    min-height: auto;
     padding-top: 89px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    order: 2;
+    padding: 0;
   }
 }

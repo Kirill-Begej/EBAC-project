@@ -6,3 +6,16 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .submenu__list {
+    gap: 16px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    transition: max-height .3s ease-out,
+                opacity .15s ease-out,
+                padding-top .15s linear;
+  }
+}

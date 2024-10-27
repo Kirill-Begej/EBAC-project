@@ -16,3 +16,9 @@
 .footer__signature-item:last-child::after {
   display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__signature-item::after {
+    display: none;
+  }
+}
