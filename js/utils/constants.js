@@ -8,5 +8,10 @@ export const validationConfig = {
   buttonSelector: '.button',
   inputErrorClass: 'input_event_error',
   inputSuccessClass: 'input_event_success',
-  inactiveButtonClass: 'button_inactive'
+  inactiveButtonClass: 'button_inactive',
+};
+
+export const subscribeFormConfig = {
+  formSelector: '.subscribe__form',
+  sendSuccessClass: 'subscribe__form_hide',
 };

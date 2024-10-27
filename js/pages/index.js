@@ -1,5 +1,6 @@
 import * as constants from '../utils/constants.js';
 import FormValidator from '../components/FormValidator.js';
+import SubscribeForm from '../components/SubscribeForm.js';
 
 const enableValidation = ({ validationConfig, emailRegexp }) => {
   const formList = Array.from(document.querySelectorAll(validationConfig.formSelector));
@@ -9,4 +10,7 @@ const enableValidation = ({ validationConfig, emailRegexp }) => {
   });
 };
 
+const subscribeForm = new SubscribeForm(constants.subscribeFormConfig);
+
 enableValidation(constants);
+subscribeForm.sendSuccessForm();

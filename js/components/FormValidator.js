@@ -24,7 +24,7 @@ export default class FormValidator {
 
   enableValidation() {
     this._toggleButtonState(this._input.value, this._checkExistCheckbox(this._checkbox));
-    this._setEventListener();
+    this._addEventListeners();
   };
 
   _inputIsValid(inputValue) {
@@ -37,10 +37,10 @@ export default class FormValidator {
 
   _toggleButtonState(inputValue, checkbox) {
     if (this._inputIsValid(inputValue) && checkbox) {
-      this._button.disabled = true;
+      this._button.disabled = false;
       this._button.classList.remove(this._inactiveButtonClass);
     } else {
-      this._button.disabled = false;
+      this._button.disabled = true;
       this._button.classList.add(this._inactiveButtonClass);
     }
   }
@@ -55,11 +55,17 @@ export default class FormValidator {
     }
   }
 
+  _clearInput(input) {
+    if (!input.value) {
+      input.value = '';
+    }
+  }
+
   _removeInputError() {
     this._inputLabel.classList.remove(this._inputErrorClass);
   }
 
-  _setEventListener() {
+  _addEventListeners() {
     this._input.addEventListener('input', (e) => {
       this._toggleInputError(e.target.value);
       this._toggleButtonState(e.target.value, this._checkExistCheckbox(this._checkbox));
@@ -69,7 +75,8 @@ export default class FormValidator {
         this._toggleInputError(e.target.value);
       }
     });
-    this._input.addEventListener('blur', () => {
+    this._input.addEventListener('blur', (e) => {
+      this._clearInput(e.target);
       this._removeInputError();
     });
     if (this._checkbox) {
