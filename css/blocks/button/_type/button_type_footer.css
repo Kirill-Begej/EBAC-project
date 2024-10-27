@@ -2,13 +2,14 @@
   background: var(--text-color-violet-dark);
   padding: 10.1px 52.13px;
   transition: background-color .3s ease-out,
-              box-shadow .3s ease-out;
+              box-shadow .3s ease-out,
+              opacity .3s ease-out;
 }
 
-.button_type_footer:enabled:hover {
+.button_type_footer[enabled]:hover {
   background: var(--text-color-pink-dark);
 }
 
-.button_type_footer:focus {
+.button_type_footer[enabled]:focus {
   box-shadow: 0px 0px 0px 2px var(--main-color-white) inset;
 }
