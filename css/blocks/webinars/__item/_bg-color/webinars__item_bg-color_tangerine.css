@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 1279px) {
   .webinars__item_bg-color_tangerine {
-    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet.svg') -75% 100% / 97% 100% no-repeat,
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet.svg') 25% 100% / 85% 100% no-repeat,
               var(--text-color-tangerine-dark);
   }
 }

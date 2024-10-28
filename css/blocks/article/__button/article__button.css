@@ -1,3 +1,9 @@
 .article__button {
   width: 232px;
 }
+
+@media screen and (max-width: 767px) {
+  .article__button {
+    width: 100%;
+  }
+}

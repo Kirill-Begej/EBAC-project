@@ -25,3 +25,11 @@
               0px 0px 0px 5px var(--tag-color-grass) inset,
               0px 0px 0px 6.5px var(--tag-color-grass) inset;
 }
+
+@media screen and (max-width: 767px) {
+  .button_type_promo {
+    padding: 15.1px 0;
+    text-align: center;
+    width: 100%;
+  }
+}

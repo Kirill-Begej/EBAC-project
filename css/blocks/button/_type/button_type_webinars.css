@@ -1,8 +1,11 @@
 .button_type_webinars {
   background: var(--text-color-violet-dark);
-  padding: 17.5px 62px;
+  display: block;
+  padding: 17.5px 0;
+  text-align: center;
   transition: background-color .3s ease-out,
               box-shadow .3s ease-out;
+  width: 280px;
 }
 
 .button_type_webinars:hover {
@@ -11,4 +14,10 @@
 
 .button_type_webinars:focus {
   box-shadow: 0px 0px 0px 2px var(--main-color-white) inset;
+}
+
+@media screen and (max-width: 767px) {
+  .button_type_webinars {
+    width: 100%;
+  }
 }
