@@ -6,3 +6,16 @@
   -moz-text-size-adjust: 100%;
   margin: 0;
 }
+
+.root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.root::-webkit-scrollbar-track {
+  background: var(--main-color-black);
+}
+
+.root::-webkit-scrollbar-thumb {
+  background: var(--main-color-gray-35);
+  border-radius: 5px;
+}
