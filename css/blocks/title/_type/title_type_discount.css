@@ -1,4 +1,4 @@
-@keyframes scrollFromLeftToRightDesktop {
+@keyframes scrollFromLeftToRightDiscountDesktop {
   from {
     transform: translateX(-25%);
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes scrollFromLeftToRightTablet {
+@keyframes scrollFromLeftToRightDiscountTablet {
   from {
     transform: translateX(-25%);
   }
@@ -25,7 +25,7 @@
 }
 
 .title_type_discount .title__list {
-  animation: scrollFromLeftToRightDesktop 20s linear infinite;
+  animation: scrollFromLeftToRightDiscountDesktop 20s linear infinite;
 }
 
 .title_type_discount .title__image {
@@ -39,6 +39,6 @@
 
   .title_type_discount .title__list {
     transform: translateX(-25%);
-    animation: scrollFromLeftToRightTablet 15s linear infinite;
+    animation: scrollFromLeftToRightDiscountTablet 15s linear infinite;
   }
 }

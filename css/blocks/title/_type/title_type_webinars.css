@@ -1,4 +1,4 @@
-@keyframes scrollFromLeftToRightDesktop {
+@keyframes scrollFromLeftToRightWebinarsDesktop {
   from {
     transform: translateX(-25%);
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes scrollFromLeftToRightTablet {
+@keyframes scrollFromLeftToRightWebinarsTablet {
   from {
     transform: translateX(-25%);
   }
@@ -27,12 +27,12 @@
 }
 
 .title_type_webinars .title__list {
-  animation: scrollFromLeftToRightDesktop 20s linear infinite;
+  animation: scrollFromLeftToRightWebinarsDesktop 20s linear infinite;
 }
 
 @media screen and (max-width: 1279px) {
   .title_type_webinars .title__list {
-    animation: scrollFromLeftToRightTablet 15s linear infinite;
+    animation: scrollFromLeftToRightWebinarsTablet 15s linear infinite;
   }
 }
 

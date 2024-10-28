@@ -1,4 +1,4 @@
-@keyframes scrollFromRightToLeftDesktop {
+@keyframes scrollFromRightToLeftSubscribeDesktop {
   from {
     transform: translateX(25%);
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes scrollFromRightToLeftTablet {
+@keyframes scrollFromRightToLeftSubscribeTablet {
   from {
     transform: translateX(25%);
   }
@@ -27,7 +27,7 @@
 }
 
 .title_type_subscribe .title__list {
-  animation: scrollFromRightToLeftDesktop 20s linear infinite;
+  animation: scrollFromRightToLeftSubscribeDesktop 20s linear infinite;
 }
 
 @media screen and (max-width: 1279px) {
@@ -38,7 +38,7 @@
   }
 
   .title_type_subscribe .title__list {
-    animation: scrollFromRightToLeftTablet 15s linear infinite;
+    animation: scrollFromRightToLeftSubscribeTablet 15s linear infinite;
   }
 }
 
