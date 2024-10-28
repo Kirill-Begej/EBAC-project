@@ -8,7 +8,7 @@
   <meta name="author" content="Kirill Begej">
   <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/pages/index.css">
-  <script src="./js/pages/index.js" type="module" defer></script>
+  <script src="./js/pages/index.js" type="module"></script>
   <title>Cursos, webinars e treinamento para os profissionais online — EBAC Online</title>
 </head>
 <body class="root">
@@ -52,7 +52,7 @@
             </svg>
           </button>
         </form>
-        <a href="#" class="ebac-link" link="#" aria-label="Link para a página inicial">
+        <a href="#" class="ebac-link" aria-label="Link para a página inicial">
           <span class="ebac-link__text">EBAC</span>
           <svg class="ebac-link__image">
             <use href="./assets/images/ebac-link/ebac-link.svg#image"></use>
@@ -109,6 +109,7 @@
               <a class="button button_type_promo" aria-label="Leer el artículo">Leer el artículo</a>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
@@ -555,7 +556,7 @@
       <div class="webinars__container">
         <h3 class="webinars__subtitle">Webinars gratuitos</h3>
         <div class="webinars__button">
-          <a class="button button_type_webinars" link="#" aria-label="Veja uma lista de todos os webinars">Todos os webinars</a>
+          <a class="button button_type_webinars" aria-label="Veja uma lista de todos os webinars">Todos os webinars</a>
         </div>
         <ul class="webinars__list">
           <li class="webinars__item webinars__item_bg-color_turquoise">
@@ -798,7 +799,7 @@
                   <svg class="input__image-success">
                     <use href="./assets/images/input/input-icon.svg#success"></use>
                   </svg>
-                  <div class="input__error-text">Formato de email inválido, verifique a ortografia</div>
+                  <span class="input__error-text">Formato de email inválido, verifique a ortografia</span>
                 </label>
                 <button class="button button_type_subscribe" type="submit" aria-label="Enviar e-mail">Enviar</button>
               </div>
@@ -943,21 +944,21 @@
           <svg class="input__image-success">
             <use href="./assets/images/input/input-icon.svg#success"></use>
           </svg>
-          <div class="input__error-text">Formato de email inválido, verifique a ortografia</div>
+          <span class="input__error-text">Formato de email inválido, verifique a ortografia</span>
         </label>
         <button class="button button_type_footer" type="submit" aria-label="Suscribirse al boletín">Suscribirse al boletín</button>
       </form>
       <div class="footer__menu">
         <nav class="submenu submenu_max-width_courses" aria-label="Menu de navegação adicional">
           <span class="submenu__title submenu__title_type_span">CURSOS</span>
-          <input type="checkbox" class="submenu__checkbox" id="courses" />
+          <input type="checkbox" class="submenu__checkbox" id="courses">
           <label for="courses" class="submenu__title submenu__title_type_checkbox" aria-label="Expandir menu adicional">CURSOS</label>
           <menu class="submenu__list">
             <li class="submenu__item">
               <a href="#" class="submenu__link" aria-label="Link para a seção Diseño">Diseño</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link" aria-label="Link para a seção" Programación & Data>Programación & Data</a>
+              <a href="#" class="submenu__link" aria-label="Link para a seção Programación & Data">Programación & Data</a>
             </li>
             <li class="submenu__item">
               <a href="#" class="submenu__link" aria-label="Link para a seção Gaming">Gaming</a>
@@ -972,7 +973,7 @@
         </nav>
         <nav class="submenu submenu_max-width_webinars" aria-label="Menu de navegação adicional">
           <span class="submenu__title submenu__title_type_span">WEBINARS</span>
-          <input type="checkbox" class="submenu__checkbox" id="webinars" />
+          <input type="checkbox" class="submenu__checkbox" id="webinars">
           <label for="webinars" class="submenu__title submenu__title_type_checkbox" aria-label="Expandir menu adicional">WEBINARS</label>
           <menu class="submenu__list">
             <li class="submenu__item">
@@ -985,7 +986,7 @@
         </nav>
         <nav class="submenu submenu_max-width_on" aria-label="Menu de navegação adicional">
           <span class="submenu__title submenu__title_type_span">SOBRE</span>
-          <input type="checkbox" class="submenu__checkbox" id="on" />
+          <input type="checkbox" class="submenu__checkbox" id="on">
           <label for="on" class="submenu__title submenu__title_type_checkbox" aria-label="Expandir menu adicional">SOBRE</label>
           <menu class="submenu__list">
             <li class="submenu__item">
@@ -1001,7 +1002,7 @@
         </nav>
         <nav class="submenu submenu_max-width_blog" aria-label="Menu de navegação adicional">
           <span class="submenu__title submenu__title_type_span">BLOG</span>
-          <input type="checkbox" class="submenu__checkbox" id="blog" />
+          <input type="checkbox" class="submenu__checkbox" id="blog">
           <label for="blog" class="submenu__title submenu__title_type_checkbox" aria-label="Expandir menu adicional">BLOG</label>
           <menu class="submenu__list">
             <li class="submenu__item">
