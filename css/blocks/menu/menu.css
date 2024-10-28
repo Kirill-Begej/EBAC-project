@@ -2,4 +2,5 @@
   color: var(--main-color-black);
   font: var(--secondary-font-size-m) var(--secondary-font-medium);
   line-height: var(--font-line-heigth-m);
+  overflow: hidden;
 }

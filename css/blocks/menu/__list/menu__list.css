@@ -8,7 +8,11 @@
 
 @media screen and (max-width: 1279px) {
   .menu__list {
+    -webkit-overflow-scrolling: touch;
     gap: 12px;
+    margin-bottom: -20px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
   }
 }
 
