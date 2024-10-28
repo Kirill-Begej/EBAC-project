@@ -1,10 +1,5 @@
 .webinars__item_bg-color_turquoise {
-  background: image-set(
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-deskop@1x.webp') type('image/webp') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-deskop@2x.webp') type('image/webp') 2x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-deskop@1x.png') type('image/png') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-deskop@2x.png') type('image/png') 2x
-              ) 100% 100% / 87% 85% no-repeat,
+  background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') 100% 100% / 87% 85% no-repeat,
               var(--text-color-turquoise-dark);
 }
 
@@ -14,12 +9,7 @@
 
 @media screen and (max-width: 1279px) {
   .webinars__item_bg-color_turquoise {
-    background: image-set(
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-tablet@1x.webp') type('image/webp') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-tablet@2x.webp') type('image/webp') 2x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-tablet@1x.png') type('image/png') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one-tablet@2x.png') type('image/png') 2x
-              ) 100% 100% / 91% 90% no-repeat,
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') 218% 157% / 96% 95% no-repeat,
               var(--text-color-turquoise-dark);
   }
 }

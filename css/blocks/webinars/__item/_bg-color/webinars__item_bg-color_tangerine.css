@@ -1,10 +1,5 @@
 .webinars__item_bg-color_tangerine {
-  background: image-set(
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop@1x.webp') type('image/webp') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop@2x.webp') type('image/webp') 2x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop@1x.png') type('image/png') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop@2x.png') type('image/png') 2x
-              ) 0% 50% / 83% 100% no-repeat,
+  background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop.svg') 0% 50% / 83% 100% no-repeat,
               var(--text-color-tangerine-dark);
 }
 
@@ -14,24 +9,14 @@
 
 @media screen and (max-width: 1279px) {
   .webinars__item_bg-color_tangerine {
-    background: image-set(
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet@1x.webp') type('image/webp') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet@2x.webp') type('image/webp') 2x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet@1x.png') type('image/png') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet@2x.png') type('image/png') 2x
-              ) -3% 100% / 97% 100% no-repeat,
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet.svg') -75% 100% / 97% 100% no-repeat,
               var(--text-color-tangerine-dark);
   }
 }
 
 @media screen and (max-width: 767px) {
   .webinars__item_bg-color_tangerine {
-    background: image-set(
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-mobile@1x.webp') type('image/webp') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-mobile@2x.webp') type('image/webp') 2x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-mobile@1x.png') type('image/png') 1x,
-                url('../../../../../assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-mobile@2x.png') type('image/png') 2x
-              ) 100% 95% / 80% 85% no-repeat,
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') -1% 90% / 116% 98% no-repeat,
               var(--text-color-tangerine-dark);
   }
 }
