@@ -62,6 +62,7 @@
 @import url('../blocks/article/__desc/article__desc.css');
 @import url('../blocks/article/__date-list/article__date-list.css');
 @import url('../blocks/article/__date-image/article__date-image.css');
+@import url('../blocks/article/__button/article__button.css');
 @import url('../blocks/articles/articles.css');
 @import url('../blocks/articles/__container/articles__container.css');
 @import url('../blocks/articles/__list/articles__list.css');
