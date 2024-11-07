@@ -18,3 +18,5 @@ export interface IBuildOptions {
   paths: IBuildPaths
   isDev: boolean
 }
+
+const name = 'name'
