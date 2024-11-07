@@ -4,6 +4,7 @@ import { buildPlugins } from './buildPlugins';
 import { buildLoaders } from './buildLoaders';
 import { buildResolvers } from './buildResolvers';
 import { buildDevServer } from './buildDevServer';
+import { buildOptimization } from './buildOptimization';
 
 export function buildWebpack(options: IBuildOptions): Configuration {
   const { mode, paths } = options;
@@ -19,6 +20,7 @@ export function buildWebpack(options: IBuildOptions): Configuration {
     },
     devtool: isDev && 'inline-source-map',
     devServer: isDev ? buildDevServer(options) : undefined,
+    optimization: buildOptimization(),
     plugins: buildPlugins(options),
     module: {
       rules: buildLoaders(isDev),
