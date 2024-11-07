@@ -3,11 +3,20 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { IBuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
-  const c = {
+  const fontsLoader = {
     test: /\.(woff|woff2|eot|ttf|otf)$/i,
     type: 'asset/resource',
     generator: {
       filename: 'asset/fonts/[name][ext]',
+    },
+  };
+
+  const imagesLoaders = {
+    test: /\.(png|jpg|jpeg|webp)$/i,
+    type: 'asset/resource',
+    type: 'asset/resource',
+    generator: {
+      filename: 'asset/images/[name][ext]',
     },
   };
 
@@ -56,6 +65,7 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
 
   return [
     fontsLoader,
+    imagesLoaders,
     cssLoader,
     typescriptLoader,
   ];
