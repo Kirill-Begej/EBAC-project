@@ -25,7 +25,16 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
       isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
       {
         loader: 'css-loader',
-        options: { importLoaders: 1 },
+        options: {
+          importLoaders: 1,
+          modules: {
+            auto: (resPath: string) => Boolean(resPath.includes('.module.')),
+            localIdentName: isDev
+              ? '[path][name]__[local]--[hash:base64:5]'
+              : '[hash:base64:8]',
+          },
+          esModule: false,
+        },
       },
       !isDev && postCssLoader,
     ],
