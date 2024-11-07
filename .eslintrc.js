@@ -30,7 +30,8 @@ module.exports = {
       'error',
       {
         ts: 'never',
-        tsx: 'never'
+        tsx: 'never',
+        css: 'always'
       }
     ],
     'import/prefer-default-export': 0,

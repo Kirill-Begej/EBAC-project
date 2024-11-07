@@ -1,0 +1,63 @@
+:root {
+  /* Шрифты используемые в приложении  */
+  --primary-font: 'Archivo-Black-Regular', 'Arial', sans-serif;
+  --secondary-font-regular: 'Nunito-Regular', 'Arial', sans-serif;
+  --secondary-font-medium: 'Nunito-Medium', 'Arial', sans-serif;
+  --secondary-font-bold: 'Nunito-Bold', 'Arial', sans-serif;
+
+  /* Размеры основного шрифта используемого в приложении */
+  --primary-font-size-xxxxs: 22px;
+  --primary-font-size-xxxs: 24px;
+  --primary-font-size-xxs: 26px;
+  --primary-font-size-xs: 28px;
+  --primary-font-size-s: 30px;
+  --primary-font-size-m: 36px;
+  --primary-font-size-l: 44px;
+  --primary-font-size-xl: 46px;
+  --primary-font-size-xxl: 58px;
+
+  /* Размеры вторичного шрифта используемого в приложении */
+  --secondary-font-size-s: 13px;
+  --secondary-font-size-m: 15px;
+  --secondary-font-size-l: 18px;
+
+  /* Размеры межстрочного интервала используемого в приложении */
+  --font-line-heigth-s: 1.2;
+  --font-line-heigth-m: 1.4;
+  --font-line-heigth-l: 1.6;
+
+  /* Основные цвета используемые в приложении */
+  --main-color-black: #1B1F21;
+  --main-color-gray-80: #434343;
+  --main-color-gray-70: #757778;
+  --main-color-gray-35: #AEAEAE;
+  --main-color-gray-20: #D9D9D8;
+  --main-color-gray-15: #E8E8E8;
+  --main-color-gray-5: #F2F2F2;
+  --main-color-gray-5-tr-20: #F2F2F233;
+  --main-color-white: #FCFAF9;
+  --main-color-white-tr-60: #fcfaf9e6;
+  --main-color-pale: #FFFFFE;
+
+  /* Основные цвета текста используемые в приложении */
+  --text-color-pink-dark: #DA3369;
+  --text-color-sky-dark: #5FA5FD;
+  --text-color-violet-dark: #9853F4;
+  --text-color-grass-dark: #94AC23;
+  --text-color-turquoise-dark: #57ACBC;
+  --text-color-tangerine-dark: #EF9700;
+  --text-color-coral-dark: #FE6D44;
+  --text-color-mint-dark: #57BCAA;
+  --text-color-marine-dark: #22C98B;
+
+  /* Основные цвета тегов используемые в приложении */
+  --tag-color-pink: #EC95B1;
+  --tag-color-sky: #A4CCFE;
+  --tag-color-violet: #D0B0FA;
+  --tag-color-grass: #BEDB39;
+  --tag-color-turquoise: #ACD6DE;
+  --tag-color-tangerine: #FFAD20;
+  --tag-color-coral: #FE8968;
+  --tag-color-mint: #AEDFD6;
+  --tag-color-marine: #90EECB;
+}
