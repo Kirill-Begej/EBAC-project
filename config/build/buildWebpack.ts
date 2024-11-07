@@ -21,7 +21,7 @@ export function buildWebpack(options: IBuildOptions): Configuration {
     devServer: isDev ? buildDevServer(options) : undefined,
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders(),
+      rules: buildLoaders(isDev),
     },
     resolve: buildResolvers(),
   };
