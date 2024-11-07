@@ -9,8 +9,8 @@
     "build:prod": "webpack --env mode=production",
     "lint:ts": "eslint . --ext .ts,.tsx",
     "lint:ts:fix": "eslint . --ext .ts,.tsx --fix",
-    "lint:css": "stylelint \"**/*.scss\"",
-    "lint:css:fix": "stylelint \"**/*.scss\" --fix",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "precommit": "lint-staged",
     "prepare": "husky"
   },
@@ -21,14 +21,12 @@
   },
   "lint-staged": {
     "*.css": [
-      "stylelint --fix",
-      "prettier --write",
-      "git add"
+      "stylelint \"**/*.css\" --fix",
+      "prettier --write"
     ],
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
+      "eslint . --ext .ts,.tsx --fix",
+      "prettier --write"
     ]
   },
   "repository": {
