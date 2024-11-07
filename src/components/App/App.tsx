@@ -1,12 +1,12 @@
-import { Test } from '../Test/Test';
-import './index.css';
+import { Test } from '../Test/Test'
+import './index.css'
 
 const App = () => (
-  <div className='container'>
+  <div className="container">
     <div>Test 1</div>
     <Test />
     <div>Test 2</div>
   </div>
-);
+)
 
-export default App;
+export default App

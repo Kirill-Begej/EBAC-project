@@ -1,5 +1,3 @@
-import classes from './Test.module.css';
+import classes from './Test.module.css'
 
-export const Test = () => (
-  <div className={classes.test}>Test module</div>
-);
+export const Test = () => <div className={classes.test}>Test module</div>
