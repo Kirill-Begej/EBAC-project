@@ -4,8 +4,6 @@ import { IBuildEnv, IBuildPaths } from './config/build/types/config';
 import { buildWebpack } from './config/build/buildWebpack';
 
 export default (env: IBuildEnv) => {
-  const isDev = env.mode === 'development';
-
   const paths: IBuildPaths = {
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
     output: path.resolve(__dirname, 'build'),
@@ -16,7 +14,6 @@ export default (env: IBuildEnv) => {
     mode: env.mode ?? 'development',
     port: env.port ?? 3000,
     paths,
-    isDev,
   });
 
   return config;
