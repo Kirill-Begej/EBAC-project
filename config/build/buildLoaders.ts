@@ -14,7 +14,6 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
   const imagesLoaders = {
     test: /\.(png|jpg|jpeg|webp|svg)$/i,
     type: 'asset/resource',
-    type: 'asset/resource',
     generator: {
       filename: 'asset/images/[name][ext]',
     },
@@ -69,4 +68,4 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
     cssLoader,
     typescriptLoader,
   ];
-};
+}

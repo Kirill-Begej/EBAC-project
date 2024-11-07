@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noEmit": true,
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ESNext",
@@ -19,5 +20,13 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "src/**/**/*",
+    ".eslintrc.js",
+    "config/**/**/*",
+    "webpack.config.ts",
+    "json-server/**/*"
+  ],
+  "exclude": ["node_modules"]
 }

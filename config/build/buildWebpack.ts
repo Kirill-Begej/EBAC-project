@@ -26,4 +26,4 @@ export function buildWebpack(options: IBuildOptions): Configuration {
     },
     resolve: buildResolvers(options),
   };
-};
+}

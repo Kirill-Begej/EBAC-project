@@ -15,4 +15,4 @@ export function buildPlugins({ paths, isDev }: IBuildOptions): Configuration['pl
     }),
     new webpack.HotModuleReplacementPlugin(),
   ];
-};
+}

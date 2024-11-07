@@ -8,4 +8,4 @@ export function buildDevServer({ port }: IBuildOptions): DevServerConfiguration 
     historyApiFallback: true,
     hot: true,
   };
-};
+}

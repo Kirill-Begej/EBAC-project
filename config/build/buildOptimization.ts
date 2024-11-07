@@ -5,9 +5,9 @@ import TerserPlugin from 'terser-webpack-plugin';
 export function buildOptimization(): Configuration['optimization'] {
   return {
     minimize: true,
-      minimizer: [
-        new CssMinimizerPlugin(),
-        new TerserPlugin(),
-      ],
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin(),
+    ],
   };
-};
+}

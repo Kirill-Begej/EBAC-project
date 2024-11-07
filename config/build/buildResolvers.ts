@@ -9,4 +9,4 @@ export function buildResolvers({ paths }: IBuildOptions): Configuration['resolve
     mainFiles: ['index'],
     alias: {},
   };
-};
+}
