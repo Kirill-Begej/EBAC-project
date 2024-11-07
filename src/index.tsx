@@ -3,6 +3,4 @@ import App from './components/App/App'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
 
-const name = 'name'
-
 root.render(<App />)
