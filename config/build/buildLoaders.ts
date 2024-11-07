@@ -3,6 +3,14 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { IBuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
+  const c = {
+    test: /\.(woff|woff2|eot|ttf|otf)$/i,
+    type: 'asset/resource',
+    generator: {
+      filename: 'asset/fonts/[name][ext]',
+    },
+  };
+
   const postCssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -47,7 +55,8 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
   };
 
   return [
-    typescriptLoader,
+    fontsLoader,
     cssLoader,
+    typescriptLoader,
   ];
 };
