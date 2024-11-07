@@ -10,7 +10,9 @@
     "lint:ts": "eslint . --ext .ts,.tsx",
     "lint:ts:fix": "eslint . --ext .ts,.tsx --fix",
     "lint:css": "stylelint \"**/*.scss\"",
-    "lint:css:fix": "stylelint \"**/*.scss\" --fix"
+    "lint:css:fix": "stylelint \"**/*.scss\" --fix",
+    "precommit": "lint-staged",
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
@@ -18,8 +20,13 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run lint:ts:fix",
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
