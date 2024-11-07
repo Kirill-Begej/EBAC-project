@@ -18,8 +18,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "npm run lint:ts:fix",
+    "*.{ts,tsx}": [
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
