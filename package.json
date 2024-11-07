@@ -20,11 +20,11 @@
     }
   },
   "lint-staged": {
-    "*.css": [
+    "**/*.css": [
       "stylelint \"**/*.css\" --fix",
       "prettier --write"
     ],
-    "*.{js,jsx,ts,tsx}": [
+    "**/*.{js,jsx,ts,tsx}": [
       "eslint . --ext .ts,.tsx --fix",
       "prettier --write"
     ]
