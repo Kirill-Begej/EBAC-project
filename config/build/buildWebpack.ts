@@ -24,6 +24,6 @@ export function buildWebpack(options: IBuildOptions): Configuration {
     module: {
       rules: buildLoaders(options),
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
   };
 };
