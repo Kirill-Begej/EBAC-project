@@ -13,5 +13,6 @@ export function buildPlugins({ paths, isDev }: IBuildOptions): Configuration['pl
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ];
 };
