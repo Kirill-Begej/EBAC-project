@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/Kirill-Begej/EBAC-project/issues"
   },
-  "homepage": "https://github.com/Kirill-Begej/EBAC-project#readme"
+  "homepage": "https://github.com/Kirill-Begej/EBAC-project#readme",
+  "devDependencies": {
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
