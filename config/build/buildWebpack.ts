@@ -7,8 +7,7 @@ import { buildDevServer } from './buildDevServer';
 import { buildOptimization } from './buildOptimization';
 
 export function buildWebpack(options: IBuildOptions): Configuration {
-  const { mode, paths } = options;
-  const isDev = mode === 'development';
+  const { mode, paths, isDev } = options;
 
   return {
     mode,
@@ -23,7 +22,7 @@ export function buildWebpack(options: IBuildOptions): Configuration {
     optimization: buildOptimization(),
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders(isDev),
+      rules: buildLoaders(options),
     },
     resolve: buildResolvers(),
   };

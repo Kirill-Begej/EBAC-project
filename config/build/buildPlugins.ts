@@ -3,12 +3,12 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { IBuildOptions } from './types/config';
 
-export function buildPlugins({ paths }: IBuildOptions): Configuration['plugins'] {
+export function buildPlugins({ paths, isDev }: IBuildOptions): Configuration['plugins'] {
   return [
     new HtmlWebpackPlugin({
       template: paths.html,
     }),
-    new webpack.ProgressPlugin(),
+    isDev && new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css',

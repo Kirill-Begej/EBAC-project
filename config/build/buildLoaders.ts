@@ -1,7 +1,8 @@
 import { ModuleOptions } from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { IBuildOptions } from './types/config';
 
-export function buildLoaders(isDev: boolean): ModuleOptions['rules'] {
+export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
   const postCssLoader = {
     loader: 'postcss-loader',
     options: {
