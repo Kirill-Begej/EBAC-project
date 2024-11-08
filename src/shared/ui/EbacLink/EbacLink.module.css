@@ -1,0 +1,38 @@
+.ebaclink {
+  color: var(--main-color-black);
+  display: flex;
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  gap: 10px;
+  line-height: var(--font-line-heigth-m);
+  position: relative;
+  text-decoration: none;
+}
+
+.ebaclink::before {
+  background: var(--tag-color-grass);
+  bottom: 4.5px;
+  content: '';
+  height: 1.5px;
+  position: absolute;
+  right: 0;
+  transform: translateX(-3px);
+  transition: width .3s ease-out;
+  width: 0;
+
+}
+
+.ebaclink:hover::before {
+  left: 0;
+  transform: translateX(1px);
+  width: 94%;
+}
+
+.linkText {
+  margin-top: -2px;
+}
+
+.linkImage {
+  fill: var(--tag-color-grass);
+  height: 16px;
+  width: 16px;
+}
