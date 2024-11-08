@@ -32,7 +32,9 @@ module.exports = {
         ts: 'never',
         tsx: 'never',
         css: 'always',
-        svg: 'always'
+        svg: 'always',
+        jpg: 'always',
+        webp: 'always'
       }
     ],
     'import/prefer-default-export': 0,

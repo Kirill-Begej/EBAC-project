@@ -10,6 +10,12 @@
   width: 109px;
 }
 
+.logoFooter .image {
+  fill: var(--main-color-white);
+  height: 82px;
+  width: 224px;
+}
+
 .logo:hover .image {
   fill: var(--text-color-pink-dark);
 }
@@ -18,5 +24,10 @@
   .image {
     height: 48px;
     width: 130px;
+  }
+
+  .logoFooter .image {
+    height: 64px;
+    width: 173px;
   }
 }

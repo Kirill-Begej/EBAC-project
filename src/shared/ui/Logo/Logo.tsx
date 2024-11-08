@@ -4,12 +4,15 @@ import cls from './Logo.module.css'
 
 interface LogoProps {
   className?: string
+  logoFooter?: boolean
 }
 
-export const Logo = ({ className }: LogoProps) => (
+export const Logo = ({ className, logoFooter }: LogoProps) => (
   <a
     href="#"
-    className={classNames(cls.logo, {}, [className])}
+    className={classNames(cls.logo, { [cls.logoFooter]: logoFooter }, [
+      className
+    ])}
     aria-label="Link para a página inicial"
   >
     <svg className={cls.image}>
