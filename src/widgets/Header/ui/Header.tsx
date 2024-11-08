@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Logo } from 'shared/ui/Logo/Logo'
 import { Menu } from 'shared/ui/Menu/Menu'
+import { SearchForm } from 'shared/ui/SearchForm/SearchForm'
 import cls from './Header.module.css'
 
 interface HeaderProps {
@@ -13,7 +14,9 @@ export const Header: FC<HeaderProps> = ({ className }) => (
     <div className={cls.container}>
       <Logo />
       <Menu />
-      <div className={cls.rightMenu}></div>
+      <div className={cls.rightMenu}>
+        <SearchForm />
+      </div>
     </div>
   </header>
 )
