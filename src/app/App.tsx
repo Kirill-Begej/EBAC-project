@@ -1,6 +1,9 @@
+import { classNames } from 'shared/lib/classNames/classNames'
+import { Header } from 'widgets/Header'
+
 const App = () => (
-  <div>
-    <div>Test</div>
+  <div className={classNames('app', {}, [])}>
+    <Header />
   </div>
 )
 

@@ -31,7 +31,8 @@ module.exports = {
       {
         ts: 'never',
         tsx: 'never',
-        css: 'always'
+        css: 'always',
+        svg: 'always'
       }
     ],
     'import/prefer-default-export': 0,

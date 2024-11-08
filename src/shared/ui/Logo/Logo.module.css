@@ -1,0 +1,22 @@
+.logo {
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  fill: var(--main-color-black);
+  height: 40px;
+  transition: fill .3s ease-out;
+  width: 109px;
+}
+
+.logo:hover .image {
+  fill: var(--text-color-pink-dark);
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    height: 48px;
+    width: 130px;
+  }
+}
