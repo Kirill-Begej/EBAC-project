@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({ className }) => (
   <header className={classNames(cls.header, {}, [className])}>
     <div className={cls.container}>
       <Logo />
-      <Menu />
+      <Menu className={cls.headerMenu} />
       <div className={cls.rightMenu}>
         <SearchForm />
         <EbacLink />
