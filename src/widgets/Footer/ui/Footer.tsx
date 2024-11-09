@@ -7,6 +7,7 @@ import FooterLogo1xWebp from 'shared/assets/img/footer/footer-logo-image@1x.webp
 import FooterLogo2xWebp from 'shared/assets/img/footer/footer-logo-image@2x.webp'
 import { Social } from 'shared/ui/Social/Social'
 import { Form } from 'features/Form'
+import { Submenu, SubmenuType } from 'shared/ui/Submenu/Submenu'
 import cls from './Footer.module.css'
 
 interface FooterProps {
@@ -36,7 +37,13 @@ export const Footer: FC<FooterProps> = ({ className }) => (
           <Social />
         </div>
       </div>
-      <Form className={cls.footerForm} formType="footer" />
+      <Form className={cls.form} formType="footer" />
+      <div className={cls.menu}>
+        <Submenu type={SubmenuType.CURSOS} />
+        <Submenu type={SubmenuType.WEBINARS} />
+        <Submenu type={SubmenuType.SOBRE} />
+        <Submenu type={SubmenuType.BLOG} />
+      </div>
     </div>
   </div>
 )

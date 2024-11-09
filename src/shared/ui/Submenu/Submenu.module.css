@@ -1,0 +1,126 @@
+.submenu {
+  color: var(--main-color-white);
+  display: flex;
+  flex-direction: column;
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  gap: 32px;
+  line-height: var(--font-line-heigth-m);
+  width: 100%;
+}
+
+.cursos {
+  max-width: 120px;
+}
+
+.webinars {
+  max-width: 104px;
+}
+
+.sobre {
+  max-width: 152px;
+}
+
+.blog {
+  max-width: 120px;
+}
+
+
+.title {
+  color: var(--main-color-gray-70);
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
+}
+
+.checkbox {
+  display: none;
+}
+
+.titleCheckbox {
+  cursor: pointer;
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+.link::before {
+  background: var(--main-color-white);
+  bottom: 0;
+  content: '';
+  height: 1.5px;
+  position: absolute;
+  right: 0;
+  transition: width .3s ease-out;
+  width: 0;
+}
+
+.link:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+  .submenu {
+    gap: 0;
+    max-width: none;
+  }
+
+  .span {
+    display: none;
+  }
+
+  .list {
+    gap: 16px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    transition: max-height .3s ease-out,
+                opacity .15s ease-out,
+                padding-top .15s linear;
+  }
+
+  .titleCheckbox {
+    align-items: center;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titleCheckbox::after {
+   background: url('/src/shared/assets/img/submenu-icon.svg') no-repeat;
+   content: '';
+   display: block;
+   height: 7px;
+   margin-right: 5px;
+   transition: transform .3s linear;
+   width: 13px;
+  }
+
+  .submenu .checkbox:checked + .titleCheckbox::after {
+    transform: rotate(180deg);
+  }
+
+  .submenu .checkbox:checked + .titleCheckbox + .list {
+    margin-bottom: 17px;
+    max-height: 1000px;
+    padding-top: 24px;
+    opacity: 1;
+    transition: max-height .3s ease-out,
+                opacity .15s ease-out,
+                padding-top .15s linear;
+  }
+}
