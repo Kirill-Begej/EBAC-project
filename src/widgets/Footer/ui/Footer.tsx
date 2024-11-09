@@ -10,13 +10,14 @@ import { Form } from 'features/Form'
 import { Submenu, SubmenuType } from 'shared/ui/Submenu/Submenu'
 import { Contacts } from 'shared/ui/Contacts/Contacts'
 import cls from './Footer.module.css'
+import { signatureData } from '../model/footerData'
 
 interface FooterProps {
   className?: string
 }
 
 export const Footer: FC<FooterProps> = ({ className }) => (
-  <div className={classNames(cls.footer, {}, [className])}>
+  <footer className={classNames(cls.footer, {}, [className])}>
     <div className={cls.container}>
       <div className={cls.logo}>
         <div className={cls.logoRow}>
@@ -46,6 +47,14 @@ export const Footer: FC<FooterProps> = ({ className }) => (
         <Submenu type={SubmenuType.BLOG} />
       </div>
       <Contacts className={cls.contacts} />
+      <Social className={cls.social} />
+      <ul className={cls.signature}>
+        {signatureData.map((item, i) => (
+          <li className={cls.item} key={i}>
+            <p className={cls.text}>{item.text}</p>
+          </li>
+        ))}
+      </ul>
     </div>
-  </div>
+  </footer>
 )
