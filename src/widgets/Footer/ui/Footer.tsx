@@ -8,6 +8,7 @@ import FooterLogo2xWebp from 'shared/assets/img/footer/footer-logo-image@2x.webp
 import { Social } from 'shared/ui/Social/Social'
 import { Form } from 'features/Form'
 import { Submenu, SubmenuType } from 'shared/ui/Submenu/Submenu'
+import { Contacts } from 'shared/ui/Contacts/Contacts'
 import cls from './Footer.module.css'
 
 interface FooterProps {
@@ -44,6 +45,7 @@ export const Footer: FC<FooterProps> = ({ className }) => (
         <Submenu type={SubmenuType.SOBRE} />
         <Submenu type={SubmenuType.BLOG} />
       </div>
+      <Contacts className={cls.contacts} />
     </div>
   </div>
 )
