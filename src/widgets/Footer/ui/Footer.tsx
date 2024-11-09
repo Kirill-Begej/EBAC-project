@@ -6,6 +6,7 @@ import FooterLogo2xJpg from 'shared/assets/img/footer/footer-logo-image@2x.jpg'
 import FooterLogo1xWebp from 'shared/assets/img/footer/footer-logo-image@1x.webp'
 import FooterLogo2xWebp from 'shared/assets/img/footer/footer-logo-image@2x.webp'
 import { Social } from 'shared/ui/Social/Social'
+import { Form } from 'features/Form'
 import cls from './Footer.module.css'
 
 interface FooterProps {
@@ -35,6 +36,7 @@ export const Footer: FC<FooterProps> = ({ className }) => (
           <Social />
         </div>
       </div>
+      <Form className={cls.footerForm} formType="footer" />
     </div>
   </div>
 )

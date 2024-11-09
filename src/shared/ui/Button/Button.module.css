@@ -1,0 +1,31 @@
+.button {
+  border-radius: 40px;
+  border: none;
+  color: var(--main-color-white);
+  cursor: pointer;
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
+  outline: none;
+}
+
+.footer {
+  background: var(--text-color-violet-dark);
+  padding: 10.1px 52.13px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              opacity .3s ease-out;
+}
+
+.footer[enabled]:hover {
+  background: var(--text-color-pink-dark);
+}
+
+.footer[enabled]:focus {
+  box-shadow: 0 0 0 2px var(--main-color-white) inset;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+}
