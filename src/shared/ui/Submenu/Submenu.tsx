@@ -1,6 +1,5 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { ISubmenuData, submenuData } from './model/submenuData'
 import cls from './Submenu.module.css'
 
 export enum SubmenuType {
@@ -10,52 +9,50 @@ export enum SubmenuType {
   BLOG = 'BLOG'
 }
 
+interface IItemsData {
+  label: string
+  url: string
+}
+
 interface SubmenuProps {
   className?: string
-  type: SubmenuType
+  data: {
+    label: string
+    items: IItemsData[]
+  }
 }
 
-export const Submenu: FC<SubmenuProps> = ({ className, type }) => {
-  const [content, setContent] = useState<ISubmenuData | null>(null)
-
-  useEffect(() => {
-    const submenuItem = submenuData.find(item => item.label === type)
-    setContent(submenuItem)
-  }, [])
-
-  return (
-    <nav
-      className={classNames(
-        cls.submenu,
-        {
-          [cls.cursos]: SubmenuType.CURSOS === type,
-          [cls.webinars]: SubmenuType.WEBINARS === type,
-          [cls.sobre]: SubmenuType.SOBRE === type,
-          [cls.blog]: SubmenuType.BLOG === type
-        },
-        [className]
-      )}
-      aria-label="Menu de navegação adicional"
+export const Submenu: FC<SubmenuProps> = ({ className, data }) => (
+  <nav
+    className={classNames(
+      cls.submenu,
+      {
+        [cls.cursos]: SubmenuType.CURSOS === data.label,
+        [cls.webinars]: SubmenuType.WEBINARS === data.label,
+        [cls.sobre]: SubmenuType.SOBRE === data.label,
+        [cls.blog]: SubmenuType.BLOG === data.label
+      },
+      [className]
+    )}
+    aria-label="Menu de navegação adicional"
+  >
+    <span className={(cls.title, cls.span)}>{data.label}</span>
+    <input type="checkbox" className={cls.checkbox} id="courses" />
+    <label
+      htmlFor="courses"
+      className={(cls.title, cls.titleCheckbox)}
+      aria-label="Expandir menu adicional"
     >
-      <span className={(cls.title, cls.span)}>{type}</span>
-      <input type="checkbox" className={cls.checkbox} id="courses" />
-      <label
-        htmlFor="courses"
-        className={(cls.title, cls.titleCheckbox)}
-        aria-label="Expandir menu adicional"
-      >
-        {type}
-      </label>
-      <menu className={cls.list}>
-        {content &&
-          content.items.map((item: any, i: any) => (
-            <li className={cls.item} key={i}>
-              <a href={item.url} className={cls.link}>
-                {item.label}
-              </a>
-            </li>
-          ))}
-      </menu>
-    </nav>
-  )
-}
+      {data.label}
+    </label>
+    <menu className={cls.list}>
+      {data.items.map((item: IItemsData, i: number) => (
+        <li className={cls.item} key={i}>
+          <a href={item.url} className={cls.link}>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </menu>
+  </nav>
+)

@@ -5,7 +5,12 @@ interface IHeader {
 
 interface IFooter {
   label: string
-  items: string
+  items: IItems[]
+}
+
+interface IItems {
+  label: string
+  url: string
 }
 
 export interface IMenu {
