@@ -1,8 +1,5 @@
 import { useContext } from 'react'
 import { MenuContext } from './MenuContext'
+import { IMenu } from '../types/types'
 
-export const UseMenuContext = () => {
-  const context = useContext(MenuContext)
-
-  return context
-}
+export const UseMenuContext = (): IMenu => useContext(MenuContext)
