@@ -5,6 +5,7 @@
     "import-notation": "string",
     "property-no-vendor-prefix": null,
     "media-feature-range-notation": "prefix",
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "number-max-precision": null
   }
 }

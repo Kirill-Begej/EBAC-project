@@ -1,6 +1,8 @@
+import { Suspense } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Header } from 'widgets/Header'
 import { Footer } from 'widgets/Footer'
+import { PageLoader } from 'widgets/PageLoader/PageLoader'
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -8,9 +10,11 @@ const App = () => {
 
   return (
     <div className={classNames('app', {}, [])}>
-      <Header />
-      <main className="content">test</main>
-      <Footer />
+      <Suspense fallback={<PageLoader />}>
+        <Header />
+        <main className="content">test</main>
+        <Footer />
+      </Suspense>
     </div>
   )
 }

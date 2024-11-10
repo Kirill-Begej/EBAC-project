@@ -17,7 +17,7 @@ interface FooterProps {
   className?: string
 }
 
-export const Footer: FC<FooterProps> = ({ className }) => {
+const Footer: FC<FooterProps> = ({ className }) => {
   const menu = UseMenuContext()
 
   return (
@@ -61,3 +61,5 @@ export const Footer: FC<FooterProps> = ({ className }) => {
     </footer>
   )
 }
+
+export default Footer

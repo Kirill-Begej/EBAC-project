@@ -1,1 +1,3 @@
-export { Header } from './ui/Header'
+import { HeaderAsync } from './ui/Header.async'
+
+export { HeaderAsync as Header }

@@ -10,7 +10,7 @@ interface HeaderProps {
   className?: string
 }
 
-export const Header: FC<HeaderProps> = ({ className }) => (
+const Header: FC<HeaderProps> = ({ className }) => (
   <header className={classNames(cls.header, {}, [className])}>
     <div className={cls.container}>
       <Logo />
@@ -22,3 +22,5 @@ export const Header: FC<HeaderProps> = ({ className }) => (
     </div>
   </header>
 )
+
+export default Header

@@ -34,7 +34,8 @@ module.exports = {
         css: 'always',
         svg: 'always',
         jpg: 'always',
-        webp: 'always'
+        webp: 'always',
+        async: 'always'
       }
     ],
     'import/prefer-default-export': 0,
