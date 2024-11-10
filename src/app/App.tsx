@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className={classNames('app', {}, [])}>
       <Header />
+      <main className="content">test</main>
       <Footer />
     </div>
   )
