@@ -24,7 +24,7 @@ interface ILinksContacts {
   url: string
 }
 
-interface IContacts {
+export interface IContacts {
   whatsapp: string
   phone: string
   email: string
