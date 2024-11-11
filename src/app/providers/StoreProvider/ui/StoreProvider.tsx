@@ -5,14 +5,14 @@ import {
   getMenuRequest,
   getSectionsRequest
 } from '../api/storeApi'
-// import { IMenu } from '../types/types'
+import { IStore } from '../types/types'
 
 interface MenuProviderProps {
   children: ReactNode
 }
 
 const StoreProvider: FC<MenuProviderProps> = ({ children }) => {
-  const [store, setStore] = useState<any>({
+  const [store, setStore] = useState<IStore>({
     isLoading: false,
     menu: {},
     contacts: {},
@@ -20,7 +20,12 @@ const StoreProvider: FC<MenuProviderProps> = ({ children }) => {
   })
 
   useEffect(() => {
-    setStore({ isLoading: true, menu: store.menu, contacts: store.contacts })
+    setStore({
+      isLoading: true,
+      menu: store.menu,
+      contacts: store.contacts,
+      sections: store.sections
+    })
     Promise.all([
       getMenuRequest(),
       getContactsRequest(),

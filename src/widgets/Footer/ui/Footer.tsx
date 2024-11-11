@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Logo } from 'shared/ui/Logo/Logo'
@@ -7,9 +8,9 @@ import FooterLogo1xWebp from 'shared/assets/img/footer/footer-logo-image@1x.webp
 import FooterLogo2xWebp from 'shared/assets/img/footer/footer-logo-image@2x.webp'
 import { Social } from 'shared/ui/Social/Social'
 import { Form } from 'features/Form'
-import { Submenu } from 'shared/ui/Submenu/Submenu'
+// import { Submenu } from 'shared/ui/Submenu/Submenu'
 import { Contacts } from 'shared/ui/Contacts/Contacts'
-import { UseMenuContext } from 'app/providers/StoreProvider'
+// import { UseMenuContext } from 'app/providers/StoreProvider'
 import cls from './Footer.module.css'
 import { signatureData } from '../model/footerData'
 
@@ -18,7 +19,7 @@ interface FooterProps {
 }
 
 const Footer: FC<FooterProps> = ({ className }) => {
-  const menu = UseMenuContext()
+  // const menu = UseMenuContext()
 
   return (
     <footer className={classNames(cls.footer, {}, [className])}>
@@ -45,8 +46,8 @@ const Footer: FC<FooterProps> = ({ className }) => {
         </div>
         <Form className={cls.form} formType="footer" />
         <div className={cls.menu}>
-          {menu?.footer &&
-            menu.footer.map((item, i) => <Submenu data={item} key={i} />)}
+          {/* {menu?.footer &&
+            menu.footer.map((item, i) => <Submenu data={item} key={i} />)} */}
         </div>
         <Contacts className={cls.contacts} />
         <Social className={cls.social} />
