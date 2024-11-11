@@ -6,9 +6,14 @@ import cls from './Input.module.css'
 interface InputProps {
   className?: string
   inputType: string
+  emailPlaceholder: string
 }
 
-export const Input: FC<InputProps> = ({ className, inputType }) => (
+export const Input: FC<InputProps> = ({
+  className,
+  inputType,
+  emailPlaceholder
+}) => (
   <label
     className={classNames(
       cls.input,
@@ -21,7 +26,7 @@ export const Input: FC<InputProps> = ({ className, inputType }) => (
     <input
       className={cls.element}
       type="email"
-      placeholder="Su correo electrónico"
+      placeholder={emailPlaceholder}
       aria-label="Campo de entrada de e-mail para boletim informativo"
     />
     <svg className={cls.imageError}>

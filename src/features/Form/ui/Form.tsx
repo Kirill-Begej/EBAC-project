@@ -6,15 +6,22 @@ import { Button } from 'shared/ui/Button/Button'
 interface FormProps {
   className?: string
   formType: string
+  emailPlaceholder: string
+  submitText: string
 }
 
-export const Form: FC<FormProps> = ({ className, formType }) => (
+export const Form: FC<FormProps> = ({
+  className,
+  formType,
+  emailPlaceholder,
+  submitText
+}) => (
   <form
     className={classNames('', {}, [className])}
     name="footerForm"
     noValidate
   >
-    <Input inputType={formType} />
-    <Button buttonType={formType} />
+    <Input inputType={formType} emailPlaceholder={emailPlaceholder} />
+    <Button buttonType={formType} submitText={submitText} />
   </form>
 )

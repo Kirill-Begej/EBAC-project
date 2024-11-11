@@ -5,9 +5,14 @@ import cls from './Button.module.css'
 interface ButtonProps {
   className?: string
   buttonType: string
+  submitText: string
 }
 
-export const Button: FC<ButtonProps> = ({ className, buttonType }) => (
+export const Button: FC<ButtonProps> = ({
+  className,
+  buttonType,
+  submitText
+}) => (
   <button
     className={classNames(
       cls.button,
@@ -19,6 +24,6 @@ export const Button: FC<ButtonProps> = ({ className, buttonType }) => (
     type="submit"
     aria-label="Suscribirse al boletín"
   >
-    Suscribirse al boletín
+    {submitText}
   </button>
 )

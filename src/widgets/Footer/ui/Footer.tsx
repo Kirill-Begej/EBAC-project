@@ -9,7 +9,7 @@ import { Social } from 'shared/ui/Social/Social'
 import { Form } from 'features/Form'
 import { Submenu } from 'shared/ui/Submenu/Submenu'
 import { Contacts } from 'shared/ui/Contacts/Contacts'
-import { UseMenuContext } from 'app/providers/StoreProvider'
+import { UseContactsContext, UseMenuContext } from 'app/providers/StoreProvider'
 import { Signature } from 'shared/ui/Signature/Signature'
 import cls from './Footer.module.css'
 
@@ -19,6 +19,7 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ className }) => {
   const menu = UseMenuContext()
+  const { subscription } = UseContactsContext()
 
   return (
     <footer className={classNames(cls.footer, {}, [className])}>
@@ -43,7 +44,14 @@ const Footer: FC<FooterProps> = ({ className }) => {
             <Social />
           </div>
         </div>
-        <Form className={cls.form} formType="footer" />
+        {subscription && (
+          <Form
+            className={cls.form}
+            formType="footer"
+            emailPlaceholder={subscription?.['email-placeholder']}
+            submitText={subscription?.['submit-text']}
+          />
+        )}
         <div className={cls.menu}>
           {menu?.footer &&
             menu.footer.map((item, i) => <Submenu data={item} key={i} />)}
