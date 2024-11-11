@@ -11,6 +11,9 @@ interface MenuProps {
 export const Menu: FC<MenuProps> = ({ className }) => {
   const menu = UseMenuContext()
 
+  // eslint-disable-next-line no-console
+  console.log(menu)
+
   return (
     <nav className={classNames(cls.menu, {}, [className])}>
       <menu className={cls.list}>
