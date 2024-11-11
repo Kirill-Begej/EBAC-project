@@ -10,8 +10,8 @@ import { Form } from 'features/Form'
 import { Submenu } from 'shared/ui/Submenu/Submenu'
 import { Contacts } from 'shared/ui/Contacts/Contacts'
 import { UseMenuContext } from 'app/providers/StoreProvider'
+import { Signature } from 'shared/ui/Signature/Signature'
 import cls from './Footer.module.css'
-import { signatureData } from '../model/footerData'
 
 interface FooterProps {
   className?: string
@@ -50,13 +50,7 @@ const Footer: FC<FooterProps> = ({ className }) => {
         </div>
         <Contacts className={cls.contacts} />
         <Social className={cls.social} />
-        <ul className={cls.signature}>
-          {signatureData.map((item, i) => (
-            <li className={cls.item} key={i}>
-              <p className={cls.text}>{item.text}</p>
-            </li>
-          ))}
-        </ul>
+        <Signature />
       </div>
     </footer>
   )
