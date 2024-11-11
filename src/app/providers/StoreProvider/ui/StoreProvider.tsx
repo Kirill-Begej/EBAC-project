@@ -1,6 +1,10 @@
 import { FC, ReactNode, useEffect, useState } from 'react'
 import { StoreContext } from '../lib/StoreContext'
-import { getMenuRequest } from '../api/storeApi'
+import {
+  getContactsRequest,
+  getMenuRequest,
+  getSectionsRequest
+} from '../api/storeApi'
 // import { IMenu } from '../types/types'
 
 interface MenuProviderProps {
@@ -10,21 +14,20 @@ interface MenuProviderProps {
 const StoreProvider: FC<MenuProviderProps> = ({ children }) => {
   const [store, setStore] = useState<any>({
     isLoading: false,
-    menu: {}
+    menu: {},
+    contacts: {},
+    sections: {}
   })
 
   useEffect(() => {
-    setStore({ isLoading: true, menu: store.menu })
-    getMenuRequest()
-      .then(res => {
-        setTimeout(() => {
-          setStore({ isLoading: false, menu: res })
-        }, 3000)
-      })
-      .finally(() => {
-        // eslint-disable-next-line no-console
-        console.log('finally')
-      })
+    setStore({ isLoading: true, menu: store.menu, contacts: store.contacts })
+    Promise.all([
+      getMenuRequest(),
+      getContactsRequest(),
+      getSectionsRequest()
+    ]).then(([menu, contacts, sections]) => {
+      setStore({ isLoading: false, menu, contacts, sections })
+    })
   }, [])
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>

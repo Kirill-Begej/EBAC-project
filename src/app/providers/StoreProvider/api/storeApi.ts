@@ -12,3 +12,7 @@ const request = (endpoint: string, options?: RequestInit) =>
   fetch(`${API_URL}${endpoint}`, options).then(checkResponse)
 
 export const getMenuRequest = async () => request('/menu')
+
+export const getContactsRequest = async () => request('/contacts')
+
+export const getSectionsRequest = async () => request('/sections')
