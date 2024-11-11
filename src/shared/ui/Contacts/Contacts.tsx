@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { UseContactsContext } from 'app/providers/StoreProvider/lib/UseContactsContext'
+import { UseContactsContext } from 'app/providers/StoreProvider'
 import cls from './Contacts.module.css'
 
 interface IContactsData {
