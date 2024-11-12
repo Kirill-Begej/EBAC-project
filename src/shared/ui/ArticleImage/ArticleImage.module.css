@@ -1,0 +1,101 @@
+.articleimage {
+  height: 0;
+  padding-bottom: 56.165%;
+  position: relative;
+}
+
+.container {
+  inset: 0;
+  position: absolute;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.imageSticker {
+  height: 54.88%;
+  position: absolute;
+  width: 30.823%;
+}
+
+.promo {
+  flex: 1 0 39.736%;
+  padding-bottom: 46.358%;
+}
+
+.promo .image {
+  object-position: center 90%;
+}
+
+.promoTopRight {
+  height: 32.145%;
+  right: 0;
+  width: 37.5%;
+}
+
+.arch {
+  mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/100% 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .articleimage {
+    padding-bottom: 65.885%;
+  }
+
+  .promo {
+    flex: 0 1 auto;
+    width: 100%;
+    padding-bottom: 45.456%;
+  }
+
+  .promo .image {
+    object-position: center center;
+  }
+
+  .promoTopRight {
+    height: 37.5%;
+    right: 1%;
+    top: 2.5%;
+    width: 17.046%;
+  }
+
+  .arch {
+    mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/42% 100% no-repeat,
+          url('shared/assets/img/masks/mask-type-one.svg') 50% 0/42% 100% no-repeat,
+          url('shared/assets/img/masks/mask-type-one.svg') 100% 0/42% 100% no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .articleimage {
+    padding-bottom: 115.79%;
+  }
+
+  .imageSticker {
+    height: 34.095%;
+    width: 39.476%;
+  }
+
+  .promo {
+    padding-bottom: 115.79%;
+  }
+
+  .promo .image {
+    object-position: center 90%;
+  }
+
+  .promo .imageSticker {
+    height: 29.546%;
+    right: 3%;
+    top: 2.5%;
+    width: 34.212%;
+  }
+
+  .arch {
+    mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/100% 100%;
+  }
+}

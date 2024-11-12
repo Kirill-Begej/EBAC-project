@@ -1,5 +1,10 @@
 import { FC } from 'react'
+import { Promo } from 'widgets/Promo'
 
-const MainPage: FC = () => <div>MAIN PAGE</div>
+const MainPage: FC = () => (
+  <>
+    <Promo />
+  </>
+)
 
 export default MainPage

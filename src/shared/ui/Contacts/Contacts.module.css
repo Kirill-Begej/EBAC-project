@@ -49,4 +49,8 @@
     gap: 24px;
     order: 3;
   }
+
+  .link {
+    align-self: start;
+  }
 }

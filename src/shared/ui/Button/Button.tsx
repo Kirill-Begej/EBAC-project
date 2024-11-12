@@ -2,6 +2,11 @@ import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Button.module.css'
 
+enum ButtonType {
+  FOOTER = 'footer',
+  PROMO = 'full-size'
+}
+
 interface ButtonProps {
   className?: string
   buttonType: string
@@ -17,7 +22,8 @@ export const Button: FC<ButtonProps> = ({
     className={classNames(
       cls.button,
       {
-        [cls.footer]: buttonType === 'footer'
+        [cls.footer]: ButtonType.FOOTER === buttonType,
+        [cls.promo]: ButtonType.PROMO === buttonType
       },
       [className]
     )}

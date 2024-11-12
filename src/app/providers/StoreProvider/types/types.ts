@@ -62,6 +62,14 @@ interface IMainItems extends IContentItems {
   'browse-text': string
 }
 
+interface IMain {
+  ticker: {
+    color: string
+    text: string
+  }
+  items: IMainItems[]
+}
+
 interface IProposalsItems {
   author: {
     img: string
@@ -76,7 +84,7 @@ interface IProposalsItems {
   time: string
 }
 
-interface ISections {
+export interface ISections {
   content: {
     ticker: {
       color: string
@@ -84,13 +92,7 @@ interface ISections {
     }
     items: IContentItems[]
   }
-  main: {
-    ticker: {
-      color: string
-      text: string
-    }
-    items: IMainItems[]
-  }
+  main: IMain
   proposals: {
     'browse-all-text': string
     title: string
