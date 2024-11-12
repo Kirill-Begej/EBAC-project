@@ -3,23 +3,47 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { ArticleImage } from 'shared/ui/ArticleImage/ArticleImage'
 import DateImage from 'shared/assets/img/date.svg'
 import cls from './Article.module.css'
-import { IMainItems } from './types'
 import { Button } from '../Button/Button'
 
 enum ArticleType {
-  FULL_SIZE = 'full-size'
+  FULL_SIZE = 'full-size',
+  FULL_IMAGE = 'full-image'
 }
 
 enum ArticleAccent {
-  GRASS = '#bedb39'
+  GRASS = '#bedb39',
+  MARINE = '#90eecb',
+  PINK = '#ec95b1',
+  TANGERINE = '#ffad20',
+  TURQUOISE = '#acd6de'
+}
+
+interface IContentItems {
+  accent: string
+  date: string
+  duration: number
+  size: string
+  text: string
+  title: string
+  img: {
+    shape: string
+    url: string
+  }
+  stamp: {
+    position: string
+    type: string
+    word: string
+  }
+  tags: string[]
 }
 
 interface ArticleProps {
   className?: string
-  data: IMainItems
+  data: IContentItems
+  button?: string
 }
 
-export const Article: FC<ArticleProps> = ({ className, data }) => {
+export const Article: FC<ArticleProps> = ({ className, data, button }) => {
   const formatDate = (date: string) => {
     const months = [
       'de enero de',
@@ -46,7 +70,8 @@ export const Article: FC<ArticleProps> = ({ className, data }) => {
       className={classNames(
         cls.article,
         {
-          [cls.promo]: ArticleType.FULL_SIZE === data.size
+          [cls.promo]: ArticleType.FULL_SIZE === data.size,
+          [cls.full]: ArticleType.FULL_IMAGE === data.size
         },
         [className]
       )}
@@ -63,9 +88,13 @@ export const Article: FC<ArticleProps> = ({ className, data }) => {
           className={classNames(
             cls.tagsList,
             {
-              [cls.grass]: ArticleAccent.GRASS === data.accent
+              [cls.grass]: ArticleAccent.GRASS === data.accent,
+              [cls.marine]: ArticleAccent.MARINE === data.accent,
+              [cls.pink]: ArticleAccent.PINK === data.accent,
+              [cls.tangerine]: ArticleAccent.TANGERINE === data.accent,
+              [cls.turquoise]: ArticleAccent.TURQUOISE === data.accent
             },
-            [className]
+            []
           )}
         >
           {data.tags.map((item, i) => (
@@ -92,9 +121,9 @@ export const Article: FC<ArticleProps> = ({ className, data }) => {
             <span className={cls.dateText}>{data.duration} min</span>
           </li>
         </ul>
-        {data?.['browse-text'] && (
+        {button && (
           <div className={cls.button}>
-            <Button buttonType={data.size} submitText={data['browse-text']} />
+            <Button buttonType={data.size} submitText={button} />
           </div>
         )}
       </div>

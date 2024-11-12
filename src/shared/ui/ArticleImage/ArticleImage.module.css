@@ -31,14 +31,63 @@
   object-position: center 90%;
 }
 
+.full {
+  padding-bottom: 43.047%;
+}
+
+.full .imageSticker {
+  height: 34.616%;
+  right: -3.3%;
+  top: -9%;
+  width: 14.901%;
+}
+
+.topLeft {
+  left: -7%;
+  top: -14.5%;
+}
+
+.topRight {
+  right: -7%;
+  top: -15%;
+}
+
 .promoTopRight {
   height: 32.145%;
   right: 0;
   width: 37.5%;
 }
 
+.marketing {
+  height: 45.123%;
+  left: -7%;
+  top: -14%;
+  transform: rotate(-16deg);
+  width: 41.096%;
+}
+
 .arch {
   mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/100% 100%;
+}
+
+.semiSquaredRounded {
+  mask: url('shared/assets/img/masks/mask-type-two.svg') 0 0/100% 100%;
+}
+
+.semiSquaredCloud {
+  mask: url('shared/assets/img/masks/mask-type-three.svg') 0 0/100% 100%;
+}
+
+.cloud {
+  mask: url('shared/assets/img/masks/mask-type-five.svg') 0 0/100% 100% no-repeat;
+}
+
+.cornerSquaredCloud {
+  mask: url('shared/assets/img/masks/mask-type-six.svg') 0 0/100% 100% no-repeat;
+}
+
+.cornerSquaredRounded {
+  mask: url('shared/assets/img/masks/mask-type-seven.svg') 0 0/100% 100% no-repeat;
 }
 
 @media screen and (max-width: 1279px) {
@@ -56,6 +105,27 @@
     object-position: center center;
   }
 
+  .full {
+    padding-bottom: 45.456%;
+  }
+
+  .full .imageSticker {
+    height: 37.5%;
+    right: 1%;
+    top: 2%;
+    width: 17.046%;
+  }
+
+  .topLeft {
+    left: 67%;
+    top: -1%;
+  }
+  
+  .topRight {
+    left: 67%;
+    top: -1%;
+  }
+
   .promoTopRight {
     height: 37.5%;
     right: 1%;
@@ -63,16 +133,42 @@
     width: 17.046%;
   }
 
+  .marketing {
+    left: 56%;
+    top: 1%;
+    transform: rotate(0);
+  }
+
   .arch {
     mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/42% 100% no-repeat,
           url('shared/assets/img/masks/mask-type-one.svg') 50% 0/42% 100% no-repeat,
           url('shared/assets/img/masks/mask-type-one.svg') 100% 0/42% 100% no-repeat;
+  }
+
+  .cloud {
+    mask: url('shared/assets/img/masks/mask-type-eight.svg') 0% 0%/100% 100% no-repeat;
+  }
+
+  .cornerSquaredCloud {
+    mask: url('shared/assets/img/masks/mask-type-nine.svg') 0 0/100% 100% no-repeat;
+  }
+
+  .cornerSquaredRounded {
+    mask: url('shared/assets/img/masks/mask-type-ten.svg') 0 0/100% 100% no-repeat;
   }
 }
 
 @media screen and (max-width: 767px) {
   .articleimage {
     padding-bottom: 115.79%;
+  }
+
+  .right22 {
+    object-position: 22% center;
+  }
+
+  .right6 {
+    object-position: 6% center;
   }
 
   .imageSticker {
@@ -95,7 +191,59 @@
     width: 34.212%;
   }
 
+  .full {
+    padding-bottom: 115.134%;
+  }
+
+  .full .imageSticker {
+    height: 34.29%;
+    right: 58%;
+    width: 39.476%;
+  }
+
+  .topLeft {
+    left: 3%;
+    top: 2%;
+  }
+  
+  .topRight {
+    left: 58%;
+    top: 2%;
+  }
+
+  .marketing {
+    height: 29%;
+    left: 44.5%;
+    top: 2%;
+    width: 53%;
+  }
+
+  .software {
+    left: 3%;
+    top: 2%;
+  }
+
   .arch {
     mask: url('shared/assets/img/masks/mask-type-one.svg') 0 0/100% 100%;
+  }
+
+  .semiSquaredRounded {
+    mask: url('shared/assets/img/masks/mask-type-eleven.svg') 0 0/100% 100%;
+  }
+
+  .semiSquaredCloud {
+    mask: url('shared/assets/img/masks/mask-type-twelve.svg') 0 0/100% 100%;
+  }
+
+  .cloud {
+    mask: url('shared/assets/img/masks/mask-type-thirteen.svg') 0% 0%/100% 100% no-repeat;
+  }
+
+  .cornerSquaredCloud {
+    mask: url('shared/assets/img/masks/mask-type-fourteen.svg') 0 0/100% 100% no-repeat;
+  }
+
+  .cornerSquaredRounded {
+    mask: url('shared/assets/img/masks/mask-type-fifteen.svg') 0 0/100% 100% no-repeat;
   }
 }

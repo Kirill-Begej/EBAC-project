@@ -15,7 +15,7 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
     test: /\.(png|jpg|jpeg|webp|svg)$/i,
     type: 'asset/resource',
     generator: {
-      filename: 'asset/images/[name][ext]'
+      filename: 'asset/images/[name]--[hash][ext][query]'
     }
   }
 

@@ -9,12 +9,14 @@ interface PromoProps {
 }
 
 export const Promo: FC<PromoProps> = ({ className }) => {
-  const sections = UseSectionsContext()
+  const { main } = UseSectionsContext()
 
   return (
     <section className={classNames(cls.promo, {}, [className])}>
       <div className={cls.container}>
-        {sections.main && <Article data={sections.main.items[0]} />}
+        {main && (
+          <Article data={main.items[0]} button={main.items[0]['browse-text']} />
+        )}
       </div>
     </section>
   )
