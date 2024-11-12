@@ -1,1 +1,1 @@
-export { Promo } from 'widgets/Promo/ui/Promo'
+export { Promo } from './ui/Promo'
