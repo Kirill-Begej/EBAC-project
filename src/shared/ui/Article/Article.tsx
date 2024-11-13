@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { ArticleImage } from 'shared/ui/ArticleImage/ArticleImage'
 import DateImage from 'shared/assets/img/date.svg'
@@ -44,6 +44,8 @@ interface ArticleProps {
 }
 
 export const Article: FC<ArticleProps> = ({ className, data, button }) => {
+  const [rotateSticker, setRotateSticker] = useState(false)
+
   const formatDate = (date: string) => {
     const months = [
       'de enero de',
@@ -75,6 +77,12 @@ export const Article: FC<ArticleProps> = ({ className, data, button }) => {
         },
         [className]
       )}
+      onMouseEnter={() => {
+        setRotateSticker(true)
+      }}
+      onMouseLeave={() => {
+        setRotateSticker(false)
+      }}
     >
       <ArticleImage
         url={data.img.url}
@@ -82,6 +90,7 @@ export const Article: FC<ArticleProps> = ({ className, data, button }) => {
         maskType={data.img.shape}
         stikerType={data.stamp.word}
         stikerPosition={data.stamp.position}
+        rotateSticker={rotateSticker}
       />
       <div className={cls.textWrapper}>
         <ul

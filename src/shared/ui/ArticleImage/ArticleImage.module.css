@@ -1,3 +1,111 @@
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(-380deg);
+  }
+
+  80% {
+    transform: rotate(-340deg);
+  }
+
+  90% {
+    transform: rotate(-365deg);
+  }
+
+  95% {
+    transform: rotate(-355deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateLeftBack {
+  from {
+    transform: rotate(-180deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(380deg);
+  }
+
+  80% {
+    transform: rotate(340deg);
+  }
+
+  90% {
+    transform: rotate(365deg);
+  }
+
+  95% {
+    transform: rotate(355deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateRightBack {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateLeftRectangle {
+  0% {
+    transform: rotate(-16deg);
+  }
+
+  70% {
+    transform: rotate(-396deg);
+  }
+
+  80% {
+    transform: rotate(-356deg);
+  }
+
+  90% {
+    transform: rotate(-381deg);
+  }
+
+  95% {
+    transform: rotate(-371deg);
+  }
+
+  100% {
+    transform: rotate(-376deg);
+  }
+}
+
+@keyframes rotateBackRectangle {
+  from {
+    transform: rotate(-196deg);
+  }
+
+  to {
+    transform: rotate(-16deg);
+  }
+}
+
 .articleimage {
   height: 0;
   padding-bottom: 56.165%;
@@ -64,6 +172,30 @@
   top: -14%;
   transform: rotate(-16deg);
   width: 41.096%;
+}
+
+.rotateLeft {
+  animation: rotateLeft 3s ease-out;
+}
+
+.rotateLeftBack {
+  animation: rotateLeftBack .2s ease-in;
+}
+
+.rotateRight {
+  animation: rotateRight 3s ease-out;
+}
+
+.rotateRightBack {
+  animation: rotateRightBack .2s ease-in;
+}
+
+.rotateLeftRectangle {
+  animation: rotateLeftRectangle 3s ease-out;
+}
+
+.rotateLeftBackRectangle {
+  animation: rotateBackRectangle .2s ease-in;
 }
 
 .arch {

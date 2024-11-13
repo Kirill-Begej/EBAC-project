@@ -34,6 +34,7 @@ interface ArticleImageProps {
   maskType: string
   stikerType: string
   stikerPosition: string
+  rotateSticker?: boolean
 }
 
 export const ArticleImage: FC<ArticleImageProps> = ({
@@ -42,7 +43,8 @@ export const ArticleImage: FC<ArticleImageProps> = ({
   imageType,
   maskType,
   stikerType,
-  stikerPosition
+  stikerPosition,
+  rotateSticker
 }) => (
   <div
     className={classNames(
@@ -90,7 +92,33 @@ export const ArticleImage: FC<ArticleImageProps> = ({
             ArticleType.FULL_SIZE === imageType &&
             StickerPosition.TOP_RIGHT === stikerPosition,
           [cls.marketing]: stikerType.toLowerCase() === 'marketing',
-          [cls.software]: stikerType.toLowerCase() === 'software'
+          [cls.software]: stikerType.toLowerCase() === 'software',
+          [cls.rotateLeft]:
+            rotateSticker &&
+            StickerPosition.TOP_LEFT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType,
+          [cls.rotateLeftBack]:
+            !rotateSticker &&
+            StickerPosition.TOP_LEFT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType,
+          [cls.rotateRight]:
+            rotateSticker &&
+            StickerPosition.TOP_RIGHT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType,
+          [cls.rotateRightBack]:
+            !rotateSticker &&
+            StickerPosition.TOP_RIGHT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType,
+          [cls.rotateLeftRectangle]:
+            rotateSticker &&
+            stikerType.toLowerCase() === 'marketing' &&
+            StickerPosition.TOP_LEFT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType,
+          [cls.rotateLeftBackRectangle]:
+            !rotateSticker &&
+            stikerType.toLowerCase() === 'marketing' &&
+            StickerPosition.TOP_LEFT === stikerPosition &&
+            ArticleType.FULL_SIZE !== imageType
         },
         []
       )}
