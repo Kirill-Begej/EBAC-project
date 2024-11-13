@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { ArticleImage } from 'shared/ui/ArticleImage/ArticleImage'
 import DateImage from 'shared/assets/img/date.svg'
 import cls from './Article.module.css'
-import { Button } from '../Button/Button'
+import { Button, TagButtonType } from '../Button/Button'
 
 enum ArticleType {
   FULL_SIZE = 'full-size',
@@ -132,7 +132,11 @@ export const Article: FC<ArticleProps> = ({ className, data, button }) => {
         </ul>
         {button && (
           <div className={cls.button}>
-            <Button buttonType={data.size} submitText={button} />
+            <Button
+              buttonType={data.size}
+              submitText={button}
+              tag={TagButtonType.LINK}
+            />
           </div>
         )}
       </div>

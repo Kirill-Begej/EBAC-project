@@ -18,6 +18,26 @@
   }
 }
 
+@keyframes scrollFromLeftToRightWebinarsDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 9px));
+  }
+}
+
+@keyframes scrollFromLeftToRightWebinarsTablet {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 122px));
+  }
+}
+
 .title {
   color: var(--main-color-black);
   font: var(--primary-font-size-xxl) var(--primary-font);
@@ -65,7 +85,7 @@
   transform: rotate(-4deg);
 }
 
-.articles .container {
+.containerArticles {
   background-color: var(--tag-color-turquoise);
 }
 
@@ -73,6 +93,19 @@
   animation: scrollFromRightToLeftArticlesDesktop 20s linear infinite;
 }
 
+.webinars {
+  position: absolute;
+  top: -85px;
+  transform: rotate(-3deg);
+}
+
+.containerWebinars {
+  background-color: var(--tag-color-tangerine);
+}
+
+.webinars .list {
+  animation: scrollFromLeftToRightWebinarsDesktop 20s linear infinite;
+}
 
 @media screen and (max-width: 1279px) {
   .title {
@@ -95,10 +128,18 @@
   .articles .list {
     animation: scrollFromRightToLeftArticlesTablet 15s linear infinite;
   }
+
+  .webinars .list {
+    animation: scrollFromLeftToRightWebinarsTablet 15s linear infinite;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .articles {
+    transform: rotate(-4deg);
+  }
+
+  .webinars {
     transform: rotate(-4deg);
   }
 }

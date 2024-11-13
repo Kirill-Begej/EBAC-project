@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { Title, TitleType } from 'shared/ui/Title/Title'
+import { TagTitleType, Title, TitleType } from 'shared/ui/Title/Title'
 import { UseSectionsContext } from 'app/providers/StoreProvider'
 import { Article } from 'shared/ui/Article/Article'
 import cls from './Articles.module.css'
@@ -19,6 +19,7 @@ export const Articles: FC<ArticlesProps> = ({ className }) => {
           type={TitleType.ARTICLES}
           text={main.ticker.text}
           color={main.ticker.color}
+          tag={TagTitleType.TITLE}
         />
       )}
       <div className={cls.container}>

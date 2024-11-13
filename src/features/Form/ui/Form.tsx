@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Input } from 'shared/ui/Input/Input'
-import { Button } from 'shared/ui/Button/Button'
+import { Button, TagButtonType } from 'shared/ui/Button/Button'
 
 interface FormProps {
   className?: string
@@ -22,6 +22,10 @@ export const Form: FC<FormProps> = ({
     noValidate
   >
     <Input inputType={formType} emailPlaceholder={emailPlaceholder} />
-    <Button buttonType={formType} submitText={submitText} />
+    <Button
+      buttonType={formType}
+      submitText={submitText}
+      tag={TagButtonType.BUTTON}
+    />
   </form>
 )
