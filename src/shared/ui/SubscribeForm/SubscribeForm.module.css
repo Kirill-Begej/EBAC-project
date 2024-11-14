@@ -1,0 +1,94 @@
+.subscribeform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 576px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  transition: opacity .3s ease-out;
+  z-index: 5;
+}
+
+.checkboxRow {
+  color: var(--main-color-white);
+  font: var(--secondary-font-size-m) var(--secondary-font-regular);
+  line-height: var(--font-line-heigth-m);
+  opacity: 1;
+  transition: opacity .3s ease-out;
+  z-index: 5;
+}
+
+.element {
+  opacity: 0;
+  position: absolute;
+  z-index: -5;
+}
+
+.label {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.label::before {
+  background: var(--main-color-white);
+  border-radius: 4px;
+  content: '';
+  display: block;
+  flex: 1 0 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.label::after {
+  background: url('shared/assets/img/checkbox.svg');
+  content: '';
+  display: block;
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.element:checked+.label::after {
+  opacity: 1;
+}
+
+.labelLink {
+  color: var(--main-color-white);
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribeform {
+    width: auto;
+  }
+
+  .inputRow {
+    flex-direction: column;
+    gap: 17px;
+    width: 36.46vw;
+  }
+
+  .checkboxRow {
+    font-size: var(--secondary-font-size-s);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribeform {
+    gap: 9px;
+  }
+
+  .inputRow {
+    gap: 8px;
+    width: 100%;
+  }
+}

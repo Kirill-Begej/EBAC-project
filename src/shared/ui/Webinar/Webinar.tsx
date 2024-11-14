@@ -30,7 +30,6 @@ interface WebinarProps {
 }
 
 export const Webinar: FC<WebinarProps> = ({ className, data, fullSize }) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const formatDate = (dateFrom: string, dateTo: string) => {
     const months = [
       'de enero',
@@ -94,10 +93,9 @@ export const Webinar: FC<WebinarProps> = ({ className, data, fullSize }) => {
               <svg className={cls.dateImage}>
                 <use href={`${DateImage}#calendar`}></use>
               </svg>
-              {/* <span className={cls.dateText}>
+              <span className={cls.dateText}>
                 {formatDate(data.date_from, data.date_to)}
-              </span> */}
-              <span className={cls.dateText}>01 e 02 de junho de 2022</span>
+              </span>
             </li>
             <li className={cls.watch}>
               <svg className={cls.dateImage}>

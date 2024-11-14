@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Button.module.css'
 
 enum ButtonType {
+  SUBSCRIBE = 'subscribe',
   FOOTER = 'footer',
   PROMO = 'full-size',
   WEBINARS = 'Todos os webinars'
@@ -32,6 +33,7 @@ export const Button: FC<ButtonProps> = ({
         className={classNames(
           cls.button,
           {
+            [cls.subscribe]: ButtonType.SUBSCRIBE === buttonType,
             [cls.footer]: ButtonType.FOOTER === buttonType,
             [cls.promo]: ButtonType.PROMO === buttonType,
             [cls.webinars]: ButtonType.WEBINARS === buttonType

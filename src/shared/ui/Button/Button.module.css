@@ -54,6 +54,24 @@
   box-shadow: 0 0 0 2px var(--main-color-white) inset;
 }
 
+.subscribe {
+  align-self: start;
+  background: var(--text-color-coral-dark);
+  line-height: var(--font-line-heigth-l);
+  padding: 10px 113.5px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              opacity .3s ease-out;
+}
+
+.subscribe[enabled]:hover {
+  background: var(--main-color-black);
+}
+
+.subscribe[enabled]:focus {
+  box-shadow: 0 0 0 2px var(--main-color-black) inset;
+}
+
 .footer {
   background: var(--text-color-violet-dark);
   padding: 10.1px 52.13px;
@@ -70,6 +88,12 @@
   box-shadow: 0 0 0 2px var(--main-color-white) inset;
 }
 
+@media screen and (max-width: 1279px) {
+  .subscribe {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .promo {
     display: block;
@@ -80,6 +104,10 @@
 
   .webinars {
     width: 100%;
+  }
+
+  .subscribe {
+    padding: 10px 100px;
   }
 
   .footer {

@@ -3,9 +3,14 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import InputIcom from 'shared/assets/img/input-icon.svg'
 import cls from './Input.module.css'
 
+export enum InputType {
+  SUBSCRIBE = 'subscribe',
+  FOOTER = 'footer'
+}
+
 interface InputProps {
   className?: string
-  inputType: string
+  inputType: InputType
   emailPlaceholder: string
 }
 
@@ -18,7 +23,8 @@ export const Input: FC<InputProps> = ({
     className={classNames(
       cls.input,
       {
-        [cls.footer]: inputType === 'footer'
+        [cls.subscribe]: InputType.SUBSCRIBE === inputType,
+        [cls.footer]: InputType.FOOTER === inputType
       },
       [className]
     )}

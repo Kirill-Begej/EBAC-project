@@ -80,6 +80,16 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1279px) {
+  .subscribe {
+    width: 100%;
+  }
+
+  .subscribe .element {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer {
     width: 100%;

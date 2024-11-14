@@ -6,7 +6,7 @@ import FooterLogo2xJpg from 'shared/assets/img/footer/footer-logo-image@2x.jpg'
 import FooterLogo1xWebp from 'shared/assets/img/footer/footer-logo-image@1x.webp'
 import FooterLogo2xWebp from 'shared/assets/img/footer/footer-logo-image@2x.webp'
 import { Social } from 'shared/ui/Social/Social'
-import { Form } from 'features/Form'
+import { FooterForm } from 'shared/ui/FooterForm/FooterForm'
 import { Submenu } from 'shared/ui/Submenu/Submenu'
 import { Contacts } from 'shared/ui/Contacts/Contacts'
 import { UseContactsContext, UseMenuContext } from 'app/providers/StoreProvider'
@@ -45,9 +45,8 @@ const Footer: FC<FooterProps> = ({ className }) => {
           </div>
         </div>
         {subscription && (
-          <Form
+          <FooterForm
             className={cls.form}
-            formType="footer"
             emailPlaceholder={subscription?.['email-placeholder']}
             submitText={subscription?.['submit-text']}
           />

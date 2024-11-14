@@ -5,7 +5,8 @@ import cls from './Title.module.css'
 
 export enum TitleType {
   ARTICLES = 'articles',
-  WEBINARS = 'webinars'
+  WEBINARS = 'webinars',
+  SUBSCRIBE = 'subscribe'
 }
 
 export enum TagTitleType {
@@ -15,7 +16,8 @@ export enum TagTitleType {
 
 enum TitleColorType {
   TURQUOISE = '#acd6de',
-  TANGERINE = '#ffad20'
+  TANGERINE = '#ffad20',
+  CORAL = '#fe6d44'
 }
 
 interface TitleProps {
@@ -41,6 +43,9 @@ export const Title: FC<TitleProps> = ({
       case TitleType.WEBINARS:
         return 19
         break
+      case TitleType.SUBSCRIBE:
+        return 16
+        break
       default:
         return 1
         break
@@ -55,7 +60,8 @@ export const Title: FC<TitleProps> = ({
             cls.title,
             {
               [cls.articles]: TitleType.ARTICLES === type,
-              [cls.webinars]: TitleType.WEBINARS === type
+              [cls.webinars]: TitleType.WEBINARS === type,
+              [cls.subscribe]: TitleType.SUBSCRIBE === type
             },
             [className]
           )}
@@ -65,7 +71,8 @@ export const Title: FC<TitleProps> = ({
               cls.container,
               {
                 [cls.containerArticles]: TitleColorType.TURQUOISE === color,
-                [cls.containerWebinars]: TitleColorType.TANGERINE === color
+                [cls.containerWebinars]: TitleColorType.TANGERINE === color,
+                [cls.containerSubscribe]: TitleColorType.CORAL === color
               },
               []
             )}
@@ -89,7 +96,8 @@ export const Title: FC<TitleProps> = ({
             cls.title,
             {
               [cls.articles]: TitleType.ARTICLES === type,
-              [cls.webinars]: TitleType.WEBINARS === type
+              [cls.webinars]: TitleType.WEBINARS === type,
+              [cls.subscribe]: TitleType.SUBSCRIBE === type
             },
             [className]
           )}
@@ -99,7 +107,8 @@ export const Title: FC<TitleProps> = ({
               cls.container,
               {
                 [cls.containerArticles]: TitleColorType.TURQUOISE === color,
-                [cls.containerWebinars]: TitleColorType.TANGERINE === color
+                [cls.containerWebinars]: TitleColorType.TANGERINE === color,
+                [cls.containerSubscribe]: TitleColorType.CORAL === color
               },
               []
             )}

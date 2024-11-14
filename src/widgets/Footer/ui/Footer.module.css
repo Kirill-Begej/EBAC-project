@@ -38,16 +38,6 @@
   display: none;
 }
 
-.form {
-  align-items: start;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  justify-content: end;
-}
-
 .menu {
   display: flex;
   grid-column: 2 / 4;
@@ -98,14 +88,6 @@
     display: block;
   }
 
-  .form {
-    align-items: end;
-    gap: 16px;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    justify-content: start;
-  }
-
   .menu {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
@@ -144,11 +126,6 @@
   .logoRow {
     gap: 0;
     justify-content: space-between;
-  }
-
-  .form {
-    gap: 8px;
-    order: 4;
   }
 
   .menu {

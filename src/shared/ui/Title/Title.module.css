@@ -38,6 +38,26 @@
   }
 }
 
+@keyframes scrollFromRightToLeftSubscribeDesktop {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25% - 135px));
+  }
+}
+
+@keyframes scrollFromRightToLeftSubscribeTablet {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25px + 38px));
+  }
+}
+
 .title {
   color: var(--main-color-black);
   font: var(--primary-font-size-xxl) var(--primary-font);
@@ -107,6 +127,20 @@
   animation: scrollFromLeftToRightWebinarsDesktop 20s linear infinite;
 }
 
+.subscribe {
+  position: relative;
+  top: -103px;
+  transform: rotate(2deg);
+}
+
+.containerSubscribe {
+  background-color: var(--text-color-coral-dark);
+}
+
+.subscribe .list {
+  animation: scrollFromRightToLeftSubscribeDesktop 20s linear infinite;
+}
+
 @media screen and (max-width: 1279px) {
   .title {
     font-size: var(--primary-font-size-s);
@@ -132,6 +166,16 @@
   .webinars .list {
     animation: scrollFromLeftToRightWebinarsTablet 15s linear infinite;
   }
+
+  .subscribe {
+    position: relative;
+    top: -108px;
+    transform: rotate(3deg);
+  }
+
+  .subscribe .list {
+    animation: scrollFromRightToLeftSubscribeTablet 15s linear infinite;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -141,5 +185,10 @@
 
   .webinars {
     transform: rotate(-4deg);
+  }
+
+  .subscribe {
+    top: -117px;
+    transform: rotate(4deg);
   }
 }
