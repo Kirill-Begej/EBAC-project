@@ -58,6 +58,26 @@
   }
 }
 
+@keyframes scrollFromLeftToRightDiscountDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% - 778px));
+  }
+}
+
+@keyframes scrollFromLeftToRightDiscountTablet {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 302px));
+  }
+}
+
 .title {
   color: var(--main-color-black);
   font: var(--primary-font-size-xxl) var(--primary-font);
@@ -141,6 +161,22 @@
   animation: scrollFromRightToLeftSubscribeDesktop 20s linear infinite;
 }
 
+.discount {
+  color: var(--main-color-gray-5);
+}
+
+.containerDiscount {
+  background-color: var(--text-color-pink-dark);
+}
+
+.discount .list {
+  animation: scrollFromLeftToRightDiscountDesktop 20s linear infinite;
+}
+
+.discount .image {
+  fill: var(--main-color-gray-5);
+}
+
 @media screen and (max-width: 1279px) {
   .title {
     font-size: var(--primary-font-size-s);
@@ -175,6 +211,15 @@
 
   .subscribe .list {
     animation: scrollFromRightToLeftSubscribeTablet 15s linear infinite;
+  }
+
+  .discount {
+    font-size: var(--primary-font-size-l);
+  }
+
+  .discount .list {
+    transform: translateX(-25%);
+    animation: scrollFromLeftToRightDiscountTablet 15s linear infinite;
   }
 }
 

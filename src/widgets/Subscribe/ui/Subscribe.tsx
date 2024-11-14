@@ -22,7 +22,7 @@ export const Subscribe: FC<SubscribeProps> = ({ className }) => {
           type={TitleType.SUBSCRIBE}
           text={proposals.ticker.text}
           color={proposals.ticker.color}
-          tag={TagTitleType.SUBTITLE}
+          tag={TagTitleType.SUBTITLE_H2}
         />
       )}
       <div className={cls.wrapper}>
@@ -61,6 +61,14 @@ export const Subscribe: FC<SubscribeProps> = ({ className }) => {
           </div>
         </div>
       </div>
+      {subscription && (
+        <Title
+          type={TitleType.DISCOUNT}
+          text={subscription.ticker.text}
+          color={subscription.ticker.color}
+          tag={TagTitleType.SUBTITLE_H3}
+        />
+      )}
     </section>
   )
 }

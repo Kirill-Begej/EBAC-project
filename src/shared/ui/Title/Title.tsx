@@ -6,18 +6,21 @@ import cls from './Title.module.css'
 export enum TitleType {
   ARTICLES = 'articles',
   WEBINARS = 'webinars',
-  SUBSCRIBE = 'subscribe'
+  SUBSCRIBE = 'subscribe',
+  DISCOUNT = 'discount'
 }
 
 export enum TagTitleType {
   TITLE = 'title',
-  SUBTITLE = 'subtitle'
+  SUBTITLE_H2 = 'subtitle-h2',
+  SUBTITLE_H3 = 'subtitle-h3'
 }
 
 enum TitleColorType {
   TURQUOISE = '#acd6de',
   TANGERINE = '#ffad20',
-  CORAL = '#fe6d44'
+  CORAL = '#fe6d44',
+  PINK = '#da3369'
 }
 
 interface TitleProps {
@@ -46,6 +49,9 @@ export const Title: FC<TitleProps> = ({
       case TitleType.SUBSCRIBE:
         return 16
         break
+      case TitleType.DISCOUNT:
+        return 8
+        break
       default:
         return 1
         break
@@ -61,7 +67,8 @@ export const Title: FC<TitleProps> = ({
             {
               [cls.articles]: TitleType.ARTICLES === type,
               [cls.webinars]: TitleType.WEBINARS === type,
-              [cls.subscribe]: TitleType.SUBSCRIBE === type
+              [cls.subscribe]: TitleType.SUBSCRIBE === type,
+              [cls.discount]: TitleType.DISCOUNT === type
             },
             [className]
           )}
@@ -72,7 +79,8 @@ export const Title: FC<TitleProps> = ({
               {
                 [cls.containerArticles]: TitleColorType.TURQUOISE === color,
                 [cls.containerWebinars]: TitleColorType.TANGERINE === color,
-                [cls.containerSubscribe]: TitleColorType.CORAL === color
+                [cls.containerSubscribe]: TitleColorType.CORAL === color,
+                [cls.containerDiscount]: TitleColorType.PINK === color
               },
               []
             )}
@@ -90,14 +98,15 @@ export const Title: FC<TitleProps> = ({
           </div>
         </h1>
       )}
-      {tag === TagTitleType.SUBTITLE && (
+      {tag === TagTitleType.SUBTITLE_H2 && (
         <h2
           className={classNames(
             cls.title,
             {
               [cls.articles]: TitleType.ARTICLES === type,
               [cls.webinars]: TitleType.WEBINARS === type,
-              [cls.subscribe]: TitleType.SUBSCRIBE === type
+              [cls.subscribe]: TitleType.SUBSCRIBE === type,
+              [cls.discount]: TitleType.DISCOUNT === type
             },
             [className]
           )}
@@ -108,7 +117,8 @@ export const Title: FC<TitleProps> = ({
               {
                 [cls.containerArticles]: TitleColorType.TURQUOISE === color,
                 [cls.containerWebinars]: TitleColorType.TANGERINE === color,
-                [cls.containerSubscribe]: TitleColorType.CORAL === color
+                [cls.containerSubscribe]: TitleColorType.CORAL === color,
+                [cls.containerDiscount]: TitleColorType.PINK === color
               },
               []
             )}
@@ -125,6 +135,44 @@ export const Title: FC<TitleProps> = ({
             </ul>
           </div>
         </h2>
+      )}
+      {tag === TagTitleType.SUBTITLE_H3 && (
+        <h3
+          className={classNames(
+            cls.title,
+            {
+              [cls.articles]: TitleType.ARTICLES === type,
+              [cls.webinars]: TitleType.WEBINARS === type,
+              [cls.subscribe]: TitleType.SUBSCRIBE === type,
+              [cls.discount]: TitleType.DISCOUNT === type
+            },
+            [className]
+          )}
+        >
+          <div
+            className={classNames(
+              cls.container,
+              {
+                [cls.containerArticles]: TitleColorType.TURQUOISE === color,
+                [cls.containerWebinars]: TitleColorType.TANGERINE === color,
+                [cls.containerSubscribe]: TitleColorType.CORAL === color,
+                [cls.containerDiscount]: TitleColorType.PINK === color
+              },
+              []
+            )}
+          >
+            <ul className={cls.list}>
+              {[...Array(titleLength(type))].map((_, i) => (
+                <li className={cls.item} key={i}>
+                  <svg className={cls.image}>
+                    <use href={`${TitleImage}#image`}></use>
+                  </svg>
+                  <span className={cls.text}>{text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </h3>
       )}
     </>
   )

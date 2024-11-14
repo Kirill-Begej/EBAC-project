@@ -20,7 +20,7 @@ export const Webinars: FC<WebinarsProps> = ({ className }) => {
           type={TitleType.WEBINARS}
           text={content.ticker.text}
           color={content.ticker.color}
-          tag={TagTitleType.SUBTITLE}
+          tag={TagTitleType.SUBTITLE_H2}
         />
       )}
       <div className={cls.container}>
