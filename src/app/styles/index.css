@@ -10,6 +10,19 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--main-color-black);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--main-color-gray-35);
+  border-radius: 5px;
+}
+
 .app {
   display: flex;
   flex-direction: column;
