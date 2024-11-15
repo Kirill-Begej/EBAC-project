@@ -6,9 +6,6 @@ import { MainPage } from 'pages/MainPage'
 import { UseLoadingContext } from './providers/StoreProvider'
 
 const App = () => {
-  // eslint-disable-next-line no-console
-  console.log('app')
-
   const isLoading = UseLoadingContext()
 
   return (

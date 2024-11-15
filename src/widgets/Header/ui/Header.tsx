@@ -1,4 +1,5 @@
-import { FC, useEffect, useRef } from 'react'
+import { FC } from 'react'
+import { useStickyHeader } from 'shared/lib/hooks/useStickyHeader'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Logo } from 'shared/ui/Logo/Logo'
 import { Menu } from 'widgets/Menu'
@@ -11,16 +12,7 @@ interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ className }) => {
-  const headerRef = useRef(null)
-
-  // const handleScroll = (element: any) => {
-  //   const headerHeight = element.offsetHeight
-  // }
-
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(headerRef.current)
-  }, [])
+  const { headerRef } = useStickyHeader()
 
   return (
     <header className={classNames(cls.header, {}, [className])} ref={headerRef}>
