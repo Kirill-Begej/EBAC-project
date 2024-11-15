@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { ChangeEvent, FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import InputIcom from 'shared/assets/img/input-icon.svg'
 import cls from './Input.module.css'
@@ -12,12 +12,16 @@ interface InputProps {
   className?: string
   inputType: InputType
   emailPlaceholder: string
+  value: string
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 export const Input: FC<InputProps> = ({
   className,
   inputType,
-  emailPlaceholder
+  emailPlaceholder,
+  value,
+  onChange
 }) => (
   <label
     className={classNames(
@@ -31,9 +35,12 @@ export const Input: FC<InputProps> = ({
   >
     <input
       className={cls.element}
+      name="email"
       type="email"
       placeholder={emailPlaceholder}
       aria-label="Campo de entrada de e-mail para boletim informativo"
+      value={value || ''}
+      onChange={e => onChange(e)}
     />
     <svg className={cls.imageError}>
       <use href={`${InputIcom}#error`}></use>

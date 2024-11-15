@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Input, InputType } from 'shared/ui/Input/Input'
 import { Button, TagButtonType } from 'shared/ui/Button/Button'
+import { useForm } from 'shared/lib/hooks/useForm'
 import cls from './SubscribeForm.module.css'
 
 interface SubscribeFormProps {
@@ -17,6 +18,11 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
   submitText,
   agreementText
 }) => {
+  const { values, handleChange } = useForm({})
+
+  // eslint-disable-next-line no-console
+  console.log(values)
+
   const formatCheckboxText = (text: string): any => {
     const termsOfUse = 'términos y condiciones'
     const privacyPolicy = 'aviso de privacidad'
@@ -55,6 +61,8 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
         <Input
           inputType={InputType.SUBSCRIBE}
           emailPlaceholder={emailPlaceholder}
+          value={values.email}
+          onChange={handleChange}
         />
         <Button
           buttonType={'subscribe'}
