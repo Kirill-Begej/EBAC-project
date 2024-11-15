@@ -64,11 +64,16 @@
               opacity .3s ease-out;
 }
 
-.subscribe[enabled]:hover {
+.subscribe:disabled {
+  cursor: default;
+  opacity: .6;
+}
+
+.subscribe:hover:enabled {
   background: var(--main-color-black);
 }
 
-.subscribe[enabled]:focus {
+.subscribe:focus:enabled {
   box-shadow: 0 0 0 2px var(--main-color-black) inset;
 }
 
@@ -80,11 +85,16 @@
               opacity .3s ease-out;
 }
 
-.footer[enabled]:hover {
+.footer:disabled {
+  cursor: default;
+  opacity: .6;
+}
+
+.footer:hover:enabled {
   background: var(--text-color-pink-dark);
 }
 
-.footer[enabled]:focus {
+.footer:focus:enabled {
   box-shadow: 0 0 0 2px var(--main-color-white) inset;
 }
 

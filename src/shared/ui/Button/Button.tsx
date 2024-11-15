@@ -19,13 +19,15 @@ interface ButtonProps {
   buttonType: string
   submitText: string
   tag: TagButtonType
+  buttonDisabled?: boolean
 }
 
 export const Button: FC<ButtonProps> = ({
   className,
   buttonType,
   submitText,
-  tag
+  tag,
+  buttonDisabled
 }) => (
   <>
     {tag === TagButtonType.BUTTON && (
@@ -41,6 +43,7 @@ export const Button: FC<ButtonProps> = ({
           [className]
         )}
         type="submit"
+        disabled={buttonDisabled}
       >
         {submitText}
       </button>
@@ -50,6 +53,7 @@ export const Button: FC<ButtonProps> = ({
         className={classNames(
           cls.button,
           {
+            [cls.subscribe]: ButtonType.SUBSCRIBE === buttonType,
             [cls.footer]: ButtonType.FOOTER === buttonType,
             [cls.promo]: ButtonType.PROMO === buttonType,
             [cls.webinars]: ButtonType.WEBINARS === buttonType

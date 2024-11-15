@@ -13,7 +13,12 @@ interface InputProps {
   inputType: InputType
   emailPlaceholder: string
   value: string
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void
+  handleChangeForValidation: (e: ChangeEvent<HTMLInputElement>) => void
+  inputError: boolean
+  inputSuccess: boolean
+  handleFocus: (e: ChangeEvent<HTMLInputElement>) => void
+  handleBlur: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 export const Input: FC<InputProps> = ({
@@ -21,7 +26,12 @@ export const Input: FC<InputProps> = ({
   inputType,
   emailPlaceholder,
   value,
-  onChange
+  handleChange,
+  handleChangeForValidation,
+  inputError,
+  inputSuccess,
+  handleFocus,
+  handleBlur
 }) => (
   <label
     className={classNames(
@@ -34,22 +44,40 @@ export const Input: FC<InputProps> = ({
     )}
   >
     <input
-      className={cls.element}
+      className={classNames(
+        cls.element,
+        {
+          [cls.elementError]: inputError,
+          [cls.elementSuccess]: inputSuccess
+        },
+        []
+      )}
       name="email"
       type="email"
       placeholder={emailPlaceholder}
       aria-label="Campo de entrada de e-mail para boletim informativo"
       value={value || ''}
-      onChange={e => onChange(e)}
+      onChange={e => {
+        handleChange(e)
+        handleChangeForValidation(e)
+      }}
+      onFocus={e => handleFocus(e)}
+      onBlur={handleBlur}
     />
-    <svg className={cls.imageError}>
-      <use href={`${InputIcom}#error`}></use>
-    </svg>
-    <svg className={cls.imageSuccess}>
-      <use href={`${InputIcom}#success`}></use>
-    </svg>
-    <span className={cls.errorText}>
-      Formato de email inválido, verifique a ortografia
-    </span>
+    {inputError && (
+      <>
+        <svg className={cls.imageError}>
+          <use href={`${InputIcom}#error`}></use>
+        </svg>
+        <span className={cls.errorText}>
+          Formato de email inválido, verifique a ortografia
+        </span>
+      </>
+    )}
+    {inputSuccess && (
+      <svg className={cls.imageSuccess}>
+        <use href={`${InputIcom}#success`}></use>
+      </svg>
+    )}
   </label>
 )

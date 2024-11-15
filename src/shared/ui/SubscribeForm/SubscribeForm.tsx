@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { Input, InputType } from 'shared/ui/Input/Input'
 import { Button, TagButtonType } from 'shared/ui/Button/Button'
 import { useForm } from 'shared/lib/hooks/useForm'
+import { useValidationForm } from 'shared/lib/hooks/useValidationForm'
 import cls from './SubscribeForm.module.css'
 
 interface SubscribeFormProps {
@@ -19,9 +20,15 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
   agreementText
 }) => {
   const { values, handleChange } = useForm({})
-
-  // eslint-disable-next-line no-console
-  console.log(values)
+  const {
+    inputError,
+    inputSuccess,
+    buttonDisabled,
+    handleChangeForValidation,
+    handleFocus,
+    handleBlur,
+    handleCheckboxChange
+  } = useValidationForm()
 
   const formatCheckboxText = (text: string): any => {
     const termsOfUse = 'términos y condiciones'
@@ -62,16 +69,27 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
           inputType={InputType.SUBSCRIBE}
           emailPlaceholder={emailPlaceholder}
           value={values.email}
-          onChange={handleChange}
+          handleChange={handleChange}
+          handleChangeForValidation={handleChangeForValidation}
+          inputError={inputError}
+          inputSuccess={inputSuccess}
+          handleFocus={handleFocus}
+          handleBlur={handleBlur}
         />
         <Button
           buttonType={'subscribe'}
           submitText={submitText}
           tag={TagButtonType.BUTTON}
+          buttonDisabled={buttonDisabled}
         />
       </div>
       <div className={cls.checkboxRow}>
-        <input className={cls.element} id="checkbox" type="checkbox" />
+        <input
+          className={cls.element}
+          id="checkbox"
+          type="checkbox"
+          onChange={e => handleCheckboxChange(e)}
+        />
         <label className={cls.label} htmlFor="checkbox">
           <span className={cls.labelText}>
             {formatCheckboxText(agreementText)}
