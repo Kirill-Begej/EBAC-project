@@ -7,11 +7,11 @@ import {
 } from '../api/storeApi'
 import { IStore } from '../types/types'
 
-interface MenuProviderProps {
+interface StoreProviderProps {
   children: ReactNode
 }
 
-const StoreProvider: FC<MenuProviderProps> = ({ children }) => {
+const StoreProvider: FC<StoreProviderProps> = ({ children }) => {
   const [store, setStore] = useState<IStore>({
     isLoading: false,
     menu: {},

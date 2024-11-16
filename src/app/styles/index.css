@@ -1,5 +1,7 @@
 @import 'fonts';
 @import 'variables';
+@import './themes/light';
+@import './themes/dark';
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -32,7 +34,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content {
+  background: url('shared/assets/img/content/background-section-promo-desktop.svg') center -72px / 100% no-repeat,
+              url('shared/assets/img/content/background-section-articles-desktop.svg') center 929px / 100% no-repeat,
+              var(--main-color-white);
   flex: 1 0 auto;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1279px) {
+  .content {
+    background: url('shared/assets/img/content/background-section-promo-tablet.svg') center -132px / 100% no-repeat,
+                url('shared/assets/img/content/background-section-articles-tablet.svg') center 645px / 100% no-repeat,
+                var(--main-color-white);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    background: url('shared/assets/img/content/background-section-promo-mobile.svg') center -125px / 100% no-repeat,
+                url('shared/assets/img/content/background-section-articles-mobile-1.svg') center 1205px / 100% no-repeat,
+                url('shared/assets/img/content/background-section-articles-mobile-2.svg') center 3048px / 100% no-repeat,
+                url('shared/assets/img/content/background-section-articles-mobile-2.svg') center 4695px / 100% no-repeat,
+                var(--main-color-white);
+  }
 }
 

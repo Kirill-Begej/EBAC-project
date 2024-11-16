@@ -27,15 +27,12 @@
   --font-line-heigth-l: 1.6;
 
   /* Основные цвета используемые в приложении */
-  --main-color-black: #1B1F21;
   --main-color-gray-80: #434343;
   --main-color-gray-70: #757778;
   --main-color-gray-35: #AEAEAE;
   --main-color-gray-20: #D9D9D8;
   --main-color-gray-15: #E8E8E8;
-  --main-color-gray-5: #F2F2F2;
   --main-color-gray-5-tr-20: #F2F2F233;
-  --main-color-white: #FCFAF9;
   --main-color-white-tr-60: #fcfaf9e6;
   --main-color-pale: #FFFFFE;
 
