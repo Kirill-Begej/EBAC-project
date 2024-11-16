@@ -4,6 +4,8 @@ import { Input, InputType } from 'shared/ui/Input/Input'
 import { Button, TagButtonType } from 'shared/ui/Button/Button'
 import { useForm } from 'shared/lib/hooks/useForm'
 import { useValidationForm } from 'shared/lib/hooks/useValidationForm'
+import { useSendSubscribeForm } from 'shared/lib/hooks/useSendSubscribeForm'
+import SubscribeStickerSuccessImage from 'shared/assets/img/subscribe-sticker-success.svg'
 import cls from './SubscribeForm.module.css'
 
 interface SubscribeFormProps {
@@ -29,6 +31,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
     handleBlur,
     handleCheckboxChange
   } = useValidationForm()
+  const { sendForm, sendFormHandler } = useSendSubscribeForm()
 
   const formatCheckboxText = (text: string): any => {
     const termsOfUse = 'términos y condiciones'
@@ -63,39 +66,58 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
   }
 
   return (
-    <form className={classNames(cls.subscribeform, {}, [className])}>
-      <div className={cls.inputRow}>
-        <Input
-          inputType={InputType.SUBSCRIBE}
-          emailPlaceholder={emailPlaceholder}
-          value={values.email}
-          handleChange={handleChange}
-          handleChangeForValidation={handleChangeForValidation}
-          inputError={inputError}
-          inputSuccess={inputSuccess}
-          handleFocus={handleFocus}
-          handleBlur={handleBlur}
-        />
-        <Button
-          buttonType={'subscribe'}
-          submitText={submitText}
-          tag={TagButtonType.BUTTON}
-          buttonDisabled={buttonDisabled}
-        />
-      </div>
-      <div className={cls.checkboxRow}>
-        <input
-          className={cls.element}
-          id="checkbox"
-          type="checkbox"
-          onChange={e => handleCheckboxChange(e)}
-        />
-        <label className={cls.label} htmlFor="checkbox">
-          <span className={cls.labelText}>
-            {formatCheckboxText(agreementText)}
+    <form
+      className={classNames(cls.subscribeform, {}, [className])}
+      onSubmit={sendFormHandler}
+    >
+      {!sendForm && (
+        <>
+          <div className={cls.inputRow}>
+            <Input
+              inputType={InputType.SUBSCRIBE}
+              emailPlaceholder={emailPlaceholder}
+              value={values.email}
+              handleChange={handleChange}
+              handleChangeForValidation={handleChangeForValidation}
+              inputError={inputError}
+              inputSuccess={inputSuccess}
+              handleFocus={handleFocus}
+              handleBlur={handleBlur}
+            />
+            <Button
+              buttonType={'subscribe'}
+              submitText={submitText}
+              tag={TagButtonType.BUTTON}
+              buttonDisabled={buttonDisabled}
+            />
+          </div>
+          <div className={cls.checkboxRow}>
+            <input
+              className={cls.element}
+              id="checkbox"
+              type="checkbox"
+              onChange={e => handleCheckboxChange(e)}
+            />
+            <label className={cls.label} htmlFor="checkbox">
+              <span className={cls.labelText}>
+                {formatCheckboxText(agreementText)}
+              </span>
+            </label>
+          </div>
+        </>
+      )}
+      {sendForm && (
+        <div className={cls.success}>
+          <span className={cls.successText}>
+            Fantástico! Espera La primera carta
           </span>
-        </label>
-      </div>
+          <img
+            className={cls.successImage}
+            src={`${SubscribeStickerSuccessImage}`}
+            alt="Assinatura bem-sucedida."
+          />
+        </div>
+      )}
     </form>
   )
 }
