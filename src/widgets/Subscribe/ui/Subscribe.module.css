@@ -5,11 +5,12 @@
   display: flex;
   flex-direction: column;
   font: var(--secondary-font-size-l) var(--secondary-font-regular);
+  gap: 28px;
   line-height: var(--font-line-heigth-l);
 }
 
 .wrapper {
-  margin-bottom: 135px;
+  margin-bottom: 107px;
   max-width: 1208px;
   width: 100%;
 }
@@ -69,8 +70,14 @@
 }
 
 @media screen and (max-width: 1279px) {
+  .subscribe {
+    gap: 29px;
+  }
+
   .wrapper {
-    margin-bottom: 92px;
+    margin-bottom: 63px;
+    padding-top: 0;
+    position: relative;
     top: -17px;
     width: 91.666%;
   }
@@ -83,6 +90,7 @@
     mask: none;
     padding: 40px 0 40px 24px;
     width: 79.12%;
+    position: static;
   }
 
   .textContainer {
@@ -116,9 +124,10 @@
   .wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 37px;
+    margin-bottom: 8px;
     top: -62px;
     width: 95%;
+    position: static;
   }
 
   .container {
@@ -129,10 +138,11 @@
     mask: url('shared/assets/img/subscribe/subscribe-mask/subscribe-mask-mobile.svg') 100% 100% / 100% 100% no-repeat;
     padding: 65px 0 480px;
     width: 304px;
+    position: relative;
   }
 
   .textContainer {
-    gap: 80px;
+    gap: 78px;
     height: auto;
     width: 84.21%;
   }

@@ -1,7 +1,7 @@
 .subscribeform {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px;
   position: relative;
   width: 576px;
 }
@@ -68,12 +68,13 @@
 
 @media screen and (max-width: 1279px) {
   .subscribeform {
+    gap: 16px;
     width: auto;
   }
 
   .inputRow {
     flex-direction: column;
-    gap: 17px;
+    gap: 8px;
     width: 36.46vw;
   }
 
@@ -88,7 +89,7 @@
   }
 
   .inputRow {
-    gap: 8px;
+    gap: 0;
     width: 100%;
   }
 }

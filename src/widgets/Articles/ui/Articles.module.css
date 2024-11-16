@@ -52,7 +52,7 @@
 @media screen and (max-width: 767px) {
   .articles {
     gap: 165px;
-    padding-bottom: 164px;
+    padding-bottom: 161px;
   }
 
   .container {

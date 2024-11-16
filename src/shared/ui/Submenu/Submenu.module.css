@@ -25,7 +25,7 @@
 }
 
 
-.title {
+.span {
   color: var(--main-color-gray-70);
   font: var(--secondary-font-size-l) var(--secondary-font-bold);
   line-height: var(--font-line-heigth-l);
@@ -38,6 +38,9 @@
 .titleCheckbox {
   cursor: pointer;
   display: none;
+  color: var(--main-color-gray-70);
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
 }
 
 .list {

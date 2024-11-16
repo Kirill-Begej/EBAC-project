@@ -36,11 +36,11 @@ export const Submenu: FC<SubmenuProps> = ({ className, data }) => (
     )}
     aria-label="Menu de navegação adicional"
   >
-    <span className={(cls.title, cls.span)}>{data.label}</span>
+    <span className={cls.span}>{data.label}</span>
     <input type="checkbox" className={cls.checkbox} id={data.label} />
     <label
       htmlFor={data.label}
-      className={(cls.title, cls.titleCheckbox)}
+      className={cls.titleCheckbox}
       aria-label="Expandir menu adicional"
     >
       {data.label}

@@ -20,14 +20,16 @@
   fill: var(--text-color-pink-dark);
 }
 
+@media screen and (max-width: 1279px) {
+  .logoFooter .image {
+    height: 64px;
+    width: 173px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .image {
     height: 48px;
     width: 130px;
-  }
-
-  .logoFooter .image {
-    height: 64px;
-    width: 173px;
   }
 }

@@ -34,8 +34,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content {
-  background: url('shared/assets/img/content/background-section-promo-desktop.svg') center -72px / 100% no-repeat,
-              url('shared/assets/img/content/background-section-articles-desktop.svg') center 929px / 100% no-repeat,
+  background: url('shared/assets/img/content/background-section-promo-desktop.svg') center -67px / 100% no-repeat,
+              url('shared/assets/img/content/background-section-articles-desktop.svg') center 933px / 100% no-repeat,
               var(--main-color-white);
   flex: 1 0 auto;
   overflow: hidden;

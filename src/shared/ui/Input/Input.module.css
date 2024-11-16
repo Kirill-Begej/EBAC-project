@@ -92,6 +92,10 @@
   width: 29px;
 }
 
+.footer {
+  gap: 0;
+}
+
 @media screen and (max-width: 1279px) {
   .subscribe {
     width: 100%;
