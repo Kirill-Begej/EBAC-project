@@ -18,13 +18,10 @@ export const useValidationForm = () => {
   }
 
   const handleChangeForValidation = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value)
+    setInputError(false)
+    setInputSuccess(false)
     if (e.target.value.match(emailRegexp)?.length) {
-      setInputError(false)
       setInputSuccess(true)
-    } else {
-      setInputError(true)
-      setInputSuccess(false)
     }
     if (e.target.value.match(emailRegexp)?.length && checkboxState) {
       setButtonDisabled(false)
@@ -33,7 +30,13 @@ export const useValidationForm = () => {
     }
   }
 
-  const handleFocus = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleFocus = () => {
+    setInputError(false)
+    setInputSuccess(false)
+  }
+
+  const handleBlur = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value)
     if (e.target.value.match(emailRegexp)?.length) {
       setInputError(false)
       setInputSuccess(true)
@@ -41,10 +44,6 @@ export const useValidationForm = () => {
       setInputError(true)
       setInputSuccess(false)
     }
-  }
-
-  const handleBlur = () => {
-    setInputError(false)
   }
 
   return {
