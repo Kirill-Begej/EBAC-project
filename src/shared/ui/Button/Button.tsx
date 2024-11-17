@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Button.module.css'
 
-enum ButtonType {
+export enum ButtonType {
   SUBSCRIBE = 'subscribe',
   FOOTER = 'footer',
   PROMO = 'full-size',
@@ -20,6 +20,7 @@ interface ButtonProps {
   submitText: string
   tag: TagButtonType
   buttonDisabled?: boolean
+  onClick?: () => void
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -27,7 +28,8 @@ export const Button: FC<ButtonProps> = ({
   buttonType,
   submitText,
   tag,
-  buttonDisabled
+  buttonDisabled,
+  onClick
 }) => (
   <>
     {tag === TagButtonType.BUTTON && (
@@ -44,6 +46,7 @@ export const Button: FC<ButtonProps> = ({
         )}
         type="submit"
         disabled={buttonDisabled}
+        onClick={onClick}
       >
         {submitText}
       </button>

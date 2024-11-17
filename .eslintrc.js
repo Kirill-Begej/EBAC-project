@@ -43,6 +43,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/no-dynamic-require': 0,
-    'global-require': 0
+    'global-require': 0,
+    'no-restricted-globals': 0
   }
 }

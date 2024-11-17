@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Input, InputType } from 'shared/ui/Input/Input'
 import { Button, TagButtonType } from 'shared/ui/Button/Button'
@@ -33,7 +33,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
   } = useValidationForm()
   const { sendForm, sendFormHandler } = useSendSubscribeForm()
 
-  const formatCheckboxText = (text: string): any => {
+  const formatCheckboxText = (text: string): ReactNode => {
     const termsOfUse = 'términos y condiciones'
     const privacyPolicy = 'aviso de privacidad'
 
