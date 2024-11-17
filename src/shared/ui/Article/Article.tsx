@@ -2,6 +2,7 @@ import { FC, useState } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { ArticleImage } from 'shared/ui/ArticleImage/ArticleImage'
 import DateImage from 'shared/assets/img/date.svg'
+import { useArticleFormatDate } from 'shared/lib/hooks/useArticleFormatDate'
 import cls from './Article.module.css'
 import { Button, TagButtonType } from '../Button/Button'
 
@@ -45,27 +46,7 @@ interface ArticleProps {
 
 export const Article: FC<ArticleProps> = ({ className, data, button }) => {
   const [rotateSticker, setRotateSticker] = useState(false)
-
-  const formatDate = (date: string) => {
-    const months = [
-      'de enero de',
-      'de febrero de',
-      'de marzo de',
-      'de abril de',
-      'de mayo de',
-      'de junio de',
-      'de julio de',
-      'de agosto de',
-      'de septiembre de',
-      'de octubre de',
-      'de noviembre de',
-      'de diciembre de'
-    ]
-
-    const spliteDate = date.split('.')
-
-    return `${Number(spliteDate[0])} ${months[Number(spliteDate[1]) - 1]} ${spliteDate[2]}`
-  }
+  const { date } = useArticleFormatDate(data.date)
 
   return (
     <div
@@ -121,7 +102,7 @@ export const Article: FC<ArticleProps> = ({ className, data, button }) => {
             <svg className={cls.dateImage}>
               <use href={`${DateImage}#calendar`}></use>
             </svg>
-            <span className={cls.dateText}>{formatDate(data.date)}</span>
+            <span className={cls.dateText}>{date}</span>
           </li>
           <li className={cls.dateItem}>
             <svg className={cls.dateImage}>
