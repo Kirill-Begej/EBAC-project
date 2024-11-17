@@ -121,13 +121,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .subscribe {
+    gap: 0;
+  }
+  
   .wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
-    top: -62px;
+    margin-bottom: 65px;
+    position: relative;
+    top: -35px;
     width: 95%;
-    position: static;
   }
 
   .container {
