@@ -1,0 +1,35 @@
+.errorpage {
+  align-items: center;
+  background: var(--main-color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.text {
+  color: var(--main-color-black);
+  font: var(--primary-font-size-xxl) var(--primary-font);
+  margin: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.button {
+  align-self: center;
+  width: 350px;
+}
+
+@media screen and (max-width: 1279px) {
+  .text {
+    font-size: var(--primary-font-size-s);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 90%;
+  }
+}

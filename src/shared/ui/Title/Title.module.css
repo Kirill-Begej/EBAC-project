@@ -1,0 +1,239 @@
+@keyframes scrollFromRightToLeftArticlesDesktop {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25% + 46px));
+  }
+}
+
+@keyframes scrollFromRightToLeftArticlesTablet {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25% - 57px));
+  }
+}
+
+@keyframes scrollFromLeftToRightWebinarsDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 9px));
+  }
+}
+
+@keyframes scrollFromLeftToRightWebinarsTablet {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 122px));
+  }
+}
+
+@keyframes scrollFromRightToLeftSubscribeDesktop {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25% - 135px));
+  }
+}
+
+@keyframes scrollFromRightToLeftSubscribeTablet {
+  from {
+    transform: translateX(25%);
+  }
+
+  to {
+    transform: translateX(calc(-25px + 38px));
+  }
+}
+
+@keyframes scrollFromLeftToRightDiscountDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% - 778px));
+  }
+}
+
+@keyframes scrollFromLeftToRightDiscountTablet {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(calc(25% + 302px));
+  }
+}
+
+.title {
+  color: var(--main-color-black);
+  font: var(--primary-font-size-xxl) var(--primary-font);
+  letter-spacing: 0.6px;
+  line-height: var(--font-line-heigth-s);
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 120px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 7800px;
+  overflow: hidden;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  gap: 48px;
+}
+
+.image {
+  fill: var(--main-color-black);
+  height: 41px;
+  width: 41px;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+.articles {
+  transform: rotate(-4deg);
+}
+
+.containerArticles {
+  background-color: var(--tag-color-turquoise);
+}
+
+.articles .list {
+  animation: scrollFromRightToLeftArticlesDesktop 20s linear infinite;
+}
+
+.webinars {
+  position: absolute;
+  top: -85px;
+  transform: rotate(-3deg);
+}
+
+.containerWebinars {
+  background-color: var(--tag-color-tangerine);
+}
+
+.webinars .list {
+  animation: scrollFromLeftToRightWebinarsDesktop 20s linear infinite;
+}
+
+.subscribe {
+  position: relative;
+  top: -103px;
+  transform: rotate(2deg);
+}
+
+.containerSubscribe {
+  background-color: var(--text-color-coral-dark);
+}
+
+.subscribe .list {
+  animation: scrollFromRightToLeftSubscribeDesktop 20s linear infinite;
+}
+
+.discount {
+  color: var(--main-color-gray-5);
+}
+
+.containerDiscount {
+  background-color: var(--text-color-pink-dark);
+}
+
+.discount .list {
+  animation: scrollFromLeftToRightDiscountDesktop 20s linear infinite;
+}
+
+.discount .image {
+  fill: var(--main-color-gray-5);
+}
+
+@media screen and (max-width: 1279px) {
+  .title {
+    font-size: var(--primary-font-size-s);
+    letter-spacing: 0;
+  }
+
+  .container {
+    height: 80px;
+  }
+
+  .list {
+    width: 2640px;
+  }
+
+  .articles {
+    transform: rotate(-3deg);
+  }
+
+  .articles .list {
+    animation: scrollFromRightToLeftArticlesTablet 15s linear infinite;
+  }
+
+  .webinars .list {
+    animation: scrollFromLeftToRightWebinarsTablet 15s linear infinite;
+  }
+
+  .subscribe {
+    position: relative;
+    top: -108px;
+    transform: rotate(3deg);
+  }
+
+  .subscribe .list {
+    animation: scrollFromRightToLeftSubscribeTablet 15s linear infinite;
+  }
+
+  .discount {
+    font-size: var(--primary-font-size-l);
+  }
+
+  .discount .list {
+    transform: translateX(-25%);
+    animation: scrollFromLeftToRightDiscountTablet 15s linear infinite;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .articles {
+    transform: rotate(-4deg);
+  }
+
+  .webinars {
+    transform: rotate(-4deg);
+  }
+
+  .subscribe {
+    top: -117px;
+    transform: rotate(4deg);
+  }
+}

@@ -1,0 +1,30 @@
+.menu {
+  color: var(--main-color-black);
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  line-height: var(--font-line-heigth-m);
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .list {
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    margin-bottom: -20px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list {
+    gap: 9px;
+  }
+}

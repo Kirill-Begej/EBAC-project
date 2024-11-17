@@ -1,0 +1,40 @@
+.menulink {
+  border-radius: 20px;
+  box-shadow: 0 0 0 1.2px var(--main-color-gray-15) inset;
+  color: inherit;
+  display: block;
+  padding: 9px 18px;
+  text-decoration: none;
+  transition: background-color .3s ease-out;
+  white-space: nowrap;
+}
+
+.pink:hover {
+  background-color: var(--tag-color-pink);
+  box-shadow: none;
+}
+
+.sky:hover {
+  background-color: var(--tag-color-sky);
+  box-shadow: none;
+}
+
+.grass:hover {
+  background-color: var(--tag-color-grass);
+  box-shadow: none;
+}
+
+.tangerine:hover {
+  background-color: var(--tag-color-tangerine);
+  box-shadow: none;
+}
+
+.turquoise:hover {
+  background-color: var(--tag-color-turquoise);
+  box-shadow: none;
+}
+
+.mint:hover {
+  background-color: var(--tag-color-mint);
+  box-shadow: none;
+}

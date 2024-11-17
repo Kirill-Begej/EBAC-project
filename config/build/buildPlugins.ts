@@ -1,0 +1,47 @@
+import path from 'path'
+import webpack, { Configuration } from 'webpack'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin'
+import { IBuildOptions } from './types/config'
+
+export function buildPlugins({
+  paths,
+  isDev
+}: IBuildOptions): Configuration['plugins'] {
+  return [
+    new HtmlWebpackPlugin({
+      template: paths.html
+    }),
+    isDev && new webpack.ProgressPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[contenthash:8].css',
+      chunkFilename: 'css/[name].[contenthash:8].css'
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new ForkTsCheckerWebpackPlugin(),
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(
+        __dirname,
+        '..',
+        '..',
+        'src',
+        'shared',
+        'assets',
+        'img',
+        'favicon.png'
+      ),
+      outputPath: path.resolve(
+        __dirname,
+        '..',
+        '..',
+        'build',
+        'asset',
+        'images',
+        'favicon'
+      ),
+      prefix: 'images/favicon/'
+    })
+  ]
+}

@@ -1,0 +1,126 @@
+.button {
+  border-radius: 40px;
+  border: none;
+  color: var(--main-color-white);
+  cursor: pointer;
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
+  outline: none;
+}
+
+.promo {
+  align-self: start;
+  background: var(--tag-color-grass);
+  box-shadow: 0 0 0 5px var(--tag-color-grass) inset,
+              0 0 0 6.5px var(--main-color-black) inset;
+  color: var(--main-color-black);
+  display: inline-block;
+  font-family: var(--secondary-font-medium);
+  padding: 15.1px 55px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              color .3s ease-out,
+              outline .3s ease-out;
+}
+
+.promo:hover {
+  background: var(--main-color-black);
+  box-shadow: 0 0 0 5px var(--main-color-black) inset,
+              0 0 0 6.5px var(--main-color-black) inset;
+  color: var(--main-color-white);
+}
+
+.promo:focus {
+  box-shadow: 0 0 0 2px var(--main-color-black) inset,
+              0 0 0 5px var(--tag-color-grass) inset,
+              0 0 0 6.5px var(--tag-color-grass) inset;
+}
+
+.webinars {
+  background: var(--text-color-violet-dark);
+  display: block;
+  padding: 17.5px 0;
+  text-align: center;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out;
+  width: 280px;
+}
+
+.webinars:hover {
+  background: var(--text-color-pink-dark);
+}
+
+.webinars:focus {
+  box-shadow: 0 0 0 2px var(--main-color-white) inset;
+}
+
+.subscribe {
+  align-self: start;
+  background: var(--text-color-coral-dark);
+  line-height: var(--font-line-heigth-l);
+  padding: 10px 113.5px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              opacity .3s ease-out;
+}
+
+.subscribe:disabled {
+  cursor: default;
+  opacity: .6;
+}
+
+.subscribe:hover:enabled {
+  background: var(--main-color-black);
+}
+
+.subscribe:focus:enabled {
+  box-shadow: 0 0 0 2px var(--main-color-black) inset;
+}
+
+.footer {
+  background: var(--text-color-violet-dark);
+  padding: 10.1px 52.13px;
+  transition: background-color .3s ease-out,
+              box-shadow .3s ease-out,
+              opacity .3s ease-out;
+}
+
+.footer:disabled {
+  cursor: default;
+  opacity: .6;
+}
+
+.footer:hover:enabled {
+  background: var(--text-color-pink-dark);
+}
+
+.footer:focus:enabled {
+  box-shadow: 0 0 0 2px var(--main-color-white) inset;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .promo {
+    display: block;
+    padding: 15.1px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .webinars {
+    width: 100%;
+  }
+
+  .subscribe {
+    padding: 10px 100px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
