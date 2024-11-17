@@ -2,8 +2,8 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { Header } from 'widgets/Header'
 import { Footer } from 'widgets/Footer'
 import { PageLoader } from 'widgets/PageLoader'
-import { MainPage } from 'pages/MainPage'
 import { UseLoadingContext } from './providers/StoreProvider'
+import { AppRouter } from './providers/router'
 
 const App = () => {
   const isLoading = UseLoadingContext()
@@ -15,7 +15,7 @@ const App = () => {
         <>
           <Header />
           <main className="content">
-            <MainPage />
+            <AppRouter />
           </main>
           <Footer />
         </>

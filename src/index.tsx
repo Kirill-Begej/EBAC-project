@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import App from 'app/App'
 import 'app/styles/index.css'
 import { StoreProvider } from 'app/providers/StoreProvider'
@@ -9,10 +10,17 @@ const root = createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <StoreProvider>
-    <ErrorBoundary>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true
+      }}
+    >
       <ThemeProvider>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </ThemeProvider>
-    </ErrorBoundary>
+    </BrowserRouter>
   </StoreProvider>
 )
