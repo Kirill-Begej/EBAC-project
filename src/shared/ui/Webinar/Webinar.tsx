@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import DateImage from 'shared/assets/img/date.svg'
+import { useWebinarFormatDate } from 'shared/lib/hooks/useWebinarFormatDate'
 import cls from './Webinar.module.css'
 
 enum WebinarBackground {
@@ -30,27 +31,7 @@ interface WebinarProps {
 }
 
 export const Webinar: FC<WebinarProps> = ({ className, data, fullSize }) => {
-  const formatDate = (dateFrom: string, dateTo: string) => {
-    const months = [
-      'de enero',
-      'de febrero',
-      'de marzo',
-      'de abril',
-      'de mayo',
-      'de junio',
-      'de julio',
-      'de agosto',
-      'de septiembre',
-      'de octubre',
-      'de noviembre',
-      'de diciembre'
-    ]
-
-    const spliteDateFrom = dateFrom.split('.')
-    const spliteDateTo = dateTo.split('.')
-
-    return `${Number(spliteDateFrom[0])} ${months[Number(spliteDateFrom[1]) - 1]}, ${Number(spliteDateTo[0])} ${months[Number(spliteDateTo[1]) - 1]} ${spliteDateTo[2]}`
-  }
+  const { date } = useWebinarFormatDate(data.date_from, data.date_to)
 
   return (
     <li
@@ -93,9 +74,7 @@ export const Webinar: FC<WebinarProps> = ({ className, data, fullSize }) => {
               <svg className={cls.dateImage}>
                 <use href={`${DateImage}#calendar`}></use>
               </svg>
-              <span className={cls.dateText}>
-                {formatDate(data.date_from, data.date_to)}
-              </span>
+              <span className={cls.dateText}>{date}</span>
             </li>
             <li className={cls.watch}>
               <svg className={cls.dateImage}>

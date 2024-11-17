@@ -30,7 +30,6 @@ export const Input: FC<InputProps> = ({
   handleChangeForValidation,
   inputError,
   inputSuccess,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   handleFocus,
   handleBlur
 }) => (
