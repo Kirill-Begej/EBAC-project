@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "font-family-name-quotes": "always-unless-keyword",
+    "import-notation": "string",
+    "property-no-vendor-prefix": null,
+    "media-feature-range-notation": "prefix",
+    "selector-class-pattern": null,
+    "number-max-precision": null,
+    "keyframes-name-pattern": null
+  }
+}
