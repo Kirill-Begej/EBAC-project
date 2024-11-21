@@ -12,11 +12,16 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
   }
 
   const imagesLoaders = {
-    test: /\.(png|jpg|jpeg|webp|svg)$/i,
+    test: /\.(png|jpg|jpeg|webp)$/i,
     type: 'asset/resource',
     generator: {
       filename: 'asset/images/[name]--[hash][ext][query]'
     }
+  }
+
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack']
   }
 
   const postCssLoader = {
@@ -62,5 +67,5 @@ export function buildLoaders({ isDev }: IBuildOptions): ModuleOptions['rules'] {
     exclude: /node_modules/
   }
 
-  return [fontsLoader, imagesLoaders, cssLoader, typescriptLoader]
+  return [fontsLoader, imagesLoaders, svgLoader, cssLoader, typescriptLoader]
 }
