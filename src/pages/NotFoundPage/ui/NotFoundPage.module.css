@@ -1,0 +1,31 @@
+.notfoundpage {
+  align-items: center;
+  color: var(--secondary-font-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font-semibold);
+  gap: 80px;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  font-size: 100px;
+  margin: 0;
+  gap: 20px;
+}
+
+.titleText {
+  font-size: 150px;
+}
+
+.titleImage {
+  padding-top: 25px;
+}
+
+.text {
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  width: 90%;
+}

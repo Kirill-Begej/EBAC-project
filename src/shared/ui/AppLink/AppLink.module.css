@@ -1,7 +1,7 @@
 .applink {
   color: var(--secondary-font-color);
   display: inline-block;
-  font: 18px var(--primary-font-semibold);
+  font: var(--font-size-l) var(--primary-font-semibold);
   text-decoration: none;
   text-transform: uppercase;
   transition: color .3s ease-out;
