@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 import App from 'app/App'
 import 'app/styles/index.css'
 
@@ -12,6 +13,8 @@ root.render(
       v7_relativeSplatPath: true
     }}
   >
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </BrowserRouter>
 )

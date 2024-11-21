@@ -1,0 +1,33 @@
+.errorpage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.text {
+  color: var(--secondary-font-color);
+  font: var(--font-size-xl) var(--primary-font-semibold);
+  margin: 0;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 0 2px var(--secondary-font-color) inset;
+  color: var(--secondary-font-color);
+  cursor: pointer;
+  font: var(--font-size-l) var(--primary-font-semibold);
+  padding: 10px 20px;
+  transition: box-shadow .3s ease-out,
+              color .3s ease-out;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 2px var(--primary-font-color) inset;
+  color: var(--primary-font-color);
+}
