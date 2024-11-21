@@ -6,7 +6,12 @@ import 'app/styles/index.css'
 const root = createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter
+    future={{
+      v7_startTransition: true,
+      v7_relativeSplatPath: true
+    }}
+  >
     <App />
   </BrowserRouter>
 )

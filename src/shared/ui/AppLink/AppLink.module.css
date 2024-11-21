@@ -1,0 +1,44 @@
+.applink {
+  color: var(--secondary-font-color);
+  display: inline-block;
+  font: 18px var(--primary-font-semibold);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .3s ease-out;
+}
+
+.applink:hover {
+  color: var(--primary-font-color);
+}
+
+.active {
+  color: var(--primary-font-color);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.image {
+  display: block;
+}
+
+.pic {
+  display: block;
+  fill: var(--secondary-font-color);
+  transition: fill .3s ease-out;
+}
+
+.active .pic {
+  fill: var(--primary-font-color);
+}
+
+.applink:hover .pic {
+  fill: var(--primary-font-color);
+}
+
+.text {
+  display: block;
+}
