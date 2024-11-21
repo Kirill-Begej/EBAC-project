@@ -29,7 +29,7 @@ export const Header = ({ className }: HeaderProps) => (
             </li>
             <li className={cls.item}>
               <AppLink
-                to={'/123'}
+                to={RoutePath.result}
                 type={AppLinkType.LINK}
                 imageType={AppLinkImageType.RESULT}
               >
@@ -54,7 +54,7 @@ export const Header = ({ className }: HeaderProps) => (
       </div>
       <div className={classNames(cls.column, {}, [cls.right])}>
         <AppLink
-          to={'/456'}
+          to={RoutePath.settings}
           type={AppLinkType.LINK}
           imageType={AppLinkImageType.SETTING}
         >
