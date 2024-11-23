@@ -44,6 +44,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/no-dynamic-require': 0,
     'global-require': 0,
-    'no-restricted-globals': 0
+    'no-restricted-globals': 0,
+    '@typescript-eslint/no-unused-expressions': 0
   }
 }
