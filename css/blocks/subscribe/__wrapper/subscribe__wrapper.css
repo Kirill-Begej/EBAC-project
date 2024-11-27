@@ -1,0 +1,22 @@
+.subscribe__wrapper {
+  margin-bottom: 135px;
+  max-width: 1208px;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__wrapper {
+    margin-bottom: 92px;
+    top: -17px;
+    width: 91.666%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__wrapper {
+    margin-bottom: 37px;
+    top: -62px;
+    width: 95%;
+  }
+}

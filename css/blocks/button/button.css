@@ -1,0 +1,15 @@
+.button {
+  border-radius: 40px;
+  border: none;
+  color: var(--main-color-white);
+  cursor: pointer;
+  font: var(--secondary-font-size-l) var(--secondary-font-bold);
+  line-height: var(--font-line-heigth-l);
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+}

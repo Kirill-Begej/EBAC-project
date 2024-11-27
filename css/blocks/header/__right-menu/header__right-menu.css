@@ -1,0 +1,21 @@
+.header__right-menu {
+  align-self: center;
+  display: flex;
+  gap: 27px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__right-menu {
+    flex: 1 0 50%;
+    justify-content: end;
+    order: 2;
+    padding-top: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__right-menu {
+    gap: 23px;
+  }
+}

@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    gap: 24px;
+    order: 3;
+  }
+}

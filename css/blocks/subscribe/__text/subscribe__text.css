@@ -1,0 +1,10 @@
+.subscribe__text {
+  margin: 0;
+  width: 584px;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__text {
+    width: auto;
+  }
+}

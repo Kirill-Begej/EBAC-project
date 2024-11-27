@@ -1,0 +1,21 @@
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 136px 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .articles__list {
+    gap: 104px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .articles__list {
+    gap: 105px;
+  }
+}
+

@@ -1,0 +1,19 @@
+.subscribe__input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__input-row {
+    flex-direction: column;
+    gap: 17px;
+    width: 36.46vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__input-row {
+    gap: 8px;
+    width: 100%;
+  }
+}

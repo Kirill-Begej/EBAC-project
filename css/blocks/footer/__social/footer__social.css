@@ -1,0 +1,12 @@
+.footer__social {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  justify-self: end;
+  padding-top: 108px;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer__social {
+    display: none;
+  }
+}

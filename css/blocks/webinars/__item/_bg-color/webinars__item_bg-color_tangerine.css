@@ -1,0 +1,22 @@
+.webinars__item_bg-color_tangerine {
+  background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-deskop.svg') 0% 50% / 83% 100% no-repeat,
+              var(--text-color-tangerine-dark);
+}
+
+.webinars__item_bg-color_tangerine .webinars__no-image {
+  fill: var(--text-color-tangerine-dark);
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__item_bg-color_tangerine {
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-three-tablet.svg') 25% 100% / 85% 100% no-repeat,
+              var(--text-color-tangerine-dark);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__item_bg-color_tangerine {
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') -1% 90% / 116% 98% no-repeat,
+              var(--text-color-tangerine-dark);
+  }
+}

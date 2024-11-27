@@ -1,0 +1,12 @@
+.logo_type_footer .logo__image {
+  fill: var(--main-color-white);
+  height: 82px;
+  width: 224px;
+}
+
+@media screen and (max-width: 1279px) {
+  .logo_type_footer .logo__image {
+    height: 64px;
+    width: 173px;
+  }
+}

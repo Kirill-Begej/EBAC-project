@@ -1,0 +1,23 @@
+.webinars__author {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 73.08%;
+  gap: 4px;
+  min-height: 103px;
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__author {
+    flex: 1 0 70.236%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__author {
+    flex: 1 0 66.1875%;
+    gap: 3px;
+    min-height: 95px;
+    padding-top: 5px;
+  }
+}

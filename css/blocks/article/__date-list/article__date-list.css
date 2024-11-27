@@ -1,0 +1,5 @@
+.article__date-list {
+  color: var(--main-color-gray-35);
+  display: flex;
+  gap: 24px;
+}

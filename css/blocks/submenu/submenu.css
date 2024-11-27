@@ -1,0 +1,29 @@
+.submenu {
+  color: var(--main-color-white);
+  display: flex;
+  flex-direction: column;
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  gap: 32px;
+  line-height: var(--font-line-heigth-m);
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .submenu {
+    gap: 0;
+  }
+
+  .submenu .submenu__checkbox:checked + .submenu__title::after {
+    transform: rotate(180deg);
+  }
+
+  .submenu .submenu__checkbox:checked + .submenu__title + .submenu__list {
+    margin-bottom: 17px;
+    max-height: 1000px;
+    padding-top: 24px;
+    opacity: 1;
+    transition: max-height .3s ease-out,
+                opacity .15s ease-out,
+                padding-top .15s linear;
+  }
+}

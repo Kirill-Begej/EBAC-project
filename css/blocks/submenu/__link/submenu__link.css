@@ -1,0 +1,21 @@
+.submenu__link {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+.submenu__link::before {
+  background: var(--main-color-white);
+  bottom: 0;
+  content: '';
+  height: 1.5px;
+  position: absolute;
+  right: 0;
+  transition: width .3s ease-out;
+  width: 0;
+}
+
+.submenu__link:hover::before {
+  left: 0;
+  width: 100%;
+}

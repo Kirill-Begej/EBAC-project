@@ -1,0 +1,23 @@
+.subscribe__text-container {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__text-container {
+    height: 418px;
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__text-container {
+    gap: 80px;
+    height: auto;
+    width: 84.21%;
+  }
+}

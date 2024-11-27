@@ -1,0 +1,17 @@
+.article__image-wrapper {
+  height: 0;
+  padding-bottom: 56.165%;
+  position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+  .article__image-wrapper {
+    padding-bottom: 65.885%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article__image-wrapper {
+    padding-bottom: 115.79%;
+  }
+}

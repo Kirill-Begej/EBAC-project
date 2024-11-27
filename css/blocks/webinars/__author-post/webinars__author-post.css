@@ -1,0 +1,9 @@
+.webinars__author-post {
+  display: block;
+  font: var(--secondary-font-size-m) var(--secondary-font-medium);
+  line-height: var(--font-line-heigth-m);
+  max-width: 195px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

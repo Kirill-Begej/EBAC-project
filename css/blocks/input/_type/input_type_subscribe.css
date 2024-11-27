@@ -1,0 +1,9 @@
+@media screen and (max-width: 1279px) {
+  .input_type_subscribe {
+    width: 100%;
+  }
+
+  .input_type_subscribe .input__element {
+    width: 100%;
+  }
+}

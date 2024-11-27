@@ -1,0 +1,19 @@
+.webinars__item-container {
+  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 82.98%;
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__item-container {
+    width: 85.88%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__item-container {
+    width: 84.21%;
+  }
+}

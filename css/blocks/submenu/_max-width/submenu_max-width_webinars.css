@@ -1,0 +1,9 @@
+.submenu_max-width_webinars {
+  max-width: 104px;
+}
+
+@media screen and (max-width: 767px) {
+  .submenu_max-width_webinars {
+    max-width: none;
+  }
+}

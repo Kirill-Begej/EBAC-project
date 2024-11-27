@@ -1,0 +1,33 @@
+.subscribe__container {
+  background: url('/assets/images/subscribe/subscribe-bg/subscribe-background-desktop.svg') 8% 43% no-repeat,
+              var(--text-color-turquoise-dark);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  mask: url('/assets/images/subscribe/subscribe-mask/subscribe-mask-desktop.svg') 0 0/100% 100% no-repeat;
+  padding: 64px 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__container {
+    background: url('/assets/images/subscribe/subscribe-bg/subscribe-background-tablet.svg') 42% 40% / 183% 185% no-repeat,
+                var(--text-color-turquoise-dark);
+    border-radius: 32px 100px 100px 32px;
+    justify-content: start;
+    mask: none;
+    padding: 40px 0 40px 24px;
+    width: 79.12%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__container {
+    background: url('/assets/images/subscribe/subscribe-bg/subscribe-background-mobile.svg') 8% -23% no-repeat,
+              var(--text-color-turquoise-dark);
+    border-radius: 0;
+    justify-content: center;
+    mask: url('/assets/images/subscribe/subscribe-mask/subscribe-mask-mobile.svg') 100% 100% / 100% 100% no-repeat;
+    padding: 65px 0 480px;
+    width: 100%;
+  }
+}

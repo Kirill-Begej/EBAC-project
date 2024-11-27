@@ -1,0 +1,9 @@
+.article__image_mask-type_three {
+  mask: url('../../../../../assets/images/article/masks/mask-type-three.svg') 0 0/100% 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .article__image_mask-type_three {
+    mask: url('../../../../../assets/images/article/masks/mask-type-twelve.svg') 0 0/100% 100%;
+  }
+}

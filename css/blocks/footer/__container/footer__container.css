@@ -1,0 +1,23 @@
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto minmax(183px, min-content) auto;
+  max-width: 1208px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer__container {
+    grid-template-rows: repeat(4, auto);
+    width: 91.666%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 95%;
+  }
+}

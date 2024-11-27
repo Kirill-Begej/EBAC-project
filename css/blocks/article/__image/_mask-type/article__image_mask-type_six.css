@@ -1,0 +1,15 @@
+.article__image_mask-type_six  {
+  mask: url('../../../../../assets/images/article/masks/mask-type-seven.svg') 0 0/100% 100% no-repeat;
+}
+
+@media screen and (max-width: 1279px) {
+  .article__image_mask-type_six  {
+    mask: url('../../../../../assets/images/article/masks/mask-type-ten.svg') 0 0/100% 100% no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article__image_mask-type_six  {
+    mask: url('../../../../../assets/images/article/masks/mask-type-fifteen.svg') 0 0/100% 100% no-repeat;
+  }
+}

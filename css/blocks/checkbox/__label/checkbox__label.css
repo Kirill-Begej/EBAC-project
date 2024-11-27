@@ -1,0 +1,32 @@
+.checkbox__label {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.checkbox__label::before {
+  background: var(--main-color-white);
+  border-radius: 4px;
+  content: '';
+  display: block;
+  flex: 1 0 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.checkbox__label::after {
+  background: url('../../../../assets/images/checkbox/checkbox.svg');
+  content: '';
+  display: block;
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: 7px;
+  width: 13px;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.checkbox__element:checked+.checkbox__label::after {
+  opacity: 1;
+}

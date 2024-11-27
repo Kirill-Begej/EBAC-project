@@ -1,0 +1,7 @@
+.article__tags-list_color_marine {
+  color: var(--text-color-marine-dark);
+}
+
+.article__tags-list_color_marine .article__tags-active {
+  background-color: var(--tag-color-marine);
+}

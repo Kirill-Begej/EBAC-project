@@ -1,0 +1,12 @@
+.subscribe__text-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 624px;
+}
+
+@media screen and (max-width: 1279px) {
+  .subscribe__text-row {
+    width: auto;
+  }
+}

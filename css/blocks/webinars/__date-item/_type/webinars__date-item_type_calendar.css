@@ -1,0 +1,16 @@
+.webinars__date-item_type_calendar .webinars__date-image {
+  align-self: start;
+  padding-top: 2px;
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__date-item_type_calendar {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__date-item_type_calendar {
+    width: 70%;
+  }
+}

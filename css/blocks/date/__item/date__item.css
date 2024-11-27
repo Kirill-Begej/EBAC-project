@@ -1,0 +1,5 @@
+.date__item {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}

@@ -1,0 +1,43 @@
+@keyframes scrollFromLeftToRightWebinarsDesktop {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% + 9px));
+  }
+}
+
+@keyframes scrollFromLeftToRightWebinarsTablet {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(calc(25% + 122px));
+  }
+}
+
+.title_type_webinars {
+  position: absolute;
+  top: -85px;
+  transform: rotate(-3deg);
+}
+
+.title_type_webinars .title__container {
+  background-color: var(--tag-color-tangerine);
+}
+
+.title_type_webinars .title__list {
+  animation: scrollFromLeftToRightWebinarsDesktop 20s linear infinite;
+}
+
+@media screen and (max-width: 1279px) {
+  .title_type_webinars .title__list {
+    animation: scrollFromLeftToRightWebinarsTablet 15s linear infinite;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title_type_webinars {
+    transform: rotate(-4deg);
+  }
+}

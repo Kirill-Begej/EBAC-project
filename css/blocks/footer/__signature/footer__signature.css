@@ -1,0 +1,27 @@
+.footer__signature {
+  border-top: 1px solid var(--main-color-gray-80);
+  display: flex;
+  gap: 10px;
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  list-style: none;
+  margin: 0;
+  padding: 33px 0 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer__signature {
+    padding: 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__signature {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    order: 5;
+    padding: 0;
+  }
+}

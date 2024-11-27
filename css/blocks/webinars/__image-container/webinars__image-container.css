@@ -1,0 +1,5 @@
+.webinars__image-container {
+  inset: 0;
+  position: absolute;
+  overflow: hidden;
+}

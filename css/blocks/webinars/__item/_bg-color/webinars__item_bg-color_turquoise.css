@@ -1,0 +1,15 @@
+.webinars__item_bg-color_turquoise {
+  background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') 100% 100% / 87% 85% no-repeat,
+              var(--text-color-turquoise-dark);
+}
+
+.webinars__item_bg-color_turquoise .webinars__no-image {
+  fill: var(--text-color-turquoise-dark);
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__item_bg-color_turquoise {
+    background: url('/assets/images/webinars/webinars-item-bg/webinars-item-bg-type-one.svg') 226% 157% / 96% 94% no-repeat,
+              var(--text-color-turquoise-dark);
+  }
+}

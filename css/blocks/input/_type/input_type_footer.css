@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px) {
+  .input_type_footer {
+    width: 100%;
+  }
+
+  .input_type_footer .input__element {
+    width: 100%;
+  }
+}

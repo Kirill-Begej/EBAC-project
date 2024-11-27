@@ -1,0 +1,22 @@
+.webinars__image-wrapper {
+  flex: 1 0 20.513%;
+  height: 0;
+  padding-bottom: 20.513%;
+  position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+  .webinars__image-wrapper {
+    flex: 1 0 21.92%;
+    margin-bottom: 20px;
+    padding-bottom: 21.92%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__image-wrapper {
+    flex: 1 0 24.3%;
+    margin-bottom: 20px;
+    padding-bottom: 24.3%;
+  }
+}

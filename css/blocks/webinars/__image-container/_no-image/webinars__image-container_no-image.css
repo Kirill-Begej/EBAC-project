@@ -1,0 +1,4 @@
+.webinars__image-container_no-image {
+  background: var(--main-color-white);
+  mask: url('../../../../../assets/images/webinars/webinars-mask.svg') 0 0/100% 100% no-repeat;
+}

@@ -1,0 +1,11 @@
+.webinars__date-list {
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .webinars__date-list {
+    gap: 16px;
+  }
+}

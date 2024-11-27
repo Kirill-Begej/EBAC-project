@@ -1,0 +1,7 @@
+.social__link {
+  display: block;
+}
+
+.social__link:hover .social__image {
+  fill: var(--text-color-pink-dark);
+}

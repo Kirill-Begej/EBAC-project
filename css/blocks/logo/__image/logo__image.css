@@ -1,0 +1,14 @@
+.logo__image {
+  display: block;
+  fill: var(--main-color-black);
+  height: 40px;
+  transition: fill .3s ease-out;
+  width: 109px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo__image {
+    height: 48px;
+    width: 130px;
+  }
+}
